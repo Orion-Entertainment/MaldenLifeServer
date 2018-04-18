@@ -24,21 +24,21 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "";
-        items[] = { "debitcard",  "cyanideCapsule", "speedbomb", "gokart", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "cprKit", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
+        items[] = { "debitcard",  "cyanideCapsule", "speedbomb", "gokart", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
     };
 	
 	class black {
         name = "STR_Shops_Black";
         side = "civ";
         conditions = "";
-        items[] = { "debitcard", "speedbomb", "gokart", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "lockpick", "bandages", "morphine", "cprKit", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "barrel", "trigger", "butt", "sight", "steel", "iron_refined", "steelplate", "gunpowder", "sulfur", "cloth", "C4", "rubber", "BTip", "BShell", "BPowder", "BPrimer"};
+        items[] = { "debitcard", "speedbomb", "gokart", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "lockpick", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "barrel", "trigger", "butt", "sight", "steel", "iron_refined", "steelplate", "gunpowder", "sulfur", "cloth", "C4", "rubber", "BTip", "BShell", "BPowder", "BPrimer"};
     };
 
     class donator {
         name = "STR_Shops_Donator";
         side = "civ";
         conditions = "call life_donorlevel >= 1";
-        items[] = { "debitcard", "gokart", "speedbomb", "cyanideCapsule", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "cprKit", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
+        items[] = { "debitcard", "gokart", "speedbomb", "cyanideCapsule", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
     };
 
     class gang {
@@ -158,7 +158,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "debitcard", "panicbutton", "dogwhistle", "gpstracker", "flashlight", "fueldart", "gokart", "morphine","bandages", "handcuffs", "keys", "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit" , "cprKit" };
+        items[] = { "debitcard", "panicbutton", "dogwhistle", "gpstracker", "flashlight", "fueldart", "gokart", "morphine","bandages", "handcuffs", "keys", "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit" };
     };
 
     class counterfitCash {
@@ -293,8 +293,8 @@ class VirtualItems {
         variable = "speedbomb";
         displayName = "STR_Item_speedbomb";
         weight = 8;
-        buyPrice = 50000;
-        sellPrice = 25000;
+        buyPrice = 20000;
+        sellPrice = 15000;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_speedbomb.paa";

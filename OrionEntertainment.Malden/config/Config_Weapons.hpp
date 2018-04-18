@@ -1,6 +1,6 @@
 class WeaponShops {
     class gun {
-        name = "Box's Gun Shop";
+        name = "Gun Shop";
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
