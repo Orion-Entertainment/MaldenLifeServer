@@ -10,8 +10,8 @@ class Life_Settings {
 
     /* Debit Card Configuration */
     debit_tax = true;	//Tax a player when they have used a Debit card to purchase something? - This is mainly a money sink in case everyone on your server owns a debit card, as they'll never have money on their person (so they can't be robbed) if they do.
-    debit_taxAmount = 0.15; // Tax the player pays when purchasing with a debit card. Tax = Price * debit_taxAmount. debit_tax must be true. Eg. - If an item is $45,000 and your tax is set to 0.15, amount paid after tax will be $51,750. (total tax paid $6750.)
-    debit_price = 75000; // Price of purchasing a debit card from the bank.
+    debit_taxAmount = 0.2; // Tax the player pays when purchasing with a debit card. Tax = Price * debit_taxAmount. debit_tax must be true. Eg. - If an item is $45,000 and your tax is set to 0.15, amount paid after tax will be $51,750. (total tax paid $6750.)
+    debit_price = 1500; // Price of purchasing a debit card from the bank.
     debit_weapons = true; // Allows the use of debit cards when purchasing/selling weapons.
     debit_clothing = true; // Allows the use of debit cards when purchasing/selling clothing.
     debit_vItems = true; // Allows the use of Debit Cards when purchasing/selling virtual items.
@@ -59,12 +59,12 @@ class Life_Settings {
 /* System Settings */
     /* ATM & Federal Reserve System Configurations */
     global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
-    noatm_timer = 15; //Time in minutes that players cannot deposit money after selling stolen gold.
+    noatm_timer = 10; //Time in minutes that players cannot deposit money after selling stolen gold.
     minimum_cops = 10; //!!!!!!change this before server launch
     minimum_cops_bank = 7; //New bank
 
     /*Death settings*/
-    drop_weapons_onDeath = false; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
+    drop_weapons_onDeath = true; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
 
     /* Lumber Related Settings */
     enable_lumbering = true;
@@ -73,11 +73,11 @@ class Life_Settings {
     donor_level = true; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = false; //Set to false to disable the ARMA 3 fatigue system.
     total_maxWeight = 34; //Static variable for the maximum weight allowed without having a backpack
-    respawn_timer = 100; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
+    respawn_timer = 90; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
-    news_broadcast_cost = 250000; //Cost for a player to send a news station broadcast.
-    news_broadcast_cooldown = 15; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
+    news_broadcast_cost = 1000000; //Cost for a player to send a news station broadcast.
+    news_broadcast_cooldown = 30; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
     news_broadcast_header_length = 60; //Number of characters that a header can consist of. Anything over this may clip. This depends on the font size and various other factors. Adjust with caution.
 	
 	//bank_cooldown = 1; //
@@ -90,20 +90,20 @@ class Life_Settings {
     clothing_masks[] = { "" };
 
     /* Escape Menu Configuration */
-    escapeMenu_timer = 20; //Time required to pass before you can click the abort button in the escape menu.
+    escapeMenu_timer = 15; //Time required to pass before you can click the abort button in the escape menu.
     escapeMenu_displayExtras = true; //Display the players UID & serverName specified below in the escape menu.
     escapeMenu_displayText = "Thanks for playing!"; //Text displayed in the escape menu. Make it short.. around 20 characters.
 
     /* Fuel System Configurations */
     pump_service = true; //Allow users to use pump service on the map. Default = false
     fuel_cost = 200; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
-    service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
-    fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
+    service_chopper = 5000; //Cost to service chopper at chopper service station(Repair/Refuel).
+    fuelCan_refuel = 750; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
-    gang_price = 150000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_price = 100000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
     gang_upgradeBase = 13000; //The base cost for purchasing additional slots in a gang
-    gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
+    gang_upgradeMultiplier = 1.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
     house_limit = 3; //Maximum number of houses a player can own.
@@ -128,20 +128,20 @@ class Life_Settings {
     jail_forceWalk = true;
 
     /* Medical System Configurations */
-    revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
+    revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_civ = false; //true to enable civs the ability to revive everyone or false for only medics/ems or medic/ems/cops.
     revive_east = false; //true to enable opfor the ability to revive everyone or false for only medics/ems or medic/ems/cops.
-    revive_fee = 8500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
-    hospital_heal_fee = 50; //Fee to heal at a hospital NPC
+    revive_fee = 5000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
+    hospital_heal_fee = 2000; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
     bank_cop = 500000; //Amount of cash in bank for new cops
     bank_civ = 500000; //Amount of cash in bank for new civillians
     bank_med = 500000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 9500; //Payment for cops
-    paycheck_civ = 7250; //Payment for civillians
-    paycheck_med = 11250; //Payment for medics
+    paycheck_cop = 3250; //Payment for cops
+    paycheck_civ = 2550; //Payment for civillians
+    paycheck_med = 3750; //Payment for medics
 
     paycheck_period = 10; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
