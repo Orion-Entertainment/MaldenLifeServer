@@ -1,13 +1,13 @@
 class CfgServerInfoMenu
 {
    addAction = 1; // Enable/disable action menu item | use 0 to disable | default: 1 (enabled)
-   antiHACK = "infiSTAR + BattlEye";
+   antiHACK = "";
    hostedBy = "Orion Entertainment";
-   ipPort = "66.70.180.170 : 2302";
+   ipPort = "66.70.180.170 : 2312";
    //openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
-   openAtLogin = no;
+   openAtLogin = true;
    restart = 4; // Amount of hours before server automatically restarts
-   serverName = "OrionLife";
+   serverName = "Orion-Entertainment";
    class menuItems
    {
       // title AND content accept formatted text ( since update Oct5.2016 )
@@ -25,7 +25,7 @@ class CfgServerInfoMenu
          menuName = "Rules";
          title = "SERVER RULES";
          content[] = {
-            "<t size='1.75'>Our Rules</t><br />Visit our website for our full list of rules here: <a href='https://orionlife.enjin.com/' color='#56BDD6'>SERVER RULES<br />",
+            "<t size='1.75'>Our Rules</t><br />Visit our website for our full list of rules here: <a href='https://OrionLife.net/' color='#56BDD6'>SERVER RULES<br />",
          };
       };
       class third
@@ -45,16 +45,14 @@ class CfgServerInfoMenu
          menuName = "Staff";
          title = "ORION STAFF";
          content[] = {
-			"Founder: Conway, +Flabby",
-            "<br />",
-			"Directors: Ober",
+			"Founders: Conway, +Flabby"
 		 };
       };
       class fifth
       {
          menuName = "Reporting";
          title = "REPORTING PLAYERS";
-         content[] = {"To report a player, visit this link: <a href='https://orionlife.enjin.com/' color='#56BDD6'>REPORT PLAYER HERE</a>"
+         content[] = {"To report a player, visit this link: <a href='https://OrionLife.net/' color='#56BDD6'>REPORT PLAYER HERE</a>"
          };
       };
       class sixth
@@ -64,7 +62,7 @@ class CfgServerInfoMenu
          content[] = {
             "<a href='http://invite.teamspeak.com/ts.orionlife.net/' color='#56BDD6'>Join Teamspeak</a>",
             "<br />",
-            "<a href='https://orionlife.enjin.com/' color='#56BDD6'>Website</a>"
+            "<a href='https://OrionLife.net/' color='#56BDD6'>Website</a>"
          };
       };
       class seventh
@@ -74,7 +72,7 @@ class CfgServerInfoMenu
          content[] = {
             "<t size='1.25'>IT07:</t> coder/creator of this menu",
             "<br />",
-            "<t size='1.25'>+Flabby:</t> Main development of this mission file",
+            "<t size='1.25'>+Flabby & Repentz:</t> Original development of this mission file",
             "<br />",
             "<t size='1.25'>Orion Dev Team:</t>"
          };
