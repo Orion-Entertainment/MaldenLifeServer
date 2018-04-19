@@ -1,4 +1,4 @@
 class Life_Banking
 {
-  pin_system = true;
+  pin_system = false;
 };

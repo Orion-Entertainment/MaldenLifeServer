@@ -488,13 +488,13 @@ class AddonsMetaData
 randomSeed=15937995;
 class ScenarioData
 {
-	author="Orion-Entertainment.com";
-	overviewText="Orion-Entertainment Dev Team";
-	overviewTextLocked="Orion-Entertainment Dev Team";
-	overViewPicture="images\Textures\armalife.paa";
-	overViewPictureLocked="images\Textures\armalife.paa";
-	onLoadMission="Orion-Entertainment Dev Team";
-	loadScreen="images\Textures\armalife.paa";
+	author="OrionLife.net";
+	overviewText="Orion-Entertainment Team";
+	overviewTextLocked="Orion-Entertainment Team";
+	overViewPicture="images\textures\armalife.paa";
+	overViewPictureLocked="images\textures\armalife.paa";
+	onLoadMission="Orion-Entertainment Team";
+	loadScreen="images\textures\armalife.paa";
 	showCompass=0;
 	showUAVFeed=0;
 	showWatch=0;
