@@ -39,9 +39,3 @@ life_actions pushBack (player addAction["<t color = '#D660D6'>Remove Seatbelt</t
 
 //Dragging
 //life_actions pushBack (player addAction["<t color = '#3366ff'>Hide Body</t>",life_fnc_hideBody,"",6,false,false,"",'cursorTarget isKindOf "Man" && !(cursorTarget isKindOf "Animal") && {!alive cursorTarget}']);
-
-//ID Cards
-life_actions = life_actions + [player addAction["View ID",{[cursorTarget, (cursorTarget getVariable ["persoRangBez","# UNDEFINIERT #"])] call fvs_fnc_zeigePerso;},"",0,false,false,"",'
-isPlayer cursorTarget && alive cursorTarget && (player distance cursorTarget < 3) && (speed player < 1 && speed cursorTarget < 1) && !(player getVariable ["restrained",false]) && (cursorTarget getVariable ["restrained",false])']];
-life_actions = life_actions + [player addAction["Show ID",{[player, (player getVariable ["persoRangBez","# UNDEFINIERT #"])] remoteExecCall ["fvs_fnc_zeigePerso",cursorTarget];},"",0,false,false,"",'
-isPlayer cursorTarget && alive cursorTarget && (player distance cursorTarget < 3) && (speed player < 1 && speed cursorTarget < 1)']];

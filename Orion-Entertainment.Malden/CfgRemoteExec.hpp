@@ -81,18 +81,6 @@ class CfgRemoteExec {
 		F(life_fnc_tieingb,CLIENT)
 		F(life_fnc_gagged,CLIENT)
         F(life_fnc_backupCall,CLIENT)
-        F(fvs_fnc_persoBeantragen,CLIENT) // Perso
-		F(fvs_fnc_persoErgebnis,CLIENT) // Perso
-		F(fvs_fnc_zeigePerso,CLIENT) // Perso
-        F(life_fnc_perso_laden,CLIENT) // Perso
-		F(life_fnc_persoBeantragen,CLIENT) // Perso
-		F(life_fnc_persoCheck,CLIENT) // Perso
-		F(life_fnc_persoErgebnis,CLIENT) // Perso
-		F(life_fnc_persoNeu,CLIENT) // Perso
-		F(life_fnc_updateMonat,CLIENT) // Perso
-		F(life_fnc_updateTag,CLIENT) // Perso
-		F(life_fnc_zeigePerso,CLIENT) // Perso
-		F(life_fnc_updatePersoBild,CLIENT) // Perso 
         F(fvs_fnc_taxiDialogRechnung,CLIENT) // Taxi 
         F(fvs_fnc_taxiInitFahrer,CLIENT) // Taxi 
         F(fvs_fnc_taxiMsgKunden,CLIENT) // Taxi 
@@ -171,9 +159,6 @@ class CfgRemoteExec {
         F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
         F(TON_fnc_debitBought,SERVER)
         F(TON_fnc_insureCar,SERVER) 
-        F(DB_fnc_persoRequest,SERVER) // Perso
-		F(DB_fnc_persoInsert,SERVER) // Perso
-		F(DB_fnc_persoUpdate,SERVER) // Perso
         F(TON_fnc_lightbarSpawn,SERVER)
         F(TON_fnc_handleMessages,SERVER)
         F(TON_fnc_msgRequest,SERVER)

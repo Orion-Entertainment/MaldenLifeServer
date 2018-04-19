@@ -81,19 +81,9 @@ sleep 2;
 disableUserInput false;
 [1, "PRESS SPACE TO START YOUR ADVENTURE (PLEASE ENABLE YOUR MUSIC SOUNDS)"] call mav_introcam_fnc_updateCinematicStatus;
 waitUntil {mav_introcam_continue};
-//0 cutFadeOut 9999999;
 
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
-
-//RE- ENABLE FOR WORKING ID SYSTEM BELOW
-
-diag_log "::Client:: loaded personalID.";
-0 cutText ["Check the identity card...","BLACK FADED"];
-[] call fvs_fnc_perso_laden;
-//0 cutFadeOut 99999999; 
-waitUntil {fvs_persoReady};
-
 
 //Set bank amount for new players
 switch (playerSide) do {

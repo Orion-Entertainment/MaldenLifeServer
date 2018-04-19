@@ -32,13 +32,13 @@ class smartphoneCOP {
 
     class perso_idcard: Life_RscButtonInvisible
 		{
-			onButtonClick = "[player,(player getVariable ['persoRangBez','# UNDEFINIERT #'])] call fvs_fnc_zeigePerso; closeDialog 0;";
 			idc = -1;
 			x = 0.425194 * safezoneW + safezoneX;
 			y = 0.256 * safezoneH + safezoneY;
 			w = 0.029 * safezoneW;
 			h = 0.049 * safezoneH;
-			tooltip = "View your own ID card";
+			onButtonClick = "";
+			tooltip = "Disabled";
 		};
 
     class Life_RscButtonInvisible_2520: Life_RscButtonInvisible {

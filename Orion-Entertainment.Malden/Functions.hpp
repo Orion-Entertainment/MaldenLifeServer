@@ -75,30 +75,6 @@ class Repentz_Addons
 class felixvonstudsinske
 {
 	tag = "fvs";
-	class perso
-	{
-		file = "Custom\IDSystem\perso";
-		class perso_laden {};
-		class persoCheck {};
-		class persoCheck_aenderung {};
-		class persoErgebnis {};
-		class persoNeu {};
-		class updateTag {};
-		class updateTagA {};
-		class updateMonat {};
-		class updateMonatA {};
-		class updateHsnr {};
-		class updateHsnrA {};
-		class updateStrasse {};
-		class updateStrasseA {};
-		class persoBeantragen {};
-		class persoBeantragenAenderung {};
-		class zeigePerso {};
-		class updatePersoBild {};
-		class updatePersoBildA {};
-		class aenderePerso {};
-		class persoPreInit {preinit = 1;}; // Neu für Variablen
-	};
 
     class taxi {
         file = "Custom\taxi";
@@ -717,7 +693,6 @@ class Life_Client_Core {
         class smartphone {};
         class smartphone2 {};
         class money {};
-        class persoErgebnis {};
         class newMsg {};
         class showMsg {};
     };

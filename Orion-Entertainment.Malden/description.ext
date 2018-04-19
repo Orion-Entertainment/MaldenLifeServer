@@ -48,7 +48,6 @@ class RscTitles {
     #include "maverick\introcam\dialogs\title_status.hpp"
     #include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
     #include "maverick\tuning\dialogs\titles.hpp"
-    #include "Custom\IDSystem\uiPerso.hpp"
     #include "Custom\UPM\Rsc\RscNotification.hpp"
     #include "dialog\RL_progress.hpp"
     #include "core\derleon\vis\vehInfo.hpp"
@@ -416,52 +415,6 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
-
-  	class falschprof
-	{
-		title = "Incorrect profile name";
-		subTitle = "";
-		description = "Your current profile (name) does not match the saved name in the personnel ID card! Please change your profile. If you do not know your name anymore, please contact support!";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	class fehlerprof
-	{
-		title = "Error in your ID card";
-		subTitle = "";
-		description = "Contact an administrator on our website or teamspeak!";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	class persoA
-	{
-		title = "Personal identity card";
-		subTitle = "";
-		description = "Please change your profile name to the name you gave the NPC 5 minutes ago!";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	class fformatprof
-	{
-		title = "Format personal identity card";
-		subTitle = "";
-		description = "Please sign up for support and report this error!";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	class dialogperso
-	{
-		title = "Personnel ID dialog closed";
-		subTitle = "";
-		description = "Dialogue of the ID card has been closed ...";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
 };
 class CfgNotifications {
     class MedicalRequestEmerg {
@@ -570,4 +523,3 @@ class CfgNotifications {
 };
 
 #include "maverick\maverick_master.cpp"
-#include "Custom\IDSystem\Config_Perso.hpp"

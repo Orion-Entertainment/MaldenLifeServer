@@ -28,21 +28,6 @@ class CfgFunctions {
             class updatePartial {};
             class betUpdate {};
         };
-
-        class perso
-		{
-			file = "\life_server\Functions\MySQL\perso";
-			class persoErrorFix {};
-			class persoRequest {};
-			class persoInsert {};
-			class persoUpdate {};
-		};
-		
-		class kills
-		{
-			file = "\life_server\Functions\MySQL\kills";
-			class killedPlayer {};
-		};
     };
 
     class Life_System {

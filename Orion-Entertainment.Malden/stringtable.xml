@@ -88,7 +88,7 @@
  	</Key>
 	</Package>
     <Package name="derleon">
-        <Key ID="STR_VIS_SU_ignitionOn">
+    <Key ID="STR_VIS_SU_ignitionOn">
         <Original>Ignition on</Original>
         <Czech>zapalování zapnuto</Czech>
         <French></French>
@@ -98,8 +98,8 @@
         <Portuguese>ignição</Portuguese>
         <Russian>при включенном зажигании</Russian>
         <German>Zuendung an</German>
-        </Key>
-        <Key ID="STR_VIS_SU_ignitionOff">
+    </Key>
+    <Key ID="STR_VIS_SU_ignitionOff">
         <Original>Ignition off</Original>
         <Czech>zapalování</Czech>
         <French></French>
@@ -109,8 +109,8 @@
         <Portuguese>ignição</Portuguese>
         <Russian>Выключить зажигание</Russian>
         <German>Zuendung aus</German>
-        </Key>
-        <Key ID="STR_VIS_SU_visOn">
+    </Key>
+    <Key ID="STR_VIS_SU_visOn">
         <Original>VIS activate</Original>
         <Czech>povolit VIS</Czech>
         <French></French>
@@ -120,8 +120,8 @@
         <Portuguese>VIS ativar</Portuguese>
         <Russian>включить VIS</Russian>
         <German>VIS aktivieren</German>
-        </Key>
-        <Key ID="STR_VIS_SU_visOff">
+    </Key>
+    <Key ID="STR_VIS_SU_visOff">
         <Original></Original>
         <Czech>zakázat VIS</Czech>
         <French></French>
@@ -131,226 +131,8 @@
         <Portuguese>desativar o VIS</Portuguese>
         <Russian>отключить VIS</Russian>
         <German>VIS deaktivieren</German>
-        </Key>
-        </Package>
-    <Package name="Perso_IDCard">
-    <Key ID="STR_IDCard_Name">
-      <Original>Name:</Original>
     </Key>
-    <Key ID="STR_IDCard_Alter">
-      <Original>Age:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_Groesse">
-      <Original>Height:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_Gewicht">
-      <Original>Weight:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_Geschlecht">
-      <Original>Sex:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_Blutgr">
-      <Original>Blood type:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_bday">
-      <Original>Date of birth:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_bdayttip">
-      <Original>DD : MM : YYYY\nPlease choose your birthay in this order: year, month, day!</Original>
-    </Key>	
-    <Key ID="STR_IDCard_Strasse">
-      <Original>Street:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_plz_ort">
-      <Original>City:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_plz_ortttip">
-      <Original>postal code - city:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_hsnr">
-      <Original>No.</Original>
-    </Key>	
-    <Key ID="STR_IDCard_mail">
-      <Original>Email:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_ok">
-      <Original>Accept:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_handynr">
-      <Original>Phone:</Original>
-    </Key>	
-    <Key ID="STR_IDCard_knopf_beantragen">
-      <Original>APPLY IDENTITY CARD</Original>
-    </Key>	
-    <Key ID="STR_IDCard_knopf_abbr">
-      <Original>CANCEL</Original>
-    </Key>	
-    <Key ID="STR_IDCard_check_rulesOK">
-      <Original>Server rules accepted</Original>
-    </Key>	
-    <Key ID="STR_IDCard_check_rulesNOK">
-      <Original>Server rules not accepted</Original>
-    </Key>	
-    <Key ID="STR_IDCard_check_rulesttip">
-      <Original>I accept the server rules for this server!</Original>
-    </Key>	
-    <Key ID="STR_IDCard_check_richtig">
-      <Original>Alle Felder ausgefuellt!</Original>
-      <English>All text boxes has been filled or all listboxes are having a select item.</English>
-      <German>Alle Felder ausgefuellt!</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_nrichtig">
-      <Original>Doch nicht alle Felder ausgefuellt?</Original>
-      <English>Please check your data?</English>
-      <German>Doch nicht alle Felder ausgefuellt?</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_ttip">
-      <Original>Die oben eingetragenen Angaben sind richtig und koennen nur im Einwohnermeldeamt geaengert werden oder via den Altis-Support.\nAusgeschlossen sind die Email-Adresse und die Handynummer.</Original>
-      <English>Your data can only be changed at the registration office or contact the 'server support'.\nYour email address and your phone number are random.</English>
-      <German>Die oben eingetragenen Angaben sind richtig und koennen nur im Einwohnermeldeamt geaengert werden oder via den Altis-Support.\nAusgeschlossen sind die Email-Adresse und die Handynummer.</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_persAngabenOK">
-      <Original>Keine realen persoenlichen Daten angegeben, welche auf Personen zurueckzufuehren sind!</Original>
-      <English>No personal data has been entered...</English>
-      <German>Keine realen persoenlichen Daten angegeben, welche auf Personen zurueckzufuehren sind!</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_persAngabenNOK">
-      <Original>Bitte ueberpruefe deine Eingaben!</Original>
-      <English>Take a look on your enterd data</English>
-      <German>Bitte ueberpruefe deine Eingaben!</German>
-    </Key>		
-    <Key ID="STR_IDCard_check_persAngabenttip">
-      <Original>Ich habe weder persoenliche Daten von mir, noch von einer anderen realen Person angegeben!</Original>
-      <English>No personal data there.</English>
-      <German>Ich habe weder persoenliche Daten von mir, noch von einer anderen realen Person angegeben!</German>
-    </Key>		
-    <Key ID="STR_IDCard_check_persHinweisOK">
-      <Original>Information zum Profilnamen des Personalausweises zur Kenntnis genommen.</Original>
-      <English>I saw the id card informations and accept them.</English>
-      <German>Information zum Profilnamen des Personalausweises zur Kenntnis genommen.</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_persHinweisNOK">
-      <Original>Bitte schaue dir die Informationen zu dem Personalausweis an.</Original>
-      <English>Pleas read the informations for the id card.</English>
-      <German>Bitte schaue dir die Informationen zu dem Personalausweis an.</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_persHinweisttip">
-      <Original>Your current profile name is your roleplay name.\nPlease do not change your profile name.\nIf you want to change your id card, you have to own the 'Citizen of Altis' license.\n\nExtra: It is possible to allow players to use different names</Original>   
-    </Key>	
-    <Key ID="STR_IDCard_Angabencmttip">
-      <Original>Angaben in cm</Original>
-      <English>Data in cm</English>
-      <German>Angaben in cm</German>
-    </Key>	
-    <Key ID="STR_IDCard_Angabenkgttip">
-      <Original>Angaben in kg</Original>
-      <English>Data in kg</English>
-      <German>Angaben in kg</German>
-    </Key>	
-    <Key ID="STR_IDCard_Blutgrttip">
-      <Original>Blutgruppe angeben. Diese Angabe koennte fuer einen Ersthelfer oder Sanitaeter hilfreich sein!</Original>
-      <English>Select your blood type. Should be useful for medics.</English>
-      <German>Blutgruppe angeben. Diese Angabe koennte fuer einen Ersthelfer oder Sanitaeter hilfreich sein!</German>
-    </Key>	
-    <Key ID="STR_IDCard_Geburtstagttip">
-      <Original>Geburtstag</Original>
-      <English>Day of birth</English>
-      <German>Geburtstag</German>
-    </Key>	
-    <Key ID="STR_IDCard_Geburtsmonatttip">
-      <Original>Geburtsmonat</Original>
-      <English>Month of birth</English>
-      <German>Geburtsmonat</German>
-    </Key>	
-    <Key ID="STR_IDCard_Geburtsjahrttip">
-      <Original>Geburtsjahr</Original>
-      <English>Year of birth</English>
-      <German>Geburtsjahr</German>
-    </Key>
-    <Key ID="STR_IDCard_emailttip">
-      <Original>Die Emailadresse setzt sich aus deinem Profilnamen und deiner Arma 3-UID zusammen und kann daher nicht angepasst werden.</Original>
-      <English>Random number and profile name. Can not be changed.</English>
-      <German>Die Emailadresse setzt sich aus deinem Profilnamen und deiner Arma 3-UID zusammen und kann daher nicht angepasst werden.</German>
-    </Key>	
-    <Key ID="STR_IDCard_handyttip">
-      <Original>Deine Handynummer setzt sich aus deiner Arma 3-UID zusammen und kann daher nicht angepasst werden.</Original>
-      <English>Random number and some numbers of your arma3 uid. Can not be changed.</English>
-      <German>Deine Handynummer setzt sich aus deiner Arma 3-UID zusammen und kann daher nicht angepasst werden.</German>
-    </Key>	
-    <Key ID="STR_IDCard_newnamettip">
-      <Original>Neuen Namen hier eingeben. Mindestens 4 Zeichen und maximal 16 Zeichen.</Original>
-      <English>Enter your new name here. Min 4 chars and max 16 chars.</English>
-      <German>Neuen Namen hier eingeben. Mindestens 4 Zeichen und maximal 16 Zeichen.</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_newnamettip">
-      <Original>Haken setzen, wenn du dein Profilnamen im Anschluss selbst mit aendern moechtest.</Original>
-      <English>Change the checkbox state to 'checked' if you want to change your profile name in a few minutes.</English>
-      <German>Haken setzen, wenn du dein Profilnamen im Anschluss selbst mit aendern moechtest.</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_newnameChange">
-      <Original>Du moechtest also deinen Spielernamen aendern.</Original>
-      <English>I want to change my profile name.</English>
-      <German>Du moechtest also deinen Spielernamen aendern.</German>
-    </Key>	
-    <Key ID="STR_IDCard_check_newnameNotChange">
-      <Original>Spielername doch nicht aendern.</Original>
-      <English>Do not change my profile name.</English>
-      <German>Spielername doch nicht aendern.</German>
-    </Key>	
-    <Key ID="STR_IDCard_profilenamettip">
-      <Original>Profilname, druecke auf ABBRECHEN um einen anderen Namen zu nehmen und aendere diesen dann im Profil.</Original>
-      <English>This is your profile name. If you want to use an other name, then press 'CANCEL' and change your profile name or profile</English>
-      <German>Profilname, druecke auf ABBRECHEN um einen anderen Namen zu nehmen und aendere diesen dann im Profil.</German>
-    </Key>	
-    <Key ID="STR_License_Einb">
-      <Original>Citizen of Altis</Original>
-      <English>Citizen of Altis</English>
-      <German>Einbuergerungsurkunde</German>
-    </Key>
-    <Key ID="STR_License_Taxi">
-      <Original>Taxi License</Original>
-    </Key>	
-    <Key ID="STR_License_Steel">
-      <Original>Steel License</Original>
-    </Key>
-    <Key ID="STR_ServerRegeln">
-      <Original>Ich akzeptiere die Serverregeln und habe diese gelesen und Missverstaendnisse aufgeklaert!</Original>
-      <English>I accept the server rules of this server</English>
-      <German>Ich akzeptiere die Serverregeln und habe diese gelesen und Missverstaendnisse aufgeklaert!</German>
-    </Key>	
-    <Key ID="STR_Info">
-      <Original>Fahre mit der Maus ueber die Checkboxen und ueber andere Elemente im Dialog um Informationen zu sehen</Original>
-      <English>Hover with your mouse over different controls and the checkboxes to see some hints.</English>
-      <German>Fahre mit der Maus ueber die Checkboxen und ueber andere Elemente im Dialog um Informationen zu sehen</German>
-    </Key>	
-    <Key ID="STR_plz_stadt">
-      <Original>Postleitzahl mit Wohnort</Original>
-      <English>postal code with city</English>
-      <German>Postleitzahl mit Wohnort</German>
-    </Key>	
-    <Key ID="STR_IDCard_knopf_beantragenAenderung">
-      <Original>Aenderung beantragen</Original>
-      <English>Change id card</English>
-      <German>Aenderung beantragen</German>
-    </Key>	
-    <Key ID="STR_IDCard_zeige_fremd">
-      <Original>Dir wird gerade der Personal- / Dienstausweis von %1 angezeigt. Blende ihn mit '%2' wieder aus.</Original>
-      <English>%1 is showing you his id card. You can cut the display with the key '%2'.</English>
-      <German>Dir wird gerade der Personal- / Dienstausweis von %1 angezeigt. Blende ihn mit '%2' wieder aus.</German>
-    </Key>	
-    <Key ID="STR_IDCard_zeige_eigen">
-      <Original>You are looking at your own id card. You can cut the display with the TAB key.</English>
-    </Key>	
-    <Key ID="STR_IDCard_staat">
-      <Original>Staatszugehoerigkeit:</Original>
-      <English>Nationality:</English>
-      <German>Staatszugehoerigkeit:</German>
-    </Key>		
-    <Key ID="STR_IDCard_staat_ttp">
-      <Original>Waehle hier deine Staatszugehoerigkeit.\nJe nach Wahl können andere Spawnpunkte zur Verfügung stehen oder der Zugang zu anderen Systemen/Bereichen verweigert werden.</Original>
-      <English>Choose your nationality. It is possible, that you do not have access to all spawnpoints or other systems.</English>
-      <German>Waehle hier deine Staatszugehoerigkeit.\nJe nach Wahl können andere Spawnpunkte zur Verfügung stehen oder der Zugang zu anderen Systemen/Bereichen verweigert werden.</German>
-    </Key>	
+    </Package>
   </Package>
     <Package name="Debit_Cards">
     <Key ID="STR_Debit_PurchaseDebit">
