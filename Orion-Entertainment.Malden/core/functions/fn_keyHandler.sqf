@@ -17,7 +17,6 @@ _handled = false;
 
 _interactionKey = if (count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = (actionKeys "ShowMap" select 0);
-//hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Vault handling...
@@ -36,8 +35,7 @@ if (!(count (actionKeys "User10") isEqualTo 0) && {(inputAction "User10" > 0)}) 
     //Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
     if (!life_action_inUse) then {
         [] spawn {
-            private "_handle";
-            _handle = [] spawn life_fnc_actionKeyHandler;
+            private _handle = [] spawn life_fnc_actionKeyHandler;
             waitUntil {scriptDone _handle};
             life_action_inUse = false;
         };
@@ -45,24 +43,14 @@ if (!(count (actionKeys "User10") isEqualTo 0) && {(inputAction "User10" > 0)}) 
     true;
 };
 
-if(FETCH_CONST(life_adminlevel) < 1)  then {
+if (life_barrier_active) then {
     switch (_code) do {
-        //F1
-        case 59: {
-            _handled = true;
-            closeDialog 0;
+        //space key
+        case 57: {
+            [] spawn life_fnc_placeablesPlaceComplete;
         };
     };
-};
-
-if (life_barrier_active) then {
-  switch (_code) do {
-    //space key
-    case 57: {
-      [] spawn life_fnc_placeablesPlaceComplete;
-    };
-  };
-  true;
+    true;
 };
 
 if (life_container_active) then {
@@ -74,32 +62,6 @@ if (life_container_active) then {
     };
     true;
 };
-
-	//Pushup
-    case 49: 		{
-		if (_shift) then {
-			if(vehicle player isEqualTo player) then {
-				if(!life_action_inUse) then {
-					player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-					_handled = true;
-			};
-		};
-	};
-};
-	
-		//Squat Bender
-    case 50: 		{
-		if (_shift) then {
-			if(vehicle player isEqualTo player) then {
-				if(!life_action_inUse) then {
-					player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
-					_handled = true;
-			};
-		};
-	};
-};
-	
-
 
 switch (_code) do {
     // -- Disable commander/tactical view
@@ -134,39 +96,43 @@ switch (_code) do {
         };
     };
 
-    //Remove Shift Minus
-    case 53: {
-    if (_shift) then {
-        uiSleep 0.1;
-		disableuserinput true;
-		disableuserinput true;
-		disableuserinput true;
-		closeDialog 0;
-		systemchat "Shift minus has been removed.";
-		systemchat "Shift minus has been removed.";
-		systemchat "Shift minus has been removed.";
-		uiSleep 3;
-		disableuserinput false;
-		disableuserinput false;
-		disableuserinput false;
+    //Pushup
+    case 49: {
+        if (_shift) then {
+            if(vehicle player isEqualTo player) then {
+                if(!life_action_inUse) then {
+                    player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+                    _handled = true;
+                };
+            };
+        };
+    };
+        
+    //Squat Bender
+    case 50: {
+        if (_shift) then {
+            if(vehicle player isEqualTo player) then {
+                if(!life_action_inUse) then {
+                    player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+                    _handled = true;
+                };
+            };
         };
     };
 
     //Shift End
     case 207: {
-    if (_shift) then {
-        [] spawn life_fnc_callbackup;
+        if (_shift) then {
+            [] spawn life_fnc_callbackup;
         };
     };
 
-
-    case 15://Fuel Dart
-		{
-		if((playerSide isEqualTo west) && (currentWeapon player == "launch_B_Titan_short_F")) then
-			{
-			    [] spawn life_fnc_fuelDart;
-			};
+    //Fuel Dart
+    case 15: {
+		if((playerSide isEqualTo west) && (currentWeapon player == "launch_B_Titan_short_F")) then {
+			[] spawn life_fnc_fuelDart;
 		};
+	};
 
     case 49: { //N Key - Disable thermals and NV for Fuel Darts
 		if((currentWeapon player) isEqualTo "launch_B_Titan_short_F")then {
@@ -199,7 +165,7 @@ switch (_code) do {
     };
 
     //O Key
-      case 24:{	if(_shift) then {
+    case 24:{	if(_shift) then {
 		switch (player getVariable["Earplugs",0]) do {
 				case 0: {hintSilent "Ear Plugs 90%"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10];
 				};
@@ -271,8 +237,7 @@ switch (_code) do {
         };
         if(_shift && !_alt && !_ctrlKey && playerSide isEqualTo west ) then {
 			if(!isNull life_spikestrip) exitWith {hint "You already have a spikestrip laid"};
-            if(([false,"spikeStrip",1] call life_fnc_handleInv)) then
-            {
+            if(([false,"spikeStrip",1] call life_fnc_handleInv)) then {
                 [] spawn life_fnc_spikeStrip;
             };
 		};	
@@ -301,14 +266,6 @@ switch (_code) do {
     case 21: {
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
             [] call life_fnc_p_openMenu;
-        };
-    };
-
-    //GPS Button
-    case 210: {
-        if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
-            [] call life_fnc_gpsMenu;
-            playSound "welcomeGPS";
         };
     };
 
@@ -354,8 +311,7 @@ switch (_code) do {
 	//F3 Key
 	case 61: {
 	if (!_alt && !_ctrlKey && playerSide == west) then  {
-	[] call life_fnc_radar;  
-	
+	    [] call life_fnc_radar;  
 		};  
 	};
 	
