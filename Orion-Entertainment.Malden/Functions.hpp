@@ -312,14 +312,6 @@ class Life_Client_Core {
         class markers {};
 	};
 
-    class asddfg5
-  {
-      file = "core\asddfg5";
-      class asddfg5 {};
-  };
-
-    //CUSTOM END
-
     class Actions {
         file = "core\actions";
         class arrestAction {};

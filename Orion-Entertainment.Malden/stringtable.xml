@@ -12737,85 +12737,128 @@
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
         </Key>
     </Package>
-    <!--
- Add this at the end of the file, right before </Project>
--->
-<Package name="BankingText">
-    <Key ID="STR_Banking_InsertCard_Title">
-        <Original>Please insert your card to continue.</Original>
-        <French>Veuillez insérer votre carte pour continuer.</French>
-    </Key>
-    <Key ID="STR_Banking_InsertCard">
-        <Original>Insert card</Original>
-        <French>Insérer la carte</French>
-    </Key>
-    <Key ID="STR_Banking_InsertPin_Title">
-        <Original>Please enter your PIN to access your account</Original>
-        <French>Veuillez entre votre NIP pour accéder à votre compte</French>
-    </Key>
-    <Key ID="STR_Banking_NoCancel">
-        <Original>You need to create your bank account first.</Original>
-        <French>Vous devez créer votre compte bancaire avant de pouvoir quitter.</French>
-    </Key>
-    <Key ID="STR_Banking_CreatePin">
-        <Original>Please enter a PIN for your new bank account</Original>
-        <French>Veuillez entrer un NIP pour votre compte bancaire</French>
-    </Key>
-    <Key ID="STR_Banking_ConfirmPin">
-        <Original>Please confirm your PIN</Original>
-        <French>Veuillez confirmer votre NIP</French>
-    </Key>
-    <Key ID="STR_Banking_Correct">
-        <Original>Correct</Original>
-        <French>Corriger</French>
-    </Key>
-    <Key ID="STR_Banking_Enter">
-        <Original>Enter</Original>
-        <French>Entrer</French>
-    </Key>
-    <Key ID="STR_Banking_Back">
-        <Original>Back</Original>
-        <French>Retour</French>
-    </Key>
-    <Key ID="STR_Banking_Balance">
-        <Original>Balance</Original>
-        <French>Solde</French>
-    </Key>
-    <Key ID="STR_Banking_Withdraw">
-        <Original>Withdraw</Original>
-        <French>Retrait</French>
-    </Key>
-    <Key ID="STR_Banking_Deposit">
-        <Original>Deposit</Original>
-        <French>Dépôt</French>
-    </Key>
-    <Key ID="STR_Banking_Transfer">
-        <Original>Transfer</Original>
-        <French>Transfert</French>
-    </Key>
-    <Key ID="STR_Banking_GangDeposit">
-        <Original>Gang Deposit</Original>
-        <French>Dépôt de gang</French>
-    </Key>
-    <Key ID="STR_Banking_GangWithdraw">
-        <Original>Gang Withdraw</Original>
-        <French>Retrait de gang</French>
-    </Key>
-    <Key ID="STR_Banking_InvalidPin">
-        <Original>Invalid PIN! It must contain 4 digits.</Original>
-        <French>NIP invalide! Il doit comporter 4 caractères.</French>
-    </Key>
-    <Key ID="STR_Banking_WrongPinConfirm">
-        <Original>Wrong PIN! Please enter the same PIN you entered before.</Original>
-        <French>NIP incorrect! Veuillez entrer le même NIP que vous avez entré précédemment.</French>
-    </Key>
-    <Key ID="STR_Banking_WrongPin">
-        <Original>Wrong PIN! Please try again...</Original>
-        <French>NIP incorrect! Veuillez réessayer...</French>
-    </Key>
-    <Key ID="STR_Banking_PinSuccess">
-        <Original>PIN successfully set! Try it at an ATM now!</Original>
-        <French>Le NIP a été activé! Vous pouvez l'essayer à un ATM dès maintenant.</French>
-    </Key>
-</Package>
+    <Package name="BankingText">
+        <Key ID="STR_Banking_InsertCard_Title">
+            <Original>Please insert your card to continue.</Original>
+            <French>Veuillez insérer votre carte pour continuer.</French>
+        </Key>
+        <Key ID="STR_Banking_InsertCard">
+            <Original>Insert card</Original>
+            <French>Insérer la carte</French>
+        </Key>
+        <Key ID="STR_Banking_InsertPin_Title">
+            <Original>Please enter your PIN to access your account</Original>
+            <French>Veuillez entre votre NIP pour accéder à votre compte</French>
+        </Key>
+        <Key ID="STR_Banking_NoCancel">
+            <Original>You need to create your bank account first.</Original>
+            <French>Vous devez créer votre compte bancaire avant de pouvoir quitter.</French>
+        </Key>
+        <Key ID="STR_Banking_CreatePin">
+            <Original>Please enter a PIN for your new bank account</Original>
+            <French>Veuillez entrer un NIP pour votre compte bancaire</French>
+        </Key>
+        <Key ID="STR_Banking_ConfirmPin">
+            <Original>Please confirm your PIN</Original>
+            <French>Veuillez confirmer votre NIP</French>
+        </Key>
+        <Key ID="STR_Banking_Correct">
+            <Original>Correct</Original>
+            <French>Corriger</French>
+        </Key>
+        <Key ID="STR_Banking_Enter">
+            <Original>Enter</Original>
+            <French>Entrer</French>
+        </Key>
+        <Key ID="STR_Banking_Back">
+            <Original>Back</Original>
+            <French>Retour</French>
+        </Key>
+        <Key ID="STR_Banking_Balance">
+            <Original>Balance</Original>
+            <French>Solde</French>
+        </Key>
+        <Key ID="STR_Banking_Withdraw">
+            <Original>Withdraw</Original>
+            <French>Retrait</French>
+        </Key>
+        <Key ID="STR_Banking_Deposit">
+            <Original>Deposit</Original>
+            <French>Dépôt</French>
+        </Key>
+        <Key ID="STR_Banking_Transfer">
+            <Original>Transfer</Original>
+            <French>Transfert</French>
+        </Key>
+        <Key ID="STR_Banking_GangDeposit">
+            <Original>Gang Deposit</Original>
+            <French>Dépôt de gang</French>
+        </Key>
+        <Key ID="STR_Banking_GangWithdraw">
+            <Original>Gang Withdraw</Original>
+            <French>Retrait de gang</French>
+        </Key>
+        <Key ID="STR_Banking_InvalidPin">
+            <Original>Invalid PIN! It must contain 4 digits.</Original>
+            <French>NIP invalide! Il doit comporter 4 caractères.</French>
+        </Key>
+        <Key ID="STR_Banking_WrongPinConfirm">
+            <Original>Wrong PIN! Please enter the same PIN you entered before.</Original>
+            <French>NIP incorrect! Veuillez entrer le même NIP que vous avez entré précédemment.</French>
+        </Key>
+        <Key ID="STR_Banking_WrongPin">
+            <Original>Wrong PIN! Please try again...</Original>
+            <French>NIP incorrect! Veuillez réessayer...</French>
+        </Key>
+        <Key ID="STR_Banking_PinSuccess">
+            <Original>PIN successfully set! Try it at an ATM now!</Original>
+            <French>Le NIP a été activé! Vous pouvez l'essayer à un ATM dès maintenant.</French>
+        </Key>
+    </Package>
+    <Package name="FlabbyThings">
+        <Key ID="STR_KilledPlayer">
+            <Original>You just Killed %1! (%2)</Original>
+            <Czech>Jenom jsi zabil %1! (%2)</Czech>
+            <French>Vous venez de tuer %1! (%2)</French>
+            <Spanish>Usted acaba de matar %1! (%2)</Spanish>
+            <Italian>Hai appena ucciso %1! (%2)</Italian>
+            <Polish>Po prostu zabiłeś %1! (%2)</Polish>
+            <Portuguese>Você acabou de matar %1! (%2)</Portuguese>
+            <Russian>Вы только что убили %1! (%2)</Russian>
+            <German>Du hast gerade getötet %1! (%2)</German>
+        </Key>
+        <Key ID="STR_SafezoneEnter">
+            <Original>You are Entering a Safezone, you must now follow our safezone rules!</Original>
+            <Czech>Vstupujete do Safezone, musíte nyní dodržovat naše pravidla safezone!</Czech>
+            <French>Vous entrez dans un Safezone, vous devez maintenant suivre nos règles de safezone!</French>
+            <Spanish>Estás ingresando a Safezone, ¡ahora debes seguir nuestras reglas de zona segura!</Spanish>
+            <Italian>Stai entrando in una zona sicura, ora devi seguire le nostre regole sulla zona di sicurezza!</Italian>
+            <Polish>Wchodzisz do Safezone, musisz teraz przestrzegać naszych zasad bezpieczeństwa!</Polish>
+            <Portuguese>Você está entrando em um Safezone, agora você deve seguir nossas regras de safezone!</Portuguese>
+            <Russian>Вы входите в безопасную зону, теперь вы должны следовать нашим правилам безопасности!</Russian>
+            <German>Sie betreten eine Sicherheitszone, Sie müssen nun unseren Sicherheitszonenregeln folgen!</German>
+        </Key>
+        <Key ID="STR_SafezoneLeave">
+            <Original>You have left the Safezone!</Original>
+            <Czech>Zanechal jste Safezone!</Czech>
+            <French>Vous avez quitté le Safezone!</French>
+            <Spanish>Has dejado Safezone!</Spanish>
+            <Italian>Hai lasciato la zona sicura!</Italian>
+            <Polish>Opuściłeś Safezone!</Polish>
+            <Portuguese>Você deixou o Safezone!</Portuguese>
+            <Russian>Вы покинули Safezone!</Russian>
+            <German>Sie haben die Safezone verlassen!</German>
+        </Key>
+        <Key ID="STR_SafezoneShooting">
+            <Original>You are not allowed to shoot in safezone!</Original>
+            <Czech>Nemáte povoleno střílet v safezone!</Czech>
+            <French>Vous n'êtes pas autorisé à tirer en safezone!</French>
+            <Spanish>No puedes disparar en safezone!</Spanish>
+            <Italian>Non ti è permesso sparare in safezone!</Italian>
+            <Polish>Nie możesz strzelać w safezone!</Polish>
+            <Portuguese>Você não tem permissão para atirar em safezone!</Portuguese>
+            <Russian>Вы не можете стрелять в безопасную зону!</Russian>
+            <German>Du darfst nicht in safezone schießen!</German>
+        </Key>
+    </Package>
 </Project>

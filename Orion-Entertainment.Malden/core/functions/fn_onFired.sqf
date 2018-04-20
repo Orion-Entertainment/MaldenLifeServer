@@ -12,9 +12,8 @@ _projectile = _this select 6;
 
 if (_ammoType isEqualTo "GrenadeHand_stone") then {
     _projectile spawn {
-        private "_position";
         while {!isNull _this} do {
-            _position = ASLtoATL (visiblePositionASL _this);
+            private _position = ASLtoATL (visiblePositionASL _this);
             sleep 0.1;
         };
         [_position] remoteExec ["life_fnc_flashbang",RCLIENT];
@@ -50,14 +49,8 @@ if (playerSide isEqualTo civilian) then {
 
 if((playerside isEqualTo civilian) && safeZone) then {
 	deleteVehicle _projectile;
-	_curGun = currentWeapon player;
-	if(currentWeapon player in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then 
-	{
-		_holder = "GroundWeaponHolder" createVehicle position player; 	
-		player action ["DropWeapon", _holder, _curGun];
-		[] call life_fnc_saveGear;
-		["I shouldn't shoot my weapon in a safezone, It's been put on the ground",false,"slow"] call life_fnc_notificationSystem;
-	};
+	[] spawn life_fnc_forceHolster;
+	[localize "STR_SafezoneShooting",false,"fast"] call life_fnc_notificationSystem;
 };
 
 //Teargas
