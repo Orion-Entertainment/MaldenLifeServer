@@ -253,14 +253,6 @@ class Licenses {
         side = "cop";
     };
     
-    class bountyH {  
-        variable = "bountyH";  
-        displayName = "STR_License_bountyH";  
-        price = 100000;  
-        illegal = false;  
-        side = "civ";  
-    };
-    
     class einbuergerung {
         variable = "einbuergerung";
         displayName = "STR_License_Einb";

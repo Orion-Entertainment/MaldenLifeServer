@@ -298,20 +298,6 @@ class Life_Client_Core {
 		class marketSetPriceRow {};
 	};
 
-    class BountyHunters {
-        file = "core\BountyHunters";
-        class bountyAddMenu {};
-        class bountyAddP {};
-        class bountyBuy {};
-        class bountyGrab {};
-        class bountyHunterReceive {};
-        class bountyInfo {};
-        class bountyKill {};
-        class bountyList {};
-        class bountyMenu {};
-        class markers {};
-	};
-
     class Actions {
         file = "core\actions";
         class arrestAction {};
