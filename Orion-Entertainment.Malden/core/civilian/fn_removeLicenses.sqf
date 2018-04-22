@@ -42,9 +42,4 @@ switch (_state) do {
             [localize "STR_Civ_LicenseRemove_2",true,"slow"] call life_fnc_notificationSystem;
         };
     };
-
-    //Adds the bountyH license to civs
-    case 100: {
-			missionNamespace setVariable [LICENSE_VARNAME("bountyH","civ"),true];
-	};
 };

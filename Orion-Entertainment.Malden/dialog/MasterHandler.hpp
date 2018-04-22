@@ -41,8 +41,6 @@
 #include "banking\createconfirmaccount.hpp"
 #include "loadoutspanel.hpp"
 #include "carRadio.hpp"
-#include "bounty_list.hpp"
-#include "bounty_addList.hpp"
 #include "smartphone.hpp"
 #include "smartphone2.hpp"
 #include "smartphone3.hpp"

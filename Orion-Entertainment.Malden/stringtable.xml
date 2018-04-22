@@ -260,42 +260,6 @@
 		<Key ID="STR_Bounty_1000000">
 			<Original>$1,000,000</Original>
 		</Key>
-		<Key ID="STR_Bounty_AddP">
-            <Original>%1 has been added to the bounty list, he was added for $%2 this has risen he current bounty price to $%3. The last known location has been marked on the map for all bounty hunting units. Normal declaration rules still apply, RDM will be delt with.</Original>
-        </Key>
-		<Key ID="STR_MAR_bountyW">
-            <Original>Bounty Hunters Armory</Original>
-        </Key>
-		<Key ID="STR_MAR_bounty">
-            <Original>Bounty Hunters HQ</Original>
-        </Key>
-		<Key ID="STR_GNOTF_BountyMSG">
-            <Original>You are about to buy a 'Bounty Hunting License' buying this license will give you access to the Bounty Hunters Database, kill someone on the list to get thier bounty! Normal declaration still applys, you can NOT RDM! Do you accept these terms and conditions?</Original>
-        </Key>
-		<Key ID="STR_bounty_bountyList_notBH">
-            <Original>You are not a civilian, only civilians can add people to the bounty list! I suggest you leave!</Original>
-        </Key>
-		<Key ID="STR_bounty_bountyList_noPlayerSelected">
-            <Original>No player on the list was selected! Please select a player.</Original>
-        </Key>
-		<Key ID="STR_bounty_bountyList_noAmountSelected">
-            <Original>No amount was selected, use the drop down menu to select a bounty amount.</Original>
-        </Key>
-		<Key ID="STR_Bounty_BountyKill">
-            <Original>You have collected a bounty of $%1 for killing someone on the bounty list, nice job!</Original>
-        </Key>
-      		<Key ID="STR_Bounty_Title">
-            <Original>Bounty List</Original>
-        </Key>
-		<Key ID="STR_BountyA_Title">
-            <Original>Bounty Hunting Database</Original>
-        </Key>
-		<Key ID="STR_Bounty_License">
-            <Original>Bounty License</Original>
-        </Key>
-        <Key ID="STR_License_bountyH">
-            <Original>Bounty Hunter</Original>
-        </Key>
 	</Package>
     <Package name="Shop_Names">
         <Key ID="STR_Shops_C_Bruce">

@@ -53,7 +53,6 @@ life_request_timer = false;
 life_banking_isclosing = false;
 life_banking_pin = 0;
 life_fadeSound = false;
-life_removeBounty = false;
 life_seatbelt = false;
 safezone = false;
 life_knockout = false;

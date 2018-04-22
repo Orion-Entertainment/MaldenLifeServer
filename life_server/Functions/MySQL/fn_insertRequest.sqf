@@ -53,9 +53,5 @@ _query = format ["INSERT INTO players (pid, name, cash, bankacc, aliases, cop_li
     _alias
 ];
 
-_query_2 = format["INSERT INTO perso(pid, persoCop, persoMed, persoCiv, persoEast) VALUES ('%1','""[]""','""[]""','""[]""','""[]""')",_uid];
 [_query,1] call DB_fnc_asyncCall;
-[_query_2,1] call DB_fnc_asyncCall;
 [] remoteExecCall ["SOCK_fnc_dataQuery",(owner _returnToSender)];
-
-

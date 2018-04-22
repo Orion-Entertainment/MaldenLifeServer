@@ -119,11 +119,6 @@ if(isNull _killer || _killer == player) then {
 		};
 	};
 };
-private _BountyPeeps = [];
-
-{
-	if (license_civ_bountyH) then {_BountyPeeps pushBack _x};
-} forEach playableUnits;
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
 showCinemaBorder false;
@@ -314,16 +309,6 @@ if (side _killer isEqualTo west && !(playerSide isEqualTo west)) then {
         [format [localize "STR_Cop_RobberDead",[findNearestPerson] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
         findNearestPerson = 0;
     };
-};
-
-if (side _killer isEqualTo civilian && {_killer != _unit}) then {
-	if (_killer in _BountyPeeps) then {
-		life_bountyHunter = _killer;
-	};
-};	
-
-if (!isNull _killer) then {
-    life_removeBounty = true;
 };
 
 if (!isNull _killer && {!(_killer isEqualTo _unit)}) then {
