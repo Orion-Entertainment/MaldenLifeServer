@@ -28,13 +28,7 @@ While {true} do {
     _resourceCfg = missionConfigFile >> "CfgGather" >> "Minerals";
     _percent = (floor random 100) + 1; //Make sure it's not 0
 
-    if (dialog) exitWith {
-        if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
-            advanced_log = format ["%1 - %2 Has used Y Menu Glitch",profileName,(getPlayerUID player)];
-            publicVariableServer "advanced_log";
-        };
-        [localize "STR_NOTF_glitchYMenu",true,"slow"] call life_fnc_notificationSystem;
-    };
+    if (dialog) exitWith {};
 
     for "_i" from 0 to count(_resourceCfg)-1 do {
         _curConfig = _resourceCfg select _i;

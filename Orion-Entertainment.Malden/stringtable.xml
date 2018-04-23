@@ -4118,15 +4118,6 @@
             <Portuguese>Seus itens ilegais foram postos em evidência.</Portuguese>
             <Polish>Twoje nielegalne pozycje zostały wprowadzone do dowodów.</Polish>
         </Key>
-        <Key ID="STR_NOTF_VehCheat">
-            <Original>This vehicle has no information, it's probably a randomly generated special vehicle from the server. \n\nDeleting vehicle.</Original>
-        </Key>
-        <Key ID="STR_NOTF_glitchYMenu">
-            <Original>[Cheater]: Your actions has been logged and you have been shamed in global chat</Original>
-        </Key>
-        <Key ID="STR_NOTF_YMenuGlitch">
-            <Original>[Cheater]: %1 Has attempted to use the Y Menu Glitch, please report them to a staff member!</Original>
-        </Key>
         <Key ID="STR_NOTF_Action">
             <Original>You are already doing an action. Please wait for it to end.</Original>
             <Czech>Ty jsou již dělá akci. Počkejte prosím, až to skončí.</Czech>
