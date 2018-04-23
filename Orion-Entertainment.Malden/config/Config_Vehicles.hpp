@@ -75,7 +75,7 @@ class CarShops {
 
     class reb_car {
         side = "civ";
-        conditions = "license_civ_rebel";
+        conditions = "mav_ttm_var_rebel > 0";
         vehicles[] = {
             { "B_Quadbike_01_F", "" },
             { "B_G_Offroad_01_F", "" },

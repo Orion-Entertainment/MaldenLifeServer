@@ -122,7 +122,7 @@ class CfgSpawnPoints {
                 displayName = "Rebel Base";
                 spawnMarker = "reb_spawn";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "license_civ_rebel";
+                conditions = "mav_ttm_var_rebel > 0";
             };
 			
 			class Donator {
@@ -161,13 +161,6 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
 			};
-			
-			class MilitaryHQ {
-                displayName = "Military Police HQ";
-                spawnMarker = "cop_spawn_4";
-                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
-            };
         };
 
         class Medic {

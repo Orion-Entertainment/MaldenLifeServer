@@ -4,9 +4,6 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
-            { "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
-            { "Binocular", "", 150, 75, "" },      //Binocular
-            { "ItemGPS", "", 100, 50, "" },       //GPS
 			{ "hgun_Rook40_F", "", 5000, -1, "" }, //Rook
             { "hgun_Pistol_heavy_02_F", "", 7500, -1, "" }, //Zubr
             { "hgun_ACPC2_F", "", 15000, -1, "" }, //45 ACP
@@ -19,14 +16,12 @@ class WeaponShops {
             { "9Rnd_45ACP_Mag", "", 100, 50, "" } //acp
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 2500, 1250, "" }, //aco
 			{ "optic_Arco", "", 2500, -1, "" }, //arco
 			{ "optic_Arco_blk_F", "", 2500, -1, "" }, //black arco
 			{ "optic_ERCO_blk_F", "", 2500, -1, "" }, //black erco
 			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holo
 			{ "optic_Holosight_smg_blk_F", "", 2500, -1, "" }, //black holo smg
 			{ "optic_MRCO", "", 2500, -1, "" }, //mrco
-            { "optic_Hamr", "", 2500, -1, "" }, //rco
 			{ "optic_DMS", "", 10000, -1, "" }, //dms
 			{ "acc_flashlight", "", 750, 375, "" }, //flashlight
 			{ "acc_flashlight_pistol", "", 750, 375, "" }, //flashlight
@@ -37,7 +32,7 @@ class WeaponShops {
     class rebel {
         name = "Rebel Weapon Shop";
         side = "civ";
-        conditions = "license_civ_rebel";
+        conditions = "mav_ttm_var_rebel > 0";
         items[] = {
 			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
             { "Binocular", "", 150, 75, "" },      //Binocular
@@ -391,116 +386,6 @@ class WeaponShops {
         };
     };
 	
-	//Military Police
-	class mp_gun {
-        name = "Military Police Weapon Shop";
-        side = "cop";
-        conditions = "";
-        items[] = {
-            { "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
-            { "Binocular", "", 150, 75, "" },      //Binocular
-			{ "Rangefinder", "", 150, 75, "" },      //Rangefinder
-            { "ItemGPS", "", 100, 50, "" },        //GPS
-			{ "B_UavTerminal", "", 100, 50, "" },  //UAV Terminal NATO
-			{ "O_UavTerminal", "", 100, 50, "" },  //UAV Terminal CSAT
-			{ "I_UavTerminal", "", 100, 50, "" },  //UAV Terminal AAF
-			{ "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, -1, "" }, //flashbang
-			{ "SmokeShellGreen", "Tear Gas", 2500, 50, "" }, //TearGas
-            { "hgun_Pistol_heavy_01_F", $STR_W_items_StunPistol, 2500, -1, "" }, //TASER
-			{ "hgun_ACPC2_F", "", 2500, -1, "" }, //ACP-C2 45
-			{ "hgun_P07_F", "", 2500, -1, "" }, //P07 9mm
-			{ "hgun_Pistol_heavy_02_F", "", 2500, -1, "" }, //Zubr .45
-			{ "hgun_Rook40_F", "", 2500, -1, "" }, //Rook
-			{ "hgun_Pistol_01_F", "", 2500, -1, "" }, //PM
-						// Tier 1
-			{ "SMG_02_F", "", 3000, -1, "" }, //sting
-			{ "hgun_PDW2000_F", "", 3000, -1, "" }, //pdw
-			{ "SMG_05_F", "", 3000, -1, "" }, //protector
-			{ "LMG_03_F", "", 3000, -1, "" }, //LIM
-			{ "arifle_MX_SW_Black_F", "", 15000, -1, "" }, //mxsw
-			{ "arifle_MXM_Black_F", "", 12000, -1, "" }, //mxm
-			{ "srifle_DMR_07_blk_F", "", 14000, -1, "" }, //cmr
-			{ "arifle_AKS_F", "", 14000, -1, "" }, //ak74
-			{ "arifle_Mk20_F", "", 14000, -1, "" }, //mk20
-			{ "arifle_TRG21_F", "", 14000, -1, "" }, //trg21
-			{ "arifle_TRG20_F", "", 14000, -1, "" }, //trg20
-			{ "arifle_SDAR_F", "", 3000, 50, "" }, //sdar
-			{ "arifle_Katiba_F", "", 6000, -1, "" }, //katibia
-			{ "arifle_Katiba_C_F", "", 6000, -1, "" }, //katibia carbine
-			{ "arifle_MXC_Black_F", "", 7000, -1, "" }, //mxc
-            { "arifle_MX_Black_F", "", 8000, -1, "" }, //mx
-			{ "arifle_SPAR_01_blk_F", "", 6000, -1, "" }, //spar16
-			{ "arifle_CTAR_blk_F", "", 8000, -1, "" }, //car95 
-						// Tier 2
-			{ "SMG_01_F", "", 3000, -1, "" }, //vermin						
-			{ "srifle_DMR_03_F", "", 15000, -1, "" }, //mk1			
-			{ "srifle_DMR_06_camo_F", "", 15000, -1, "" }, //mk14
-			{ "srifle_EBR_F", "", 15000, -1, "" }, //mk18
-			{ "srifle_DMR_01_F", "", 15000, -1, "" }, //Rahim
-			{ "arifle_SPAR_03_blk_F", "", 14000, -1, "" }, //spar17
-			{ "arifle_AK12_F", "", 10000, -1, "" }, //ak12
-			{ "arifle_AKM_F", "", 10000, -1, "" }, //akm
-			{ "arifle_ARX_blk_F", "", 10000, -1, "" }, //type115
-						// Tier 3
-			{ "srifle_DMR_04_F", "", 15000, -1, "" }, //ASP-1		
-			{ "srifle_DMR_02_F", "", 15000, -1, "" }, //mar10
-			{ "LMG_03_F", "", 15000, -1, "" }, //LIM
-			{ "launch_B_Titan_short_F", "Anti-Fuel launcher", 25000, -1, "" }, //short titan
-						// Tier 4
-			{ "srifle_LRR_F", "", 15000, -1, "" } //M320 LRR 408		
-        };
-        mags[] = {
-			{ "11Rnd_45ACP_Mag", "", 20, -1, "" }, //4five
-			{ "9Rnd_45ACP_Mag", "", 20, -1, "" }, //ACP ammo
-			{ "16Rnd_9x21_Mag", "", 20, -1, "" }, //P07,Rook
-			{ "10Rnd_9x21_Mag", "", 20, -1, "" }, //PM
-			{ "6Rnd_45ACP_Cylinder", "", 20, -1, "" }, //Zubr 45
-						// Tier 1
-			{ "30Rnd_9x21_Mag_SMG_02", "", 13, -1, "" }, //sting
-			{ "30Rnd_9x21_Mag", "", 13, -1, "" }, //pdw
-			{ "200Rnd_556x45_Box_F", "", 13, -1, "" }, //LIM
-			{ "100Rnd_65x39_caseless_mag", "", 300, 150, "" }, //mxsw
-			{ "30Rnd_65x39_caseless_mag", "", 20, -1, "" }, //mxc, mx, mxm
-			{ "20Rnd_650x39_Cased_Mag_F", "", 20, -1, "" }, //cmr
-			{ "30Rnd_545x39_Mag_F", "", 20, 100, "" }, //ak74
-			{ "30Rnd_556x45_Stanag", "", 13, -1, "" }, //sdar,mk20c,trg21,trg20,spar16
-			{ "20Rnd_556x45_UW_mag", "", 20, -1, "" }, //sdar		
-			{ "30Rnd_580x42_Mag_F", "", 13, -1, "" }, //car95			
-						// Tier 2
-			{ "30Rnd_45ACP_Mag_SMG_01", "", 15, 50, "" }, //vermin		
-			{ "20Rnd_762x51_Mag", "", 30, -1, "" }, //mk1, mk14, mk18, spar17			
-			{ "10Rnd_762x54_Mag", "", 30, -1, "" }, //Rahim
-			{ "30Rnd_762x39_Mag_F", "", 30, -1, "" }, //ak12,akm
-			{ "30Rnd_65x39_caseless_green", "", 50, 50, "" }, //type115 katiba
-						// Tier 3
-			{ "10Rnd_127x54_Mag", "", 100, -1, "" }, //ASP-1		
-			{ "10Rnd_338_Mag", "", 100, 50, "" }, //mar10
-			{ "200Rnd_556x45_Box_F", "", 100, 50, "" }, //LIM
-						// Tier 4
-			{ "7Rnd_408_Mag", "", 100, -1, "" } //M320 LRR 408
-		};
-		accs[] = {
-			{ "muzzle_snds_acp", "", 750, 375, "" }, //45 supresser
-			{ "muzzle_snds_H", "", 750, 375, "" }, //6.5 Supressor
-			{ "muzzle_snds_B", "", 750, 375, "" }, //7.62 Supressor
-			{ "optic_MRD", "", 2750, 1375, "" }, //mrd
-			{ "acc_flashlight", "", 750, 375, "" }, //flashlight
-			{ "acc_flashlight_pistol", "", 750, 375, "call life_coplevel >= 1" }, //flashlight
-			{ "optic_ACO_grn_smg", "", 2500, 1250, "" }, //aco
-			{ "optic_Arco", "", 2500, -1, "" }, //arco
-			{ "optic_Arco_blk_F", "", 2500, -1, "" }, //black arco
-			{ "optic_ERCO_blk_F", "", 2500, -1, "" }, //black erco
-			{ "optic_AMS", "", 2500, -1, "" }, //black AMS
-			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holo
-			{ "optic_Holosight_smg_blk_F", "", 2500, -1, "" }, //black holo smg
-			{ "optic_MRCO", "", 2500, -1, "" }, //mrco
-            { "optic_Hamr", "", 2500, -1, "" }, //rco
-			{ "optic_DMS", "", 5000, -1, "" }, //dms
-			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
-        };
-    };
-	//Military Police
-	
 	//DTU
 	class dtu_gun {
         name = "DTU Weapon Shop";
@@ -538,5 +423,4 @@ class WeaponShops {
         };
     };
 	//DTU
-	
 };

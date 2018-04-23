@@ -664,7 +664,7 @@ class Clothing {
 
     class reb {
         title = "STR_Shops_C_Rebel";
-        conditions = "license_civ_rebel";
+        conditions = "mav_ttm_var_rebel > 0";
         side = "civ";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },

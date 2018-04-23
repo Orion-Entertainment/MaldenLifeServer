@@ -96,30 +96,6 @@ switch (_code) do {
         };
     };
 
-    //Pushup
-    case 49: {
-        if (_shift) then {
-            if(vehicle player isEqualTo player) then {
-                if(!life_action_inUse) then {
-                    player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-                    _handled = true;
-                };
-            };
-        };
-    };
-        
-    //Squat Bender
-    case 50: {
-        if (_shift) then {
-            if(vehicle player isEqualTo player) then {
-                if(!life_action_inUse) then {
-                    player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
-                    _handled = true;
-                };
-            };
-        };
-    };
-
     //Shift End
     case 207: {
         if (_shift) then {
@@ -134,7 +110,8 @@ switch (_code) do {
 		};
 	};
 
-    case 49: { //N Key - Disable thermals and NV for Fuel Darts
+    //N Key - Disable thermals and NV for Fuel Darts
+    case 49: { 
 		if((currentWeapon player) isEqualTo "launch_B_Titan_short_F")then {
 			_handled = true;
 		};
@@ -216,8 +193,7 @@ switch (_code) do {
                     [vehicle player] spawn life_fnc_openInventory;
                 };
             } else {
-                private "_list";
-                _list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
+                private _list = ((ASLtoATL (getPosASL player)) nearEntities [["Box_IND_Grenades_F","B_supplyCrate_F"], 2.5]) select 0;
                 if (!(isNil "_list")) then {
                     _house = nearestObject [(ASLtoATL (getPosASL _list)), "House"];
                     if (_house getVariable ["locked", false]) then {

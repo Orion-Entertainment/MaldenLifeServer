@@ -20,7 +20,6 @@ if (count _vInfo > 0) then {
     _uid = _vInfo select 0;
 };
 
-diag_log format["--- VIS -> DB -> Starting DB for %1 ---",_ret];
 
 if (!_read) exitWith {
     // update
@@ -49,5 +48,4 @@ if (!(count _queryResult == 1)) exitWith { diag_log format["--- VIS -> DB -> Err
 _queryResult = _queryResult select 0;
 if (!(count _queryResult == 5)) exitWith { diag_log format["--- VIS -> DB -> Error -> Bad data 2 : %1 ---",_queryResult]; };
 
-diag_log format["--- VIS -> DB -> Returning result -> %1 ---",_queryResult];
 [_queryResult,true] remoteExec ["life_fnc_visVehInfo",_ret];

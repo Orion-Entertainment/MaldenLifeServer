@@ -252,23 +252,6 @@ class Licenses {
         illegal = false;
         side = "cop";
     };
-    
-    class einbuergerung {
-        variable = "einbuergerung";
-        displayName = "STR_License_Einb";
-        price = 2500;
-        illegal = false;
-        side = "civ";
-		beschreibung = "";
-    };
-
-    class taxi {
-        variable = "taxi";
-        displayName = "STR_License_Taxi";
-        price = 25000;
-        illegal = false;
-        side = "civ";
-    };
 
     class lumber {
         variable = "lumber";

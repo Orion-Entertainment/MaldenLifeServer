@@ -28097,7 +28097,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing"",life_fnc_clothingMenu,""reb""];   this addAction[""Rebel Weapons"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",'playerSide isEqualTo civilian']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide isEqualTo civilian ']; [this, ""BRIEFING"", ""ASIS""] call BIS_fnc_ambientAnim;";
+						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing"",life_fnc_clothingMenu,""reb""];   this addAction[""Rebel Weapons"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",'playerSide isEqualTo civilian']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ']; [this, ""BRIEFING"", ""ASIS""] call BIS_fnc_ambientAnim;";
 						name="reb_1";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;

@@ -379,15 +379,15 @@
             <Polish>Sklep dla nurków</Polish>
         </Key>
         <Key ID="STR_Shops_C_Gun">
-            <Original>Jeriah's Clothing</Original>
-            <Czech>Jeriah's oblečení</Czech>
-            <Spanish>Tienda de Ropa de Billy Joe</Spanish>
+            <Original>Mike's Clothing</Original>
+            <Czech>Mike's oblečení</Czech>
+            <Spanish>Tienda de Ropa de Mike</Spanish>
             <Russian></Russian>
-            <German>Jeriah's Bekleidung</German>
-            <Italian>Emporio Jeriah's</Italian>
-            <French>Friperie Jeriah's</French>
-            <Portuguese>Roupa Jeriah's</Portuguese>
-            <Polish>Jeriah's Odzież</Polish>
+            <German>Mike's Bekleidung</German>
+            <Italian>Emporio Mike's</Italian>
+            <French>Friperie Mike's</French>
+            <Portuguese>Roupa Mike's</Portuguese>
+            <Polish>Mike's Odzież</Polish>
         </Key>
         <Key ID="STR_Shops_W_Gun">
             <Original>Jeriah's Firearms</Original>
@@ -401,11 +401,11 @@
             <Polish>Broń palna Jeriah's</Polish>
         </Key>
         <Key ID="STR_Shops_C_Kart">
-            <Original>Jeriah's Kart-Racing Outfits</Original>
-            <Czech>Jeriah's Střelné zbraně</Czech>
-            <French>Magasin de kart de Jeriah's</French>
-            <Spanish>Jeriah's de Trajes de Carreras</Spanish>
-            <Italian>Vestiario da Jeriah's </Italian>
+            <Original>Bobby's Kart-Racing Outfits</Original>
+            <Czech>Bobby's Střelné zbraně</Czech>
+            <French>Magasin de kart de Bobby's</French>
+            <Spanish>Bobby's de Trajes de Carreras</Spanish>
+            <Italian>Vestiario da Bobby's </Italian>
             <Russian></Russian>
             <German>Bobby's Gokart Rennbekleidung</German>
             <Portuguese>Loja de equipamentos para Kart</Portuguese>
@@ -2141,11 +2141,11 @@
         </Key>
         <Key ID="STR_GNOTF_DisbandGangPro">
             <Original>Disbanding the gang... wait 10 seconds and relog OR click disband gang again in the gang menu!</Original>
-            <Czech>Rozpuštění gang ... wait 10 seconds and relog<</Czech>
-            <Spanish>Desmantelando la Pandilla... wait 10 seconds and relog<</Spanish>
+            <Czech>Rozpuštění gang ... wait 10 seconds and relog</Czech>
+            <Spanish>Desmantelando la Pandilla... wait 10 seconds and relog</Spanish>
             <Russian></Russian>
             <German>Gang wird aufgelöst...</German>
-            <French>Démantèlement du gang... wait 10 seconds and relog<</French>
+            <French>Démantèlement du gang... wait 10 seconds and relog</French>
             <Italian>Sciogliendo la Gang...</Italian>
             <Portuguese>Desfazendo a gangue...</Portuguese>
             <Polish>Rozwiąż gang</Polish>
