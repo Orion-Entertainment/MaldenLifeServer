@@ -28,7 +28,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 
 private _index = -1;
 {
-    private "_text";
+    private ["_text"];
     _idc = _ui displayCtrl (iconID + _forEachIndex);
     if (!(lineIntersects [eyePos player, eyePos _x, player, _x]) && alive _x && {!isNil {_x getVariable "realname"}}) then {
         _pos = switch (typeOf _x) do {
@@ -41,7 +41,7 @@ private _index = -1;
 
         if (!((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks)) then {
             if (count _sPos > 1 && {_distance < 15}) then {
-                _text = format ["<t size='1' color='#a3a3a3'>%1</t><br/><t size='0.8' color='#666666'>%2</t>",_x getVariable ["realname",name _x],getPlayerUID _x];
+                _text = format ["<t size='1' color='#a3a3a3'>MASKED</t><br/><t size='0.9' color='#666666'>%1</t>",getPlayerUID _x];
                 if (_x getVariable ["speaking",false]) then {_text = "<t color='#e6e6e6'>[Speaking] " + _text;};
                 _idc ctrlSetStructuredText parseText _text;
                 _idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
@@ -52,7 +52,7 @@ private _index = -1;
             };
         } else {
             if (count _sPos > 1 && {_distance < 15}) then {
-                _text = format ["<t size='1' color='#a3a3a3'>MASKED</t><br/><t size='0.8' color='#666666'>%1</t>",getPlayerUID _x];
+                _text = format ["<t size='1' color='#a3a3a3'>%1</t><br/><t size='0.9' color='#666666'>%2</t>",_x getVariable ["realname",name _x],getPlayerUID _x];
                 if (_x getVariable ["speaking",false]) then {_text = "<t color='#e6e6e6'>[Speaking] " + _text;};
                 _idc ctrlSetStructuredText parseText _text;
                 _idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
