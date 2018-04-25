@@ -76,21 +76,6 @@ class VirtualShops {
         items[] = { "cocaine_processed", "heroin_processed", "marijuana", "LSD" };
     };
 	
-	//Box's Additons
-	class Smokeshop {
-        name = "STR_Shops_Smokeshop";
-        side = "civ";
-        conditions = "";
-        items[] = { "Cigar" };
-    };
-	class glassshop {
-        name = "STR_Shops_glassshop";
-        side = "civ";
-        conditions = "";
-        items[] = { "Bong", "Marbles", "Vase", "Pipe" };
-    };
-	//Box's Additons
-	
     class oil {
         name = "STR_Shops_Oil";
         side = "civ";
