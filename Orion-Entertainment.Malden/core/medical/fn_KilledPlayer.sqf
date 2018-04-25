@@ -5,12 +5,10 @@
     Description:
     Creates a notification when you kill someone
 */
-private["_PlayerKilled","_PlayerKilledPID","_unit","_killer"];
 params [
     ["_unit",objNull,[objNull]],
 	["_killer",objNull,[objNull]]
 ];
-_PlayerKilled = _unit getVariable["realname",""];
-_PlayerKilledPID = getPlayerUID _unit;
-playSound "HintExpand";
-hint format ["You just killed %1(%2)",_PlayerKilled,_PlayerKilledPID];
+private _PlayerKilled = _unit getVariable["realname",""];
+private _PlayerKilledPID = getPlayerUID _unit;
+[format [localize "STR_KilledPlayer",_PlayerKilled,_PlayerKilledPID],true,"slow"] call life_fnc_notificationSystem;

@@ -28,7 +28,6 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "core\derleon\Scripts_Master.hpp"
 #include "Custom\scarCODE\ServerInfoMenu\hpp\CfgServerInfoMenu.hpp"
 #include "Custom\scarCODE\ServerInfoMenu\hpp\RscDisplayServerInfoMenu.hpp"
-#include "Custom\CAS\CAS_MENU.hpp"
 
 
 class CfgServer {

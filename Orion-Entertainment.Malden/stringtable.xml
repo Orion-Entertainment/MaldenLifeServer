@@ -260,42 +260,6 @@
 		<Key ID="STR_Bounty_1000000">
 			<Original>$1,000,000</Original>
 		</Key>
-		<Key ID="STR_Bounty_AddP">
-            <Original>%1 has been added to the bounty list, he was added for $%2 this has risen he current bounty price to $%3. The last known location has been marked on the map for all bounty hunting units. Normal declaration rules still apply, RDM will be delt with.</Original>
-        </Key>
-		<Key ID="STR_MAR_bountyW">
-            <Original>Bounty Hunters Armory</Original>
-        </Key>
-		<Key ID="STR_MAR_bounty">
-            <Original>Bounty Hunters HQ</Original>
-        </Key>
-		<Key ID="STR_GNOTF_BountyMSG">
-            <Original>You are about to buy a 'Bounty Hunting License' buying this license will give you access to the Bounty Hunters Database, kill someone on the list to get thier bounty! Normal declaration still applys, you can NOT RDM! Do you accept these terms and conditions?</Original>
-        </Key>
-		<Key ID="STR_bounty_bountyList_notBH">
-            <Original>You are not a civilian, only civilians can add people to the bounty list! I suggest you leave!</Original>
-        </Key>
-		<Key ID="STR_bounty_bountyList_noPlayerSelected">
-            <Original>No player on the list was selected! Please select a player.</Original>
-        </Key>
-		<Key ID="STR_bounty_bountyList_noAmountSelected">
-            <Original>No amount was selected, use the drop down menu to select a bounty amount.</Original>
-        </Key>
-		<Key ID="STR_Bounty_BountyKill">
-            <Original>You have collected a bounty of $%1 for killing someone on the bounty list, nice job!</Original>
-        </Key>
-      		<Key ID="STR_Bounty_Title">
-            <Original>Bounty List</Original>
-        </Key>
-		<Key ID="STR_BountyA_Title">
-            <Original>Bounty Hunting Database</Original>
-        </Key>
-		<Key ID="STR_Bounty_License">
-            <Original>Bounty License</Original>
-        </Key>
-        <Key ID="STR_License_bountyH">
-            <Original>Bounty Hunter</Original>
-        </Key>
 	</Package>
     <Package name="Shop_Names">
         <Key ID="STR_Shops_C_Bruce">
@@ -415,15 +379,15 @@
             <Polish>Sklep dla nurków</Polish>
         </Key>
         <Key ID="STR_Shops_C_Gun">
-            <Original>Jeriah's Clothing</Original>
-            <Czech>Jeriah's oblečení</Czech>
-            <Spanish>Tienda de Ropa de Billy Joe</Spanish>
+            <Original>Mike's Clothing</Original>
+            <Czech>Mike's oblečení</Czech>
+            <Spanish>Tienda de Ropa de Mike</Spanish>
             <Russian></Russian>
-            <German>Jeriah's Bekleidung</German>
-            <Italian>Emporio Jeriah's</Italian>
-            <French>Friperie Jeriah's</French>
-            <Portuguese>Roupa Jeriah's</Portuguese>
-            <Polish>Jeriah's Odzież</Polish>
+            <German>Mike's Bekleidung</German>
+            <Italian>Emporio Mike's</Italian>
+            <French>Friperie Mike's</French>
+            <Portuguese>Roupa Mike's</Portuguese>
+            <Polish>Mike's Odzież</Polish>
         </Key>
         <Key ID="STR_Shops_W_Gun">
             <Original>Jeriah's Firearms</Original>
@@ -437,11 +401,11 @@
             <Polish>Broń palna Jeriah's</Polish>
         </Key>
         <Key ID="STR_Shops_C_Kart">
-            <Original>Jeriah's Kart-Racing Outfits</Original>
-            <Czech>Jeriah's Střelné zbraně</Czech>
-            <French>Magasin de kart de Jeriah's</French>
-            <Spanish>Jeriah's de Trajes de Carreras</Spanish>
-            <Italian>Vestiario da Jeriah's </Italian>
+            <Original>Bobby's Kart-Racing Outfits</Original>
+            <Czech>Bobby's Střelné zbraně</Czech>
+            <French>Magasin de kart de Bobby's</French>
+            <Spanish>Bobby's de Trajes de Carreras</Spanish>
+            <Italian>Vestiario da Bobby's </Italian>
             <Russian></Russian>
             <German>Bobby's Gokart Rennbekleidung</German>
             <Portuguese>Loja de equipamentos para Kart</Portuguese>
@@ -2177,11 +2141,11 @@
         </Key>
         <Key ID="STR_GNOTF_DisbandGangPro">
             <Original>Disbanding the gang... wait 10 seconds and relog OR click disband gang again in the gang menu!</Original>
-            <Czech>Rozpuštění gang ... wait 10 seconds and relog<</Czech>
-            <Spanish>Desmantelando la Pandilla... wait 10 seconds and relog<</Spanish>
+            <Czech>Rozpuštění gang ... wait 10 seconds and relog</Czech>
+            <Spanish>Desmantelando la Pandilla... wait 10 seconds and relog</Spanish>
             <Russian></Russian>
             <German>Gang wird aufgelöst...</German>
-            <French>Démantèlement du gang... wait 10 seconds and relog<</French>
+            <French>Démantèlement du gang... wait 10 seconds and relog</French>
             <Italian>Sciogliendo la Gang...</Italian>
             <Portuguese>Desfazendo a gangue...</Portuguese>
             <Polish>Rozwiąż gang</Polish>
@@ -4153,15 +4117,6 @@
             <Italian>I tuoi articoli illegali sono stati messi sotto sequestro.</Italian>
             <Portuguese>Seus itens ilegais foram postos em evidência.</Portuguese>
             <Polish>Twoje nielegalne pozycje zostały wprowadzone do dowodów.</Polish>
-        </Key>
-        <Key ID="STR_NOTF_VehCheat">
-            <Original>This vehicle has no information, it's probably a randomly generated special vehicle from the server. \n\nDeleting vehicle.</Original>
-        </Key>
-        <Key ID="STR_NOTF_glitchYMenu">
-            <Original>[Cheater]: Your actions has been logged and you have been shamed in global chat</Original>
-        </Key>
-        <Key ID="STR_NOTF_YMenuGlitch">
-            <Original>[Cheater]: %1 Has attempted to use the Y Menu Glitch, please report them to a staff member!</Original>
         </Key>
         <Key ID="STR_NOTF_Action">
             <Original>You are already doing an action. Please wait for it to end.</Original>

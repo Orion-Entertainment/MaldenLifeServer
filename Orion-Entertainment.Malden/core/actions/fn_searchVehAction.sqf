@@ -10,7 +10,7 @@ private ["_vehicle","_data"];
 _vehicle = cursorObject;
 if ((_vehicle isKindOf "Car") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship")) then {
     _owners = _vehicle getVariable "vehicle_info_owners";
-    if (isNil "_owners") exitWith {[localize "STR_NOTF_VehCheat",true,"slow"] call life_fnc_notificationSystem; deleteVehicle _vehicle;};
+    if (isNil "_owners") exitWith {deleteVehicle _vehicle;};
 
     life_action_inUse = true;
 	[localize "STR_NOTF_Searching",true,"slow"] call life_fnc_notificationSystem;

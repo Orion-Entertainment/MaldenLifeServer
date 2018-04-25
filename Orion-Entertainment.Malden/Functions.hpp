@@ -210,13 +210,6 @@ class Life_Client_Core {
 		class playAsDog {};
 	};
 
-    class airStrike
-	{
-		file = "Custom\CAS";
-		class airstrike {};
-        class buyStrike {};
-	};
-
     class holy_bug {
         file = "Custom\holy_bug";
         class holy_bug;

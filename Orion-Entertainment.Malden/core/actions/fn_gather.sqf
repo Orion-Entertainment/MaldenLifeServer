@@ -16,13 +16,7 @@ while{true} do {
     
     if (player getVariable "restrained") exitWith {[localize "STR_NOTF_isrestrained",true,"slow"] call life_fnc_notificationSystem; };
     if (player getVariable "playerSurrender") exitWith {[localize "STR_NOTF_surrender",true,"slow"] call life_fnc_notificationSystem;};
-    if (dialog) exitWith {
-        if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
-            advanced_log = format ["%1 - %2 Has used Y Menu Glitch",profileName,(getPlayerUID player)];
-            publicVariableServer "advanced_log";
-        };
-        [localize "STR_NOTF_glitchYMenu",true,"slow"] call life_fnc_notificationSystem;
-    };
+    if (dialog) exitWith {};
 
     life_action_inUse = true;
     _zone = "";
