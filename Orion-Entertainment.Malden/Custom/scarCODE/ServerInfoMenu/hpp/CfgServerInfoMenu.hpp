@@ -36,8 +36,7 @@ class CfgServerInfoMenu
              "<t size='1.45'>Y</t><br />Opens player menu<br />",
              "<t size='1.15'>Shift B</t><br />Surrender<br />",
              "<t size='1.15'>Shift H</t><br />Holster<br />",
-             "<t size='1.15'>Tab</t><br />Close ID card<br />",
-             "<t size='1.15'>Shift Tab</t><br />Open taxi driver menu<br />"
+             "<t size='1.15'>Tab</t><br />Close ID card<br />"
          };
       };
       class fourth

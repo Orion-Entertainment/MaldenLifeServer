@@ -20,8 +20,6 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 #include "infiSTAR_AdminMenu.hpp"
-#include "Custom\taxi\Config_Taxi.hpp"
-#include "Custom\taxi\Taxi.hpp"
 #include "core\jobs\job_config.hpp"
 #include "core\jobs\Jobdialog.hpp"
 #include "core\AS\Scripts_Master.hpp" 

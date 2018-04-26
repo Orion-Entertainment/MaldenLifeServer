@@ -72,22 +72,6 @@ class Repentz_Addons
 	};
 };
 
-class felixvonstudsinske
-{
-	tag = "fvs";
-
-    class taxi {
-        file = "Custom\taxi";
-		class taxiInitFahrer {};
-		class taxiMsgKunden {};
-		class taxiDialogRechnung {};
-		class taxiRechnungAusstellen {};
-		class taxiRechnungErhalten {};
-		class taxiRechnungBezahlt {};
-		class taxiPreInit {preinit = 1;};
-    };
-};
-
 class Life_Client_Core {
     tag = "life";
 
