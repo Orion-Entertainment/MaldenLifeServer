@@ -1,2 +1,2 @@
-[-1] spawn life_fnc_PINMenu;
+[-1] spawn life_fnc_bankingMainMenu;
 playSound "InsertCard";
