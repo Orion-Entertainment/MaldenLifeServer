@@ -21,71 +21,55 @@ switch (playerSide) do {
     case west: {
         if (uniform player isEqualTo "U_Rangemaster") then {
                 if (FETCH_CONST(life_coplevel) >= 1) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\1police_uniform_cadet.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\1jeriah.paa"];
             };
         };
-        if (uniform player isEqualTo "U_Rangemaster") then {
+        if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 2) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\2police_uniform_PO.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\2jeriah.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
+         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 3) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\3police_uniform_SO.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\3jeriah.paa"];
             };
         };
-        if (uniform player isEqualTo "U_Rangemaster") then {
+        if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 4) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\4police_uniform_CPL.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\4jeriah.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
+         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 5) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\5police_uniform_SGT.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\5jeriah.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
+         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 6) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\6police_uniform_2LT.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\6jeriah.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
+         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 7) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\6police_uniform_LT.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\7jeriah.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
+         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 8) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\7police_uniform_CPT.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\8jeriah.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
+         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 9) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\8police_uniform_MAJ.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\9jeriah.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
+         if (uniform player isEqualTo "U_B_CombatUniform_mcam") then {
                 if (FETCH_CONST(life_coplevel) >= 10) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\9police_uniform_ASSCHIEF.paa"];
+                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\jweedpd.paa"];
             };
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
-                if (FETCH_CONST(life_coplevel) >= 11) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\10police_uniform_CHIEF.paa"];
-            };
-        };
-         if (uniform player isEqualTo "U_Rangemaster") then {
-                if (FETCH_CONST(life_coplevel) >= 12) then {
-                    player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\11police_uniform_COM.paa"];
-            };
-        };
-		if (uniform player isEqualTo "U_I_CombatUniform") then {
-            player setObjectTextureGlobal [0, "images\textures\Uniform\MP\mp_uniform1.paa"];
-        };
-        if( backpack player == "B_Carryall_cbr") then {
-            (backpackContainer player) setObjectTextureGlobal [0,""];
-        };
-    };
+
 	case independent: {
 		if (uniform player isEqualTo "U_Rangemaster") then {
                 if (FETCH_CONST(life_mediclevel) >= 1) then {
