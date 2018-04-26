@@ -114,7 +114,7 @@ class CarShops {
 
     class donator_car {
         side = "civ";
-        conditions = "call life_donorlevel >= 1";
+        conditions = "call life_donorlevel > 0";
         vehicles[] = {
             { "B_Quadbike_01_F", "" },
             { "B_G_Offroad_01_F", "" },
@@ -191,25 +191,6 @@ class CarShops {
             { "C_Plane_Civil_01_F", "call life_coplevel >= 3" }
         };
     };
-	
-	//Military Police
-	class mp_car {
-        side = "cop";
-        conditions = "";
-        vehicles[] = {
-            { "I_MRAP_03_F", "" },
-			{ "C_SUV_01_F", "" }
-        };
-    };
-	
-	class mp_air {
-        side = "cop";
-        conditions = "";
-        vehicles[] = {
-            { "B_Heli_Transport_01_F", "" }
-        };
-    };
-	//Military Police
 
     class cop_boat {
         side = "cop";

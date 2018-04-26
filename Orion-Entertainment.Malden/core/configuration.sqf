@@ -117,7 +117,6 @@ life_copGroup = grpNull;
 //mav_ttm_var_canRepair = 0;
 //mav_ttm_var_infiniteRepair = 0;
 //mav_ttm_var_terrorist = 0;
-//mav_ttm_var_rebel = 0;
 //mav_ttm_var_loadouts = 0;
 //mav_ttm_var_home = 0;
 //mav_ttm_var_advCop = 0;

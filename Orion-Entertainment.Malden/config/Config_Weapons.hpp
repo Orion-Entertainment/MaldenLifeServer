@@ -56,9 +56,7 @@ class WeaponShops {
 			{ "arifle_SPAR_03_khk_F", "", 175000, -1, "" }, //spar17
             { "srifle_DMR_06_olive_F", "", 175000, -1, "" }, //mk14
             { "srifle_EBR_F", "", 175000, -1, "" }, //mk18
-			{ "srifle_DMR_03_khaki_F", "", 185000, -1 "" }, //mk1
-			{ "launch_RPG32_F", "", 200000, -1 "" }, //RPG-42
-			{ "launch_RPG32_ghex_F", "", 200000, -1 "" } //RPG-42 ghex
+			{ "srifle_DMR_03_khaki_F", "", 185000, -1 "" } //mk1
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
@@ -74,22 +72,21 @@ class WeaponShops {
 			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
             { "6Rnd_45ACP_Cylinder", "", 100, 50, "" }, //zubr
             { "9Rnd_45ACP_Mag", "", 100, 50, "" }, //acp
-			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" }, //car95
-			{ "RPG32_F", "", 500000, -1 "" } //RPG-32 rockets
+			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" } //car95
         };
         accs[] = {
-			{ "optic_ACO_grn_smg", "", 2500, 1250, "" }, //aco
-			{ "optic_Arco", "", 2500, -1, "" }, //arco
-			{ "optic_Arco_blk_F", "", 2500, -1, "" }, //black arco
-			{ "optic_ERCO_blk_F", "", 2500, -1, "" }, //black erco
-			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holo
-			{ "optic_Holosight_smg_blk_F", "", 2500, -1, "" }, //black holo smg
-			{ "optic_MRCO", "", 2500, -1, "" }, //mrco
-            { "optic_Hamr", "", 2500, -1, "" }, //rco
-			{ "optic_DMS", "", 10000, -1, "" }, //dms
-			{ "acc_flashlight", "", 750, 375, "" }, //flashlight
-			{ "acc_flashlight_pistol", "", 750, 375, "" }, //flashlight
-			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
+			{ "optic_ACO_grn_smg", "", 1500, -1, "" }, //aco
+			{ "optic_Arco", "", 1500, -1, "" }, //arco
+			{ "optic_Arco_blk_F", "", 1500, -1, "" }, //black arco
+			{ "optic_ERCO_blk_F", "", 1500, -1, "" }, //black erco
+			{ "optic_Holosight_blk_F", "", 1500, -1, "" }, //black holo
+			{ "optic_Holosight_smg_blk_F", "", 1500, -1, "" }, //black holo smg
+			{ "optic_MRCO", "", 1500, -1, "" }, //mrco
+            { "optic_Hamr", "", 1500, -1, "" }, //rco
+			{ "optic_DMS", "", 3000, -1, "" }, //dms
+			{ "acc_flashlight", "", 750, -1, "" }, //flashlight
+			{ "acc_flashlight_pistol", "", 750, -1, "" }, //flashlight
+			{ "bipod_01_F_blk", "", 2000, -1, "" } //bipod
         };
     };
 
