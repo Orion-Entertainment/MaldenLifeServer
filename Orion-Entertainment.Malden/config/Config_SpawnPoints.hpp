@@ -118,15 +118,8 @@ class CfgSpawnPoints {
                 conditions = "";
             };
 			
-			class Rebel {
-                displayName = "Rebel Base";
-                spawnMarker = "reb_spawn";
-                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "mav_ttm_var_rebel > 0";
-            };
-			
 			class Donator {
-                displayName = "Donator Base";
+                displayName = "Donator";
                 spawnMarker = "don_spawn";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";

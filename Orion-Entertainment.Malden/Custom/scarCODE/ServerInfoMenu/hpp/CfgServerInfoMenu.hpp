@@ -25,7 +25,7 @@ class CfgServerInfoMenu
          menuName = "Rules";
          title = "SERVER RULES";
          content[] = {
-            "<t size='1.75'>Our Rules</t><br />Visit our website for our full list of rules here: <a href='https://OrionLife.net/' color='#56BDD6'>SERVER RULES<br />",
+            "<t size='1.75'>Our Rules</t><br />Visit our website for our full list of rules here: <a href='https://OrionLife.enjin.com/' color='#56BDD6'>SERVER RULES<br />",
          };
       };
       class third
@@ -51,7 +51,7 @@ class CfgServerInfoMenu
       {
          menuName = "Reporting";
          title = "REPORTING PLAYERS";
-         content[] = {"To report a player, visit this link: <a href='https://OrionLife.net/' color='#56BDD6'>REPORT PLAYER HERE</a>"
+         content[] = {"To report a player, visit this link: <a href='https://OrionLife.enjin.com/' color='#56BDD6'>REPORT PLAYER HERE</a>"
          };
       };
       class sixth
@@ -61,7 +61,7 @@ class CfgServerInfoMenu
          content[] = {
             "<a href='http://invite.teamspeak.com/ts.orionlife.net/' color='#56BDD6'>Join Teamspeak</a>",
             "<br />",
-            "<a href='https://OrionLife.net/' color='#56BDD6'>Website</a>"
+            "<a href='https://OrionLife.enjin.com/' color='#56BDD6'>Website</a>"
          };
       };
       class seventh

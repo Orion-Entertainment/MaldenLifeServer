@@ -34,18 +34,6 @@ class CfgGather {
             item = "";
             zoneSize = 30;
         };
-        
-
-        //custom
-		
-		//Tobacco
-		class Tobaccoleaf {
-            amount = 1;
-            zones[] = { "tobacco_1" };
-            item = "";
-			zoneSize = 30;
-		};	
-		//Tobacco
 
 		class rubberU
 		{
@@ -89,7 +77,7 @@ class CfgGather {
 
 		class wool
 		{
-			amount = 3;
+			amount = 2;
 			zones[] = { "wool_1" };
 			item = "";
             zoneSize = 30;
