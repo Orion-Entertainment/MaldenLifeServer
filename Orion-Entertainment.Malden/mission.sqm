@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1835;
+		nextID=1842;
 	};
 	class Camera
 	{
-		pos[]={4993.5571,321.90878,9497.9873};
-		dir[]={-0.037873507,-0.28749198,0.95704401};
-		up[]={-0.011368649,0.95778233,0.28727546};
-		aside[]={0.99922943,3.7499376e-008,0.039542962};
+		pos[]={7269.1289,55.530754,10491.436};
+		dir[]={-0.72466314,-0.399517,-0.56150448};
+		up[]={-0.31582448,0.91671407,-0.24471734};
+		aside[]={-0.61250901,3.1723175e-007,0.79048669};
 	};
 };
 binarizationWanted=0;
@@ -8108,7 +8108,7 @@ class Mission
 			};
 			id=6480;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.26846313;
+			atlOffset=0.26828003;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27683,15 +27683,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={752.76624,29.523438,12125.422};
-						angles[]={0,1.7403612,0};
+						position[]={752.76599,29.523438,12125.422};
+						angles[]={0,1.740355,0};
 					};
 					side="Civilian";
 					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Terrorist Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing"",life_fnc_clothingMenu,""reb""];   this addAction[""Rebel Weapons"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",'playerSide isEqualTo civilian']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide isEqualTo civilian ']; [this, ""BRIEFING"", ""ASIS""] call BIS_fnc_ambientAnim;";
+						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing"",life_fnc_clothingMenu,""reb""];   this addAction[""Rebel Weapons"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",'playerSide isEqualTo civilian']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide isEqualTo civilian ']; [this, ""BRIEFING"", ""ASIS""] call BIS_fnc_ambientAnim;";
 						name="reb_1";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;
@@ -37454,7 +37454,7 @@ class Mission
 			colorName="ColorYellow";
 			a=0.69999999;
 			b=0.69999999;
-			angle=359.95889;
+			angle=359.95886;
 			id=11397;
 			atlOffset=-38.189999;
 		};
@@ -47995,7 +47995,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7718.7876,37.335892,4194.123};
-				angles[]={6.2654915,4.616158,-0};
+				angles[]={6.2654915,4.616158,0};
 			};
 			side="Empty";
 			flags=1;
@@ -48036,7 +48036,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7719.5596,37.249065,4186.1543};
-				angles[]={6.2829452,4.616158,-0};
+				angles[]={6.2829452,4.616158,0};
 			};
 			side="Empty";
 			flags=1;
@@ -51835,7 +51835,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7730.8652,37.214188,4213.2163};
-				angles[]={0.017453292,2.2544343,-0};
+				angles[]={0.017453292,2.2544343,0};
 			};
 			side="Empty";
 			flags=1;
@@ -51876,7 +51876,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7725.8125,37.300251,4207.0127};
-				angles[]={0.017453292,2.2544343,-0};
+				angles[]={0.017453292,2.2544343,0};
 			};
 			side="Empty";
 			flags=1;
@@ -51917,7 +51917,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7720.9106,37.353653,4201.0322};
-				angles[]={6.2831855,2.2544343,-0};
+				angles[]={0,2.2544343,0};
 			};
 			side="Empty";
 			flags=1;
@@ -68186,7 +68186,7 @@ class Mission
 			position[]={8068.8911,261.03101,4010.782};
 			name="car_g_12";
 			type="Empty";
-			angle=234.35896;
+			angle=234.35895;
 			id=32729;
 			atlOffset=220.75131;
 		};
@@ -115865,7 +115865,7 @@ class Mission
 			};
 			id=35316;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.2419281;
+			atlOffset=0.24200058;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -133187,6 +133187,7 @@ class Mission
 			};
 			id=40164;
 			type="Land_HumanSkeleton_F";
+			atlOffset=0.082108259;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -141459,7 +141460,7 @@ class Mission
 			};
 			id=40654;
 			type="Land_Basketball_01_F";
-			atlOffset=3.2215312;
+			atlOffset=3.2215307;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -141498,7 +141499,7 @@ class Mission
 			};
 			id=40657;
 			type="Land_Basketball_01_F";
-			atlOffset=3.4424548;
+			atlOffset=3.4424543;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -153958,7 +153959,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Donator Market"",life_fnc_virt_menu,""donator""];  this allowDamage false; this enableSimulation false; this addAction[""Donator  Clothing"",life_fnc_clothingMenu,""donator_clothing""];   this addAction[""Donator Weapons"",life_fnc_weaponShopMenu,""donator"",0,false,false,"""",'playerSide isEqualTo civilian']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Donator Clothing"",life_fnc_clothingMenu,""donator_clothing""];   this addAction[""Rebel Weapons"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",'playerSide isEqualTo civilian'];";
 				disableSimulation=1;
 			};
 			id=42568;
@@ -154092,7 +154093,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7747.2529,37.096508,4228.6914};
-				angles[]={0,3.0921924,-0};
+				angles[]={0,3.0921924,0};
 			};
 			side="Empty";
 			flags=1;
@@ -154133,7 +154134,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7720.3257,37.244568,4178.1895};
-				angles[]={6.2829452,4.616158,-0};
+				angles[]={6.2829452,4.616158,0};
 			};
 			side="Empty";
 			flags=1;
@@ -154174,7 +154175,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7721.0874,37.228588,4170.2271};
-				angles[]={6.2829452,4.616158,-0};
+				angles[]={6.2829452,4.616158,0};
 			};
 			side="Empty";
 			flags=1;
@@ -154215,7 +154216,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7721.8384,37.210449,4162.2471};
-				angles[]={6.2829452,4.616158,-0};
+				angles[]={6.2829452,4.616158,0};
 			};
 			side="Empty";
 			flags=1;
@@ -154256,7 +154257,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7722.5483,37.138405,4154.8291};
-				angles[]={6.2654924,4.616158,-0};
+				angles[]={6.2654924,4.616158,0};
 			};
 			side="Empty";
 			flags=1;
@@ -155059,7 +155060,7 @@ class Mission
 			};
 			id=34414;
 			type="Land_Cargo_Tower_V1_F";
-			atlOffset=0.35697746;
+			atlOffset=0.35697556;
 		};
 		class Item4210
 		{
@@ -155091,7 +155092,7 @@ class Mission
 			};
 			id=34605;
 			type="Land_InfoStand_V1_F";
-			atlOffset=1.9169922;
+			atlOffset=1.9093323;
 			class CustomAttributes
 			{
 				class Attribute0
