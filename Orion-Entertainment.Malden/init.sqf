@@ -5,16 +5,13 @@
 StartProgress = false;
 
 if (hasInterface) then {
-    [] execVM "briefing.sqf"; //Load Briefing
 	life_open_notifications = [];
+    [] execVM "briefing.sqf";
+    [] execVM "Custom\safezones.sqf";
+    [] execVM "core\gps\fn_deletetask.sqf";
+    [] execVM "Custom\jeriahsteargas.sqf";
 };
 [] execVM "KRON_Strings.sqf";
-[] execVM "Custom\safezones.sqf";
-[] execVM "core\gps\fn_deletetask.sqf";
-[] execVM "Custom\jeriahsteargas.sqf";
-
-[] execFSM "core\fsm\server.fsm";
-diag_log "Server FSM executed";
 
 StartProgress = true;
 

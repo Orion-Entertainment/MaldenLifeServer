@@ -1688,8 +1688,8 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 2;
-        buyPrice = 1200;
-        sellPrice = 1150;
+        buyPrice = 975;
+        sellPrice = 900;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_marijuana.paa";
@@ -1712,7 +1712,7 @@ class VirtualItems {
         displayName = "STR_Item_CocaineP";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 1300;
+        sellPrice = 1150;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_cocaineProcessed.paa";

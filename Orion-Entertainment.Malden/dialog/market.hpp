@@ -118,7 +118,8 @@ class marketView
 			y = 5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;
 			h = 9 * GUI_GRID_H;
-			onLBSelChanged = "[] spawn life_fnc_refreshMarketView";
+			tooltip = "Disabled";
+			onLBSelChanged = "";
 		};
 	};
 };

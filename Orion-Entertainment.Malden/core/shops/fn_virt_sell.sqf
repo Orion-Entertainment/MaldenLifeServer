@@ -11,12 +11,6 @@ if ((lbCurSel 2402) isEqualTo -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
 
-_marketprice = [_type] call life_fnc_marketGetSellPrice;
-if(_marketprice != -1) then
-{
-	_price = _marketprice;
-};
-
 if (_price isEqualTo -1) exitWith {};
 
 _amount = ctrlText 2405;
@@ -31,15 +25,6 @@ _name = M_CONFIG(getText,"VirtualItems",_type,"displayName");
 if ([false,_type,_amount] call life_fnc_handleInv) then {
     hint format[localize "STR_Shop_Virt_SellItem",_amount,(localize _name),[_price] call life_fnc_numberText];
     findNearestPerson = findNearestPerson + _price;
-	
-	if(_marketprice != -1) then 
-	{ 
-		[_type, _amount] spawn
-		{
-			sleep 120;
-			[_this select 0,_this select 1] call life_fnc_marketSell;
-		};
-	};
 	
     [] call life_fnc_virt_update;
 };

@@ -259,22 +259,6 @@ class Life_Client_Core {
   		class saveLoadout {};
   	};
 
-    class Market {
-		file = "core\market";
-		class openMarketView {};
-		class refreshMarketView {};
-		class marketBuy {};
-		class marketSell {};
-		class marketGetBuyPrice {};
-		class marketGetSellPrice {};
-		class marketconfiguration {};
-		class marketReset {};
-		class marketChange {};
-		class marketGetRow {};
-		class marketGetPriceRow {};
-		class marketSetPriceRow {};
-	};
-
     class Actions {
         file = "core\actions";
         class arrestAction {};
