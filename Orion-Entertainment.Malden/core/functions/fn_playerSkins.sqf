@@ -48,55 +48,40 @@ switch (playerSide) do {
         if (uniform player isEqualTo "U_B_CombatUniform_mcam" && FETCH_CONST(life_coplevel) >= 10) then {
             player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\jweedpd.paa"];
         };
+        if (backpack player == "B_Carryall_cbr") then {
+            (backpackContainer player) setObjectTextureGlobal [0,""];
+        };
     };
 
 	case independent: {
-		if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 1) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\volunteer.paa"];
-            };
+		if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 1) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\volunteer.paa"];
         };
-        if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 2) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\trainee.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 2) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\trainee.paa"];
         };
-        if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 3) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\emt.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 3) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\emt.paa"];
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 4) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\paramedic.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 4) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\paramedic.paa"];
         };
-        if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 5) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\sparamedic.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 5) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\sparamedic.paa"];
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 6) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 6) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 7) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 7) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 8) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 8) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
         };
-         if (uniform player isEqualTo "U_Rangemaster") then {
-            if (FETCH_CONST(life_mediclevel) >= 9) then {
-                player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
-            };
+        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_mediclevel) >= 9) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\med\HC.paa"];
         };
-        if( backpack player == "B_Carryall_cbr") then {
+        if (backpack player == "B_Carryall_cbr") then {
             (backpackContainer player) setObjectTextureGlobal [0,""];
         };
     };

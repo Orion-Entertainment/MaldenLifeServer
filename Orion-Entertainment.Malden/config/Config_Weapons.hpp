@@ -137,69 +137,6 @@ class WeaponShops {
 			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
         };
     };
-
-	
-    class donator {
-        name = "Donator Weapon Shop";
-        side = "civ";
-        conditions = "call life_donorlevel >= 1";
-        items[] = {
-			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
-            { "Binocular", "", 150, 75, "" },      //Binocular
-            { "ItemGPS", "", 100, 50, "" },       //GPS
-			{ "hgun_Rook40_F", "", 5000, -1, "" }, //Rook
-            { "hgun_Pistol_heavy_02_F", "", 7500, -1, "" }, //Zubr
-            { "hgun_ACPC2_F", "", 15000, -1, "" }, //45 ACP
-			{ "hgun_PDW2000_F", "", 20000, -1, "" }, //PDW
-			{ "SMG_05_F", "", 25000, -1, "" }, //Protector
-			{ "SMG_01_F", "", 30000, -1, "" }, //vermin
-			{ "arifle_AKS_F", "", 40000, -1, "" }, //AKS
-            { "arifle_SDAR_F", "", 45000, -1, "" }, //sdar
-            { "arifle_Mk20_plain_F", "", 50000, -1, "" }, //mk20
-            { "arifle_TRG21_F", "", 55000, -1, "" }, //TRG21
-            { "arifle_SPAR_01_khk_F", "", 65000, -1, "" }, //spar16	
-            { "arifle_Katiba_F", "", 80000, -1, "" }, //katibia
-			{ "arifle_ARX_blk_F", "", 90000, -1, "" }, //type115
-            { "srifle_DMR_07_ghex_F", "", 100000, -1, "" }, //CMR
-			{ "arifle_AKM_F", "", 120000, -1, "" }, //AKM
-			{ "srifle_DMR_01_DMS_BI_F", "", 150000, -1, "" }, //rahim
-			{ "arifle_SPAR_03_khk_F", "", 175000, -1, "" }, //spar17
-            { "srifle_DMR_06_olive_F", "", 175000, -1, "" }, //mk14
-            { "srifle_EBR_F", "", 175000, -1, "" }, //mk18
-			{ "srifle_DMR_03_khaki_F", "", 185000, -1 "" } //mk1
-        };
-        mags[] = {
-            { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
-            { "30Rnd_556x45_Stanag", "", 100, 50, "" }, //sdar,mk20,trg21,spar16 
-			{ "30Rnd_762x39_Mag_F", "", 200, 100, "" }, //akm
-            { "20Rnd_762x51_Mag", "", 200, 100, "" }, //mk1, mk14, mk18, spar17
-			{ "10Rnd_762x54_Mag", "", 150, 75, "" }, //rahim
-            { "20Rnd_650x39_Cased_Mag_F", "", 100, 50, "" }, //cmr
-			{ "30Rnd_45ACP_Mag_SMG_01", "", 100, 50, "" }, //vermin
-            { "30Rnd_65x39_caseless_green", "", 100, 50, "" }, //type115, katibia
-			{ "30Rnd_545x39_Mag_F", "", 200, 100, "" }, //aks
-			{ "30Rnd_9x21_Mag", "", 100, 50, "" }, //9mm
-			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
-            { "6Rnd_45ACP_Cylinder", "", 100, 50, "" }, //zubr
-            { "9Rnd_45ACP_Mag", "", 100, 50, "" }, //acp
-			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" } //car95
-        };
-        accs[] = {
-			{ "optic_ACO_grn_smg", "", 2500, 1250, "" }, //aco
-			{ "optic_Arco", "", 2500, -1, "" }, //arco
-			{ "optic_Arco_blk_F", "", 2500, -1, "" }, //black arco
-			{ "optic_ERCO_blk_F", "", 2500, -1, "" }, //black erco
-			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holo
-			{ "optic_Holosight_smg_blk_F", "", 2500, -1, "" }, //black holo smg
-			{ "optic_MRCO", "", 2500, -1, "" }, //mrco
-            { "optic_Hamr", "", 2500, -1, "" }, //rco
-			{ "optic_DMS", "", 10000, -1, "" }, //dms
-			{ "acc_flashlight", "", 750, 375, "" }, //flashlight
-			{ "acc_flashlight_pistol", "", 750, 375, "" }, //flashlight
-			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
-			
-        };
-	};
 	
     class gang {
         name = "Hideout Armament";
@@ -289,7 +226,7 @@ class WeaponShops {
 			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
             { "Binocular", "", 150, 75, "" },      //Binocular
             { "ItemGPS", "", 100, 50, "" },        //GPS
-			{ "SmokeShellGreen", "Tear Gas", 2500, 50, "call life_coplevel >= 5" },        //TearGas
+			{ "SmokeShellGreen", "Tear Gas", 2500, 50, "call life_coplevel >= 5" },//TearGas
             { "hgun_Pistol_heavy_01_F", $STR_W_items_StunPistol, 4000, -1, "" }, //TASER
             { "SMG_02_F", "Sting Tazer", 3000, -1, "call life_coplevel >= 1" }, //sting
             { "arifle_SPAR_01_blk_F", "", 6000, -1, "call life_coplevel >= 2" }, //spar16

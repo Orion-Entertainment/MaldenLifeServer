@@ -128,7 +128,7 @@ class CfgSpawnPoints {
 
         class Cop {
             class MainHQ {
-                displayName = "Main HQ";
+                displayName = "Le Port HQ";
                 spawnMarker = "cop_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
