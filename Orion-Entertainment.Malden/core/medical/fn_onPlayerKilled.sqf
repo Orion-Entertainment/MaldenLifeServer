@@ -17,7 +17,7 @@ diag_log format ["You got killed by %1(%2)",_killer getVariable["realname",""],g
 
 if(playerside isEqualTo west) then
 {
-	life_repentz_cop_gear = [uniform player,[uniformItems player],vest player,[vestItems player],backpack player,[backpackItems player],headgear player, goggles player, secondaryWeapon player,[secondaryWeaponItems player]];
+	life_deadcopgear = [uniform player,[uniformItems player],vest player,[vestItems player],backpack player,[backpackItems player],headgear player, goggles player, secondaryWeapon player,[secondaryWeaponItems player]];
 };
 
 
