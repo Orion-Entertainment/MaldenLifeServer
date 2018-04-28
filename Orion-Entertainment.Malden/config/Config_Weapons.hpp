@@ -238,6 +238,7 @@ class WeaponShops {
 			{ "arifle_MX_SW_Black_F", "", 15000, -1, "call life_coplevel >= 8" }, //mxsw
             { "srifle_DMR_07_blk_F", "", 14000, -1, "call life_coplevel >= 4" }, //cmr
             { "arifle_SPAR_03_blk_F", "", 14000, -1, "call life_coplevel >= 5" }, //spar17
+            { "arifle_AK12_F", "", 14000, -1, "call life_coplevel >= 5" },//AK-12
 			{ "srifle_DMR_02_F", "", 18000, -1, "call life_coplevel >= 6" }, //mar10
             { "srifle_DMR_03_F", "", 18000, -1, "call life_coplevel >= 6" } //mk1
         };
@@ -252,7 +253,8 @@ class WeaponShops {
 			{ "30Rnd_45ACP_Mag_SMG_01", "", 20, -1, "call life_coplevel >= 4" }, //vermin
 			{ "100Rnd_65x39_caseless_mag", "", 300, 150, "call life_coplevel >= 8" }, //mxsw
             { "20Rnd_762x51_Mag", "", 30, -1, "call life_coplevel >= 5" }, //mk1, mk14, mk18, spar17
-			{ "10Rnd_338_Mag", "", 40, -1, "call life_coplevel >= 6" } // mar10
+			{ "10Rnd_338_Mag", "", 40, -1, "call life_coplevel >= 6" }, // mar10
+            { "30Rnd_762x39_Mag_F", "", 40, -1, "call life_coplevel >= 5" } //Ak-12
         };
         accs[] = {
             { "muzzle_snds_acp", "", 750, 375, "call life_coplevel >= 1" }, //45 supresser
