@@ -19,7 +19,7 @@ class Life_Settings {
     item_debit = true; // Enables/Disables virtual debit cards (life_inv_debitcard) that can be lost on player death.
 
     /* Auction House Settings */
-    ah_listing_limit = 3; //Amount of listings per player
+    ah_listing_limit = 0; //Amount of listings per player
     ah_auctioneers[] = { auchouse, auchouse_1, auchouse_2 }; //Object var names of your auctioneers <--- make sure you make an npc and place name in this array
     ah_percent = 30; // Percentage of tax to pay when selling item.
     ah_time_to_expire = 5; //Time until the listing is expired. in days
@@ -39,14 +39,13 @@ class Life_Settings {
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = true; //Save civilian location?
-    save_civilian_position_restart = true; //Save civilian location only between restarts. 
-    //^^^TURN TO TRUE BEFORE LAUNCH
+    save_civilian_position_restart = true; //Save civilian location only between restarts.
     /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
     save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
-    save_vehicle_items[] = { "knife", "pdrill", "fueldart", "dogwhistle", "head", "flashlight", "gpstracker", "tent1", "campfire", "gokart", "protest", "volleyball", "goldcoin", "airhorn", "megaphone", "axe", "pepsi", "cocaCola", "monsterEnergy", "doritos", "shittynoodles", "kfc", "easterEggs", "debitCard", "zipties", "blindfold", "cprKit", "morphine", "keys", "handcuffs", "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit" };
+    save_vehicle_items[] = { "knife", "pdrill", "fueldart", "dogwhistle", "head", "flashlight", "gpstracker", "tent1", "campfire", "gokart", "protest", "volleyball", "airhorn", "megaphone", "axe", "pepsi", "cocaCola", "monsterEnergy", "doritos", "shittynoodles", "kfc", "easterEggs", "debitCard", "zipties", "blindfold", "cprKit", "morphine", "keys", "handcuffs", "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit" };
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = false; //Save vehicle fuel level to the database (Impounded/Garaged).
     save_vehicle_damage = true; //Save vehicle damage to the database.
@@ -54,7 +53,6 @@ class Life_Settings {
 
 /*Cop Settings*/
     cop_cars[]= {"C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F","I_G_Offroad_01_F","C_Offroad_02_unarmed_F","B_T_LSV_01_unarmed_F","B_LSV_01_unarmed_F","B_CTRG_LSV_01_light_F","I_MRAP_03_F","B_T_LSV_01_unarmed_black_F","C_Offroad_02_unarmed_black_F"};
-
 
 /* System Settings */
     /* ATM & Federal Reserve System Configurations */
@@ -76,7 +74,7 @@ class Life_Settings {
     respawn_timer = 90; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
-    news_broadcast_cost = 1000000; //Cost for a player to send a news station broadcast.
+    news_broadcast_cost = 999999999; //Cost for a player to send a news station broadcast.
     news_broadcast_cooldown = 30; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
     news_broadcast_header_length = 60; //Number of characters that a header can consist of. Anything over this may clip. This depends on the font size and various other factors. Adjust with caution.
 	
