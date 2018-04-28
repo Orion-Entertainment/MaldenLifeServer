@@ -15,11 +15,12 @@ _amount = ctrlText 2404;
 if (!([_amount] call TON_fnc_isnumber)) exitWith {[localize "STR_Shop_Virt_NoNum",true,"slow"] call life_fnc_notificationSystem;};
 _diff = [_type,parseNumber(_amount),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 _amount = parseNumber(_amount);
+if (_amount > 100) exitWith {["You can't buy more than 100 items",true,"slow"] call life_fnc_notificationSystem;};
 if (_diff <= 0) exitWith {hint localize "STR_NOTF_NoSpace"};
 _amount = _diff;
 _hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],25]) select 0;
 if ((_price * _amount) > findNearestPerson && {!isNil "_hideout" && {!isNil {group player getVariable "gang_bank"}} && {(group player getVariable "gang_bank") <= _price * _amount}}) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
-if ((time - life_action_delay) < 0.2) exitWith {[localize "STR_NOTF_ActionDelay",true,"slow"] call life_fnc_notificationSystem;};
+if ((time - life_action_delay) < 0.5) exitWith {[localize "STR_NOTF_ActionDelay",true,"slow"] call life_fnc_notificationSystem;};
 life_action_delay = time;
 
 _name = M_CONFIG(getText,"VirtualItems",_type,"displayName");

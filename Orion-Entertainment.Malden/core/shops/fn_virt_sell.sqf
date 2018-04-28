@@ -17,7 +17,8 @@ _amount = ctrlText 2405;
 if (!([_amount] call TON_fnc_isnumber)) exitWith {[localize "STR_Shop_Virt_NoNum",true,"slow"] call life_fnc_notificationSystem;};
 _amount = parseNumber (_amount);
 if (_amount > (ITEM_VALUE(_type))) exitWith {hint localize "STR_Shop_Virt_NotEnough"};
-if ((time - life_action_delay) < 0.2) exitWith {[localize "STR_NOTF_ActionDelay",true,"slow"] call life_fnc_notificationSystem;};
+if (_amount > 100) exitWith {["You can't sell more than 100 items",true,"slow"] call life_fnc_notificationSystem;};
+if ((time - life_action_delay) < 0.5) exitWith {[localize "STR_NOTF_ActionDelay",true,"slow"] call life_fnc_notificationSystem;};
 life_action_delay = time;
 
 _price = (_price * _amount);
