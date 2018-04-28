@@ -375,6 +375,7 @@ class Clothing {
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_TacVest_blk_POLICE", "", 1000, "" },
+			{ "V_PlateCarrier2_blk", "", 1000, "call life_coplevel >= 5" },
             { "V_PlateCarrier1_blk", "", 2500, "call life_coplevel >= 2" }
         };
         backpacks[] = {
