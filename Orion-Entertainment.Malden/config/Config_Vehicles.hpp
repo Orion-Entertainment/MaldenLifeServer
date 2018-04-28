@@ -548,9 +548,6 @@ class LifeCfgVehicles {
         conditions = "";
         price = 200000;
         textures[] = {
-            { "Military Police", "cop", {
-                "images\textures\Vehicles\mp\mp_strider.paa"
-            }, "" },
 			{ "EMS Strider", "med", {
                 "images\textures\Vehicles\Medical\ems_strider.paa"
             }, "" },
@@ -893,24 +890,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "images\Textures\Vehicles\Cop\police_hatchback.paa"
             }, "" },
-			{ "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
-            }, "" },
-            { "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport02_co.paa"
-            }, "" },
-            { "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport03_co.paa"
-            }, "" },
-            { "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport04_co.paa"
-            }, "" },
-            { "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport05_co.paa"
-            }, "" },
-            { "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
-            }, "" },
 			{ "Bugatti", "civ", {
                 "images\Textures\Donator\BugattiHatchback.paa"
             }, "call life_donorlevel >= 1" },
@@ -1052,9 +1031,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Police", "cop", {
                 "images\Textures\Vehicles\Cop\police_suv.paa"
-            }, "" },
-			{ "Military Police", "cop", {
-                "images\Textures\Vehicles\MP\mp_suv.paa"
             }, "" },
 			{ "DTU ONLY", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
