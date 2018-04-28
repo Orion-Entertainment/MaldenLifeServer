@@ -273,41 +273,6 @@ class WeaponShops {
         };
     };
 
-    class cop_advanced {
-        name = "Malden Advanced Cop Shop";
-        side = "cop";
-        conditions = "mav_ttm_var_advCop == 1;";
-        items[] = {
-			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
-            { "Binocular", "", 150, 75, "" },      //Binocular
-            { "ItemGPS", "", 100, 50, "" },        //GPS
-			{ "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, -1, "call life_coplevel >= 2" }, //flashbang
-			{ "arifle_ARX_blk_F", "", 20000, -1, "call life_coplevel >= 6" }, //type115
-            { "launch_B_Titan_short_F", "Anti-Fuel launcher", 25000, -1, "call life_coplevel >= 3" } //short titan
-        };
-        mags[] = {
-			{ "30Rnd_65x39_caseless_green", "", 50, 50, "call life_coplevel >= 6" }, //type115
-			{ "10Rnd_50BW_Mag_F", "", 500, 250, "call life_coplevel >= 6" } //type115 50cal
-        };
-        accs[] = {
-            { "muzzle_snds_acp", "", 750, 375, "call life_coplevel >= 1" }, //45 supresser
-			{ "optic_MRD", "", 2750, 1375, "call life_coplevel >= 1" }, //mrd
-			{ "acc_flashlight", "", 750, 375, "call life_coplevel >= 1" }, //flashlight
-			{ "acc_flashlight_pistol", "", 750, 375, "call life_coplevel >= 1" }, //flashlight
-			{ "optic_ACO_grn_smg", "", 2500, 1250, "" }, //aco
-			{ "optic_Arco", "", 2500, -1, "" }, //arco
-			{ "optic_Arco_blk_F", "", 2500, -1, "" }, //black arco
-			{ "optic_ERCO_blk_F", "", 2500, -1, "" }, //black erco
-			{ "optic_AMS", "", 2500, -1, "call life_coplevel >= 8" }, //black AMS
-			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holo
-			{ "optic_Holosight_smg_blk_F", "", 2500, -1, "" }, //black holo smg
-			{ "optic_MRCO", "", 2500, -1, "" }, //mrco
-            { "optic_Hamr", "", 2500, -1, "" }, //rco
-			{ "optic_DMS", "", 5000, -1, "" }, //dms
-			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
-        };
-    };
-
     class cop_boat {
         name = "store";
         side = "cop";
@@ -326,34 +291,13 @@ class WeaponShops {
         side = "cop";
         conditions = "";
         items[] = {
-			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
-            { "Binocular", "", 150, 75, "" },      //Binocular
-            { "ItemGPS", "", 100, 50, "" },        //GPS
-			{ "arifle_Katiba_F", "DTU ONLY Katibia", 12000, -1, "call life_coplevel >= 4" }, //katibia
-			{ "arifle_AKM_F", "DTU ONLY AKM", 17500, -1, "call life_coplevel >= 4" }, //AKM
-			{ "srifle_DMR_07_ghex_F", "DTU ONLY CMR", 17500, -1, "call life_coplevel >= 4" }, //AKM
+			{ "NVGoggles_OPFOR", "", 5000, 75, ""}
         };
         mags[] = {
-			{ "30Rnd_762x39_Mag_F", "7.62 RubberBullets", 200, 100, "call life_coplevel >= 4" }, //akm
-			{ "30Rnd_65x39_caseless_green", "6.5 RubberBullets", 50, 50, "call life_coplevel >= 4" }, //katibia
-			{ "20Rnd_650x39_Cased_Mag_F", "6.5 RubberBullets", 50, 50, "call life_coplevel >= 4" }, //cmr
+			{ "30Rnd_762x39_Mag_F", "7.62 RubberBullets", 200, 100, "call life_coplevel >= 4" }
         };
         accs[] = {
-			{ "acc_flashlight", "", 750, 375, "call life_coplevel >= 1" }, //flashlight
-			{ "acc_flashlight_pistol", "", 750, 375, "call life_coplevel >= 1" }, //flashlight
-			{ "optic_ACO_grn_smg", "", 2500, 1250, "" }, //aco
-			{ "optic_Arco", "", 2500, -1, "" }, //arco
-			{ "muzzle_snds_H", "", 750, 375, "" }, //6.5 Supressor
-			{ "muzzle_snds_B", "", 750, 375, "" }, //7.62 Supressor
-			{ "optic_Arco_blk_F", "", 2500, -1, "" }, //black arco
-			{ "optic_ERCO_blk_F", "", 2500, -1, "" }, //black erco
-			{ "optic_AMS", "", 2500, -1, "" }, //black AMS
-			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holo
-			{ "optic_Holosight_smg_blk_F", "", 2500, -1, "" }, //black holo smg
-			{ "optic_MRCO", "", 2500, -1, "" }, //mrco
-            { "optic_Hamr", "", 2500, -1, "" }, //rco
-			{ "optic_DMS", "", 10000, -1, "" }, //dms
-			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
+			{ "acc_flashlight", "", 750, 375, "call life_coplevel >= 1" }
         };
     };
 	//DTU

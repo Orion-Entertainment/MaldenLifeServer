@@ -112,28 +112,6 @@ class CarShops {
         };
     };
 
-    class donator_car {
-        side = "civ";
-        conditions = "call life_donorlevel > 0";
-        vehicles[] = {
-            { "B_Quadbike_01_F", "" },
-            { "B_G_Offroad_01_F", "" },
-			{ "C_SUV_01_F", "" },
-			{ "C_Hatchback_01_sport_F", "" },
-            { "B_Heli_Light_01_F", "" },
-            { "B_G_Offroad_01_armed_F", "" },
-            { "O_T_LSV_02_unarmed_F", "" },
-			{ "B_T_LSV_01_unarmed_F", "" },
-            { "O_MRAP_02_F", "" },
-            { "B_T_LSV_01_armed_F", "" },
-            { "I_Heli_light_03_unarmed_F", "" },
-            { "B_Heli_Transport_03_unarmed_F", "" },
-            { "O_Heli_Transport_04_bench_F", "" },
-            { "O_Heli_Transport_04_box_F", "" },
-			{ "O_Heli_Light_02_unarmed_F", "" }
-        };
-    };
-
     class med_shop {
         side = "med";
         conditions = "";
@@ -149,7 +127,7 @@ class CarShops {
 
     class med_air_hs {
         side = "med";
-        conditions = "mav_ttm_var_air == 1;";
+        conditions = "";
         vehicles[] = {
             { "B_Heli_Light_01_F", "call life_mediclevel >= 4" },
             { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 5" },
@@ -161,11 +139,12 @@ class CarShops {
         side = "cop";
         conditions = "";
         vehicles[] = {
-            { "B_Quadbike_01_F", "" },
             { "C_Offroad_01_F", "call life_coplevel >= 1" },
             { "C_SUV_01_F", "call life_coplevel >= 1" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
-			{ "C_Offroad_02_unarmed_black_F", "call life_coplevel >= 4" }
+			{ "C_Offroad_02_unarmed_black_F", "call life_coplevel >= 4" },
+            { "B_MRAP_01_F", "call life_coplevel >= 4" },
+			{ "B_T_LSV_01_unarmed_black_F", "call life_coplevel >= 5" }
         };
     };
 
@@ -182,7 +161,7 @@ class CarShops {
 
     class cop_air {
         side = "cop";
-        conditions = "mav_ttm_var_air == 1;";
+        conditions = "";
         vehicles[] = {
             { "B_Heli_Light_01_F", "call life_coplevel >= 2" },
 			{ "O_Heli_Light_02_unarmed_F", "call life_coplevel >= 4" },
