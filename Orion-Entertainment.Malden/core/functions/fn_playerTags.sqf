@@ -39,7 +39,7 @@ private _index = -1;
         _sPos = worldToScreen _pos;
         _distance = _pos distance player;
 
-        if (!((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks)) then {
+        if ((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks) then {
             if (count _sPos > 1 && {_distance < 15}) then {
                 _text = format ["<t size='1' color='#a3a3a3'>MASKED</t><br/><t size='0.9' color='#666666'>%1</t>",getPlayerUID _x];
                 if (_x getVariable ["speaking",false]) then {_text = "<t color='#e6e6e6'>[Speaking] " + _text;};
