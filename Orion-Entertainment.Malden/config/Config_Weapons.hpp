@@ -34,29 +34,29 @@ class WeaponShops {
         side = "civ";
         conditions = "mav_ttm_var_rebel > 0";
         items[] = {
-			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
-            { "Binocular", "", 150, 75, "" },      //Binocular
-            { "ItemGPS", "", 100, 50, "" },       //GPS
-			{ "hgun_Rook40_F", "", 5000, -1, "" }, //Rook
-            { "hgun_Pistol_heavy_02_F", "", 7500, -1, "" }, //Zubr
-            { "hgun_ACPC2_F", "", 15000, -1, "" }, //45 ACP
-			{ "hgun_PDW2000_F", "", 20000, -1, "" }, //PDW
-			{ "SMG_05_F", "", 25000, -1, "" }, //Protector
-			{ "SMG_01_F", "", 30000, -1, "" }, //vermin
-			{ "arifle_AKS_F", "", 40000, -1, "" }, //AKS
-            { "arifle_SDAR_F", "", 45000, -1, "" }, //sdar
-            { "arifle_Mk20_plain_F", "", 50000, -1, "" }, //mk20
-            { "arifle_TRG21_F", "", 50000, -1, "" }, //TRG21
-            { "arifle_SPAR_01_khk_F", "", 65000, -1, "" }, //spar16	
-            { "arifle_Katiba_F", "", 80000, -1, "" }, //katibia
-			{ "arifle_ARX_blk_F", "", 90000, -1, "" }, //type115
-            { "srifle_DMR_07_ghex_F", "", 100000, -1, "" }, //CMR
-			{ "arifle_AKM_F", "", 120000, -1, "" }, //AKM
-			{ "srifle_DMR_01_DMS_BI_F", "", 120000, -1, "" }, //rahim
-			{ "arifle_SPAR_03_khk_F", "", 175000, -1, "" }, //spar17
-            { "srifle_DMR_06_olive_F", "", 175000, -1, "" }, //mk14
-            { "srifle_EBR_F", "", 175000, -1, "" }, //mk18
-			{ "srifle_DMR_03_khaki_F", "", 185000, -1 "" } //mk1
+			{ "NVGoggles_OPFOR", "", 5000, 75, "mav_ttm_var_rebel > 0"}, //Black NightVision
+            { "Binocular", "", 150, 75, "mav_ttm_var_rebel > 0" },      //Binocular
+            { "ItemGPS", "", 100, 50, "mav_ttm_var_rebel > 0" },       //GPS
+			{ "hgun_Rook40_F", "", 5000, -1, "mav_ttm_var_rebel > 0" }, //Rook
+            { "hgun_Pistol_heavy_02_F", "", 7500, -1, "mav_ttm_var_rebel > 0" }, //Zubr
+            { "hgun_ACPC2_F", "", 15000, -1, "mav_ttm_var_rebel > 0" }, //45 ACP
+			{ "hgun_PDW2000_F", "", 20000, -1, "mav_ttm_var_rebel > 0" }, //PDW
+			{ "SMG_05_F", "", 25000, -1, "mav_ttm_var_rebel > 0" }, //Protector
+			{ "SMG_01_F", "", 30000, -1, "mav_ttm_var_rebel > 0" }, //vermin
+			{ "arifle_AKS_F", "", 40000, -1, "mav_ttm_var_rebel > 0" }, //AKS
+            { "arifle_SDAR_F", "", 45000, -1, "mav_ttm_var_rebel > 0" }, //sdar
+            { "arifle_Mk20_plain_F", "", 50000, -1, "mav_ttm_var_rebel > 0" }, //mk20
+            { "arifle_TRG21_F", "", 50000, -1, "mav_ttm_var_rebel > 0" }, //TRG21
+            { "arifle_SPAR_01_khk_F", "", 65000, -1, "mav_ttm_var_rebel >= 2" }, //spar16	
+            { "arifle_Katiba_F", "", 80000, -1, "mav_ttm_var_rebel >= 2" }, //katibia
+			{ "arifle_ARX_blk_F", "", 90000, -1, "mav_ttm_var_rebel >= 2" }, //type115
+            { "srifle_DMR_07_ghex_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //CMR
+			{ "arifle_AKM_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //AKM
+			{ "srifle_DMR_01_DMS_BI_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //rahim
+			{ "arifle_SPAR_03_khk_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //spar17
+            { "srifle_DMR_06_olive_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //mk14
+            { "srifle_EBR_F", "", 175000, -1, "mav_ttm_var_rebel >= 5" }, //mk18
+			{ "srifle_DMR_03_khaki_F", "", 185000, -1, "mav_ttm_var_rebel >= 5" } //mk1
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
