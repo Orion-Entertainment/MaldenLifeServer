@@ -17,7 +17,7 @@ player createDiarySubject ["controls","Controls"];
         [
             "", //Subsection
                 "
-TEXT HERE<br/><br/>
+<br/><br/>
                 "
         ]
     ];
@@ -27,7 +27,7 @@ TEXT HERE<br/><br/>
         [
             "Server Change Log",
                 "
-This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.<br/><br/>
+				Map changes coming soon<br/><br/>
                 "
         ]
     ];
