@@ -9,7 +9,7 @@ params [
 
 private ["_payCheck"];
 
-_payCheck = selectRandom [65000,70000,72500,75000,80000,85000,100000];
+_payCheck = floor random [15000, 30000, 55000]; //$15000-55000
 
 findNearestPerson = findNearestPerson + _payCheck;
 hint format ["Congratulations, you have completed the transportation mission and recived the reward of $%1. Enjoy!", [_payCheck] call life_fnc_numberText];

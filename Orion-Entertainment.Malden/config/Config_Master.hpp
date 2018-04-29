@@ -85,7 +85,7 @@ class Life_Settings {
     cop_extendedSkins = false; //Enable or disable cop skins by level. Before enabling, you must add all the EIGHT files to textures folder. (It must be named as: cop_uniform.jpg + cop_uniform_1.jpg, cop_uniform_2.jpg...cop_uniform_6.jpg, cop_uniform_7.jpg; meaning cop_uniform = life_coplevel=0, cop_uniform_1 = life_coplevel=1, cop_uniform_2 = life_coplevel=2, etc...)
     clothing_noTP = true;  //Disable clothing preview teleport? (true = no teleport. false = teleport)
     clothing_box = false; //true = teleport to a black box. false = teleport to somewhere on map. (It only affects the game if clothing_noTP is set as false)
-    clothing_masks[] = { "H_CrewHelmetHeli_B","H_Shemag_tan","H_Shemag_tan","H_Shemag_olive_hs","H_ShemagOpen_tan","H_Shemag_olive","G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","G_Balaclava_oli","G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli","G_Bandanna_shades","G_Bandanna_sport","G_Bandanna_tan","H_CrewHelmetHeli_B","H_PilotHelmetHeli_B","H_PilotHelmetHeli_O","H_PilotHelmetHeli_I","",""};
+    clothing_masks[] = { "H_CrewHelmetHeli_B","H_Shemag_tan","H_Shemag_tan","H_Shemag_olive_hs","H_ShemagOpen_tan","H_Shemag_olive","G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","G_Balaclava_oli","G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli","G_Bandanna_shades","G_Bandanna_sport","G_Bandanna_tan","H_CrewHelmetHeli_B","H_PilotHelmetHeli_B","H_PilotHelmetHeli_O","H_PilotHelmetHeli_I" };
 
     /* Escape Menu Configuration */
     escapeMenu_timer = 15; //Time required to pass before you can click the abort button in the escape menu.
