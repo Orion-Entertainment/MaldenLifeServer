@@ -88,7 +88,15 @@ class ProcessAction {
         //ScrollText = "Harvest Marijuana";
         NoLicenseCost = 500;
     };
-
+/*
+	class wax {
+        MaterialsReq[] = {{"marijuana",1}};
+        MaterialsGive[] = {{"Wax Cartrige",1}};
+        Text = "STR_Process_Marijuana";
+        //ScrollText = "Compress Marijuana";
+        NoLicenseCost = 5000;
+    };
+*/
     class cement {
         MaterialsReq[] = {{"rock",1}};
         MaterialsGive[] = {{"cement",1}};
