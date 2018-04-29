@@ -51,6 +51,7 @@ class WeaponShops {
             { "arifle_Katiba_F", "", 80000, -1, "mav_ttm_var_rebel >= 2" }, //katibia
 			{ "arifle_ARX_blk_F", "", 90000, -1, "mav_ttm_var_rebel >= 2" }, //type115
             { "srifle_DMR_07_ghex_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //CMR
+            { "arifle_MXM_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //MXM
 			{ "arifle_AKM_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //AKM
 			{ "srifle_DMR_01_DMS_BI_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //rahim
 			{ "arifle_SPAR_03_khk_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //spar17
@@ -67,6 +68,7 @@ class WeaponShops {
             { "20Rnd_650x39_Cased_Mag_F", "", 100, 50, "" }, //cmr
 			{ "30Rnd_45ACP_Mag_SMG_01", "", 100, 50, "" }, //vermin
             { "30Rnd_65x39_caseless_green", "", 100, 50, "" }, //type115, katibia
+            { "30Rnd_65x39_caseless_mag", "", 200, 100, "" }, //MXM
 			{ "30Rnd_545x39_Mag_F", "", 200, 100, "" }, //aks
 			{ "30Rnd_9x21_Mag", "", 100, 50, "" }, //9mm
 			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
