@@ -1032,21 +1032,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Police", "cop", {
                 "images\Textures\Vehicles\Cop\police_suv.paa"
             }, "" },
-			{ "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
-            }, "" },
-            { "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"
-            }, "" },
-            { "DTU ONLY", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            }, "" },
             { "EMS", "med", {
                 "images\Textures\Vehicles\Medical\Msuv.paa"
             }, "" },
-			{ "Beevers SUV", "civ", {
-                "images\Textures\Donator\BeeversSUV.paa"
-            }, "call life_donorlevel >= 1" },
 			{ "Gold and Black", "civ", {
                 "images\Textures\Donator\GoldandBlackSUV.paa"
             }, "call life_donorlevel >= 1" },
@@ -1189,9 +1177,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
         price = 450000;
         textures[] = {
-            { "Black", "cop", {
-                "images\textures\Vehicles\MP\MP_orca.paa"
-            }, "" },
             { "White / Blue", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
             }, "" },
