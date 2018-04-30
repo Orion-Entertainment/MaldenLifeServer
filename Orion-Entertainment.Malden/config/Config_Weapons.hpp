@@ -7,6 +7,7 @@ class WeaponShops {
 			{ "hgun_Rook40_F", "", 5000, -1, "" }, //Rook
             { "hgun_Pistol_heavy_02_F", "", 7500, -1, "" }, //Zubr
             { "hgun_ACPC2_F", "", 15000, -1, "" }, //45 ACP
+			{ "hgun_P07_F", "", 17000, -1, "" }, //P07
 			{ "hgun_PDW2000_F", "", 20000, -1, "" } //PDW
         };
         mags[] = {
@@ -289,20 +290,3 @@ class WeaponShops {
         };
     };
 	
-	//DTU
-	class dtu_gun {
-        name = "DTU Weapon Shop";
-        side = "cop";
-        conditions = "";
-        items[] = {
-			{ "NVGoggles_OPFOR", "", 5000, 75, ""}
-        };
-        mags[] = {
-			{ "30Rnd_762x39_Mag_F", "7.62 RubberBullets", 200, 100, "call life_coplevel >= 4" }
-        };
-        accs[] = {
-			{ "acc_flashlight", "", 750, 375, "call life_coplevel >= 1" }
-        };
-    };
-	//DTU
-};
