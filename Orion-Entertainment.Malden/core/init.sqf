@@ -228,7 +228,6 @@ if (playerSide isEqualTo west) then {
 	life_copGroup = group player;
 };
 
-[] spawn Repentz_fnc_initCarRadio;
 [] spawn life_fnc_autoSaveInv;
 [] execVM "core\derleon\vis\Setup.sqf";
 
