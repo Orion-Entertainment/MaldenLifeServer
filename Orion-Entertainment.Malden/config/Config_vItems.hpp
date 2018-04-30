@@ -143,7 +143,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "debitcard", "panicbutton", "dogwhistle", "gpstracker", "flashlight", "fueldart", "gokart", "morphine","bandages", "handcuffs", "keys", "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit" };
+        items[] = { "debitcard", "panicbutton", "gpstracker", "flashlight", "fueldart", "gokart", "morphine","bandages", "handcuffs", "keys", "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit" };
     };
 
     class counterfitCash {
@@ -413,17 +413,6 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "images\icons\ico_airhorn.paa";
-    };
-
-    class dogwhistle {
-        variable = "dogwhistle";
-        displayName = "STR_Item_dogwhistle";
-        weight = 2;
-        buyPrice = 999999;
-        sellPrice = 200;
-        illegal = true;
-        edible = -1;
-        icon = "images\icons\ico_dogwhistle.paa";
     };
 
     class flashlight {
