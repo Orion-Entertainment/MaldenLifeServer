@@ -57,6 +57,7 @@ class WeaponShops {
 			{ "srifle_DMR_01_DMS_BI_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //rahim
 			{ "arifle_SPAR_03_khk_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //spar17
             { "srifle_DMR_06_olive_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //mk14
+	    { "arifle_CTARS_hex_F", "", 150000, -1, "mav_ttm_var_rebel >= 5" },//Car-95-1
             { "srifle_EBR_F", "", 175000, -1, "mav_ttm_var_rebel >= 5" }, //mk18
 			{ "srifle_DMR_03_khaki_F", "", 185000, -1, "mav_ttm_var_rebel >= 5" } //mk1
         };
@@ -75,6 +76,7 @@ class WeaponShops {
 			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
             { "6Rnd_45ACP_Cylinder", "", 100, 50, "" }, //zubr
             { "9Rnd_45ACP_Mag", "", 100, 50, "" }, //acp
+		{ "100Rnd_580x42_Mag_F", "", 100, 50, "" },//Car-95-1
 			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" } //car95
         };
         accs[] = {
