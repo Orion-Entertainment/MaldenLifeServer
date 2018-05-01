@@ -1696,7 +1696,7 @@ class VirtualItems {
         displayName = "STR_Item_CocaineP";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 2250;
+        sellPrice = 2700;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_cocaineProcessed.paa";
