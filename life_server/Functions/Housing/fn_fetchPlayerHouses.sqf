@@ -76,12 +76,7 @@ _furnituress = [];
             _container addBackpackCargoGlobal [((_backpacks select 0) select _i), ((_backpacks select 1) select _i)];
         };
     };
-	if!(_isFurniture)then{
-		_house setVariable ["containers",_containerss,true];
-	}else{
-		_house setVariable ["furnitures",_furnituress,true];
-		_container enableSimulationGlobal false;
-	};
+    _house setVariable ["containers",_containerss,true];
 } forEach _containers;
 
 _query = format ["SELECT pid, pos FROM houses WHERE pid='%1' AND owned='1'",_uid];
@@ -93,7 +88,6 @@ _return = [];
     _house = nearestObject [_pos, "House"];
     _house allowDamage false;
     _return pushBack [_x select 1,_containerss];
-	_return pushBack [_x select 1,_furnituress];
 } forEach _houses;
 
 missionNamespace setVariable [format ["houses_%1",_uid],_return];
