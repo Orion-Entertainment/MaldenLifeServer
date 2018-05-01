@@ -25,7 +25,7 @@ if (!isNull _source) then {
 					_damage = 0;
 					if (alive player && !life_istazed && !life_isknocked && !(_unit getVariable ["restrained",false])) then {
 						private ["_distance"];
-						_distance = 100;
+						_distance = 200;
 						if (currentMagazine _source in ["30Rnd_65x39_caseless_mag_Tracer"]) then {_distance = 600;};
 						if (_unit distance _source < _distance) then {
 							if !(isNull objectParent player) then {

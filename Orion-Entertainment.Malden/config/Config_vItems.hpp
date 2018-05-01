@@ -727,8 +727,8 @@ class VirtualItems {
 		variable = "cloth";
 		displayName = "STR_Item_cloth";
 		weight = 1;
-		buyPrice = 8000;
-		sellPrice = 6000;
+		buyPrice = 2000;
+		sellPrice = 1400;
 		illegal = false;
 		edible = -1;
 		icon = "images\icons\craft\cloth.paa";
