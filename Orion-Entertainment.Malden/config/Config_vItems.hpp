@@ -365,7 +365,7 @@ class VirtualItems {
         displayName = "STR_Item_LSD";
         weight = 5;
         buyPrice = -1;
-        sellPrice = 2275;
+        sellPrice = 2775;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_LSD.paa";
@@ -528,9 +528,9 @@ class VirtualItems {
     class uranium {
         variable = "uranium";
         displayName = "STR_Item_uranium";
-        weight = 4;
+        weight = 6;
         buyPrice = -1;
-        sellPrice = 2550;
+        sellPrice = 4000;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_uraniumP.paa";
