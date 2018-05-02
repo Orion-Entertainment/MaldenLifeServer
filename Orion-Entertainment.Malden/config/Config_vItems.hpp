@@ -840,8 +840,8 @@ class VirtualItems {
 		variable = "beer";
 		displayName = "STR_Item_beer";
 		weight = 2;
-		buyPrice = 2000;
-		sellPrice = 1000;
+		buyPrice = 3000;
+		sellPrice = 2000;
 		illegal = false;
 		edible = 100;
 		icon = "images\icons\ico_beer.paa";
@@ -851,8 +851,8 @@ class VirtualItems {
 		variable = "whiskey";
 		displayName = "STR_Item_whiskey";
 		weight = 2;
-		buyPrice = 3000;
-		sellPrice = 1500;
+		buyPrice = 3500;
+		sellPrice = 2600;
 		illegal = false;
 		edible = 100;
 		icon = "images\icons\ico_whiskey.paa";
@@ -862,8 +862,8 @@ class VirtualItems {
 		variable = "moonshine";
 		displayName = "STR_Item_moonshine";
 		weight = 2;
-		buyPrice = 3000;
-		sellPrice = 2500;
+		buyPrice = 5300;
+		sellPrice = 4300;
 		illegal = false;
 		edible = 100;
 		icon = "images\icons\ico_moonshine.paa";
