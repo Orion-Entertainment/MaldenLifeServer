@@ -8,7 +8,7 @@ class EditorData
 	toggles=554;
 	class ItemIDProvider
 	{
-		nextID=45433;
+		nextID=45434;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1926;
+		nextID=1933;
 	};
 	class Camera
 	{
-		pos[]={9714.2119,44.891846,3899.2673};
-		dir[]={-0.0068148584,-0.46775201,-0.88383669};
-		up[]={-0.0036060896,0.8838594,-0.46774015};
-		aside[]={-0.9999733,1.6343984e-007,0.0077100373};
+		pos[]={9714.1709,41.338184,3892.0393};
+		dir[]={-0.6834327,-0.72349578,0.097339295};
+		up[]={-0.7162677,0.69032848,0.10201583};
+		aside[]={0.14100407,-1.0477379e-008,0.99000937};
 	};
 };
 binarizationWanted=0;
@@ -6597,7 +6597,7 @@ class Mission
 			b=0.69999999;
 			angle=359.95883;
 			id=3849;
-			atlOffset=85.133446;
+			atlOffset=90.838867;
 		};
 		class Item168
 		{
@@ -7097,7 +7097,7 @@ class Mission
 			};
 			id=4759;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.26160812;
+			atlOffset=0.26197433;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8362,7 +8362,7 @@ class Mission
 			};
 			id=6480;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.26828003;
+			atlOffset=0.26776123;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8482,7 +8482,7 @@ class Mission
 			};
 			id=6485;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.34119415;
+			atlOffset=0.35152435;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10336,7 +10336,6 @@ class Mission
 				angles[]={0,3.3777008,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this addAction [""Job Centre"", {createDialog ""ADT_JobCentre"";},"""",0,false,false,"""",' vehicle player isEqualTo player && player distance _target < 5 && playerSide isEqualTo civilian '];";
@@ -10344,7 +10343,7 @@ class Mission
 			};
 			id=6926;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.21803284;
+			atlOffset=0.68797302;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10666,7 +10665,7 @@ class Mission
 			b=0.69999999;
 			angle=359.95883;
 			id=7123;
-			atlOffset=36.793762;
+			atlOffset=42.076385;
 		};
 		class Item279
 		{
@@ -27963,7 +27962,6 @@ class Mission
 				angles[]={0,4.5382748,6.2826962};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this enableSimulation false; this addAction[""Rob Shop"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4']; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -27971,7 +27969,7 @@ class Mission
 			};
 			id=8164;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.020690918;
+			atlOffset=0.58400726;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49929,7 +49927,7 @@ class Mission
 			a=0.80000001;
 			b=0.80000001;
 			id=23585;
-			atlOffset=0.0069198608;
+			atlOffset=0.16410828;
 		};
 		class Item1310
 		{
@@ -54965,7 +54963,7 @@ class Mission
 			init=" { _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],30])";
 			id=24775;
 			type="Logic";
-			atlOffset=1.1122742;
+			atlOffset=1.4550171;
 		};
 		class Item1458
 		{
@@ -54979,7 +54977,7 @@ class Mission
 			init=" { _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],25])";
 			id=24776;
 			type="Logic";
-			atlOffset=0.37313843;
+			atlOffset=0.73199463;
 		};
 		class Item1459
 		{
@@ -54996,7 +54994,7 @@ class Mission
 			};
 			id=24778;
 			type="Sign_Sphere10cm_F";
-			atlOffset=2.0261993;
+			atlOffset=5.0005951;
 		};
 		class Item1460
 		{
@@ -55449,7 +55447,7 @@ class Mission
 			};
 			id=24956;
 			type="Land_PCSet_01_screen_F";
-			atlOffset=1.0376205;
+			atlOffset=1.0377846;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55508,7 +55506,7 @@ class Mission
 			};
 			id=24959;
 			type="Land_PCSet_01_keyboard_F";
-			atlOffset=1.0366135;
+			atlOffset=1.0366211;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57384,7 +57382,7 @@ class Mission
 			position[]={8077.8145,261.44501,4000.0281};
 			name="car_g_11";
 			type="Empty";
-			angle=226.5666;
+			angle=226.56659;
 			id=31852;
 			atlOffset=220.56107;
 		};
@@ -62314,7 +62312,7 @@ class Mission
 			init=" { _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],10])";
 			id=33275;
 			type="Logic";
-			atlOffset=0.10582924;
+			atlOffset=4.0560102;
 		};
 		class Item1665
 		{
@@ -64601,7 +64599,7 @@ class Mission
 			};
 			id=33452;
 			type="Land_CncWall4_F";
-			atlOffset=1.8194726;
+			atlOffset=2.7958806;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -108869,7 +108867,7 @@ class Mission
 			};
 			id=35316;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.24200058;
+			atlOffset=0.2419281;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -108957,7 +108955,7 @@ class Mission
 			position[]={5375.3237,65.033478,3668.208};
 			name="civ_air_4";
 			type="Empty";
-			angle=207.50208;
+			angle=207.50206;
 			id=35366;
 		};
 		class Item2858
@@ -109097,7 +109095,7 @@ class Mission
 			position[]={5358.2021,64.711327,3674.7373};
 			name="air_g_10";
 			type="Empty";
-			angle=207.50208;
+			angle=207.50206;
 			id=35371;
 		};
 		class Item2862
@@ -113242,7 +113240,7 @@ class Mission
 			a=75;
 			b=75;
 			id=36163;
-			atlOffset=14.513885;
+			atlOffset=17.890839;
 		};
 		class Item3002
 		{
@@ -143140,17 +143138,18 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			id=34604;
-			atlOffset=1.9667053;
+			atlOffset=0.80328369;
 		};
 		class Item3895
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4805.4858,283.19165,5722.855};
+				position[]={4805.4858,282.36157,5722.855};
 				angles[]={0,0.32967523,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Drug_Dealer"",life_fnc_virt_menu,""drugdealer"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo civilian ']; this addAction[localize""STR_MAR_Question_Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo west && !life_action_inUse '];";
@@ -143159,7 +143158,7 @@ class Mission
 			};
 			id=34605;
 			type="Land_InfoStand_V1_F";
-			atlOffset=1.9093323;
+			atlOffset=0.010070801;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -143221,7 +143220,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4807.9609,283.27402,5723.8071};
+				position[]={4807.9609,282.43317,5723.8071};
 				angles[]={0,4.3144712,0};
 			};
 			side="Empty";
@@ -143231,7 +143230,7 @@ class Mission
 			};
 			id=34603;
 			type="Land_Slum_03_F";
-			atlOffset=1.3469849;
+			atlOffset=0.50613403;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -143361,7 +143360,7 @@ class Mission
 			};
 			id=42582;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.14142323;
+			atlOffset=0.14131975;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -189711,19 +189710,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9712.2402,39.46085,3892.384};
-				angles[]={0,4.7269454,0};
+				position[]={9712.0752,39.465363,3892.2605};
+				angles[]={0,4.7442846,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[""Start Transport Mission"",life_fnc_MissionStart,"""",0,false,false,"""",'playerSide == cop && vehicle player == player && player distance _target < 4'];";
+				init="this addAction[""Start Mission"",life_fnc_missionStart,"""",0,false,false,"""",'playerSide == west && vehicle player == player && player distance _target < 4'];";
+				name="Cop_Transport_Shop_1";
 				disableSimulation=1;
 			};
-			id=45430;
+			id=45433;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.0045127869;
 			class CustomAttributes
 			{
 				class Attribute0
