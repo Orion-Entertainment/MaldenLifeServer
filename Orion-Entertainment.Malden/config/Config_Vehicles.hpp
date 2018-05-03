@@ -669,16 +669,18 @@ class LifeCfgVehicles {
                 "a3\soft_f\MRAP_02\data\MRAP_02_ext_01_co.paa",
 				"a3\soft_f\MRAP_02\data\MRAP_02_ext_02_co.paa"
             }, "" },
-			{ "Urban", "civ", {
-                "images\Textures\Donator\IfritUrbanBody.paa",
-				"images\Textures\Donator\IfritUrbanFront.paa",
-				"images\Textures\Donator\IfritUrbanBack.paa"
+            { "Camo", "civ", {
+                "images\textures\Donator\ifrit_r1.paa",
+                "images\textures\Donator\ifrit_r2.paa",
+            }, "call life_donorlevel >= 1" },
+            { "Red", "civ", {
+                "images\textures\Donator\ifrit_red_front.jpg",
+                "images\textures\Donator\ifrit_red_back.jpg",
             }, "call life_donorlevel >= 2" },
-			{ "Woodland", "civ", {
-                "images\Textures\Donator\IfritBody.paa",
-				"images\Textures\Donator\IfritFront.paa",
-				"images\Textures\Donator\Ifritback.paa"
-            }, "call life_donorlevel >= 2" }
+            { "Gold", "civ", {
+                "images\textures\Donator\Ifrit_Gold_Front.jpg",
+                "images\textures\Donator\Ifrit_Gold_Back.jpg"
+            }, "call life_donorlevel >= 3" }
 		};
     };
 	
