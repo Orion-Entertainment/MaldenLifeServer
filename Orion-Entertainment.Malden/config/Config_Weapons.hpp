@@ -44,7 +44,6 @@ class WeaponShops {
 			{ "hgun_PDW2000_F", "", 20000, -1, "mav_ttm_var_rebel > 0" }, //PDW
 			{ "SMG_05_F", "", 25000, -1, "mav_ttm_var_rebel > 0" }, //Protector
 			{ "SMG_01_F", "", 30000, -1, "mav_ttm_var_rebel > 0" }, //vermin
-<<<<<<< HEAD
 			{ "arifle_Mk20_F", "", 40000, -1, "mav_ttm_var_rebel > 0" }, //MK20
 			{ "arifle_TRG21_F", "", 35000, -1, "mav_ttm_var_rebel > 0" }, //TRG21
 			{ "arifle_SPAR_01_blk_F", "", 45000, -1, "mav_ttm_var_rebel > 0" }, //SPAR16
@@ -71,41 +70,15 @@ class WeaponShops {
 			{ "srifle_DMR_05_tan_F", "", 600000, -1, "mav_ttm_var_rebel > 5" }, //Cyrus
 			{ "srifle_DMR_02_sniper_F	", "", 500000, -1, "mav_ttm_var_rebel > 5" }, //MAR-10
 			{ "LMG_Zafir_F", "", 800000, -1, "mav_ttm_var_rebel > 5" } //Zafir	
-=======
-			{ "arifle_AKS_F", "", 40000, -1, "mav_ttm_var_rebel > 0" }, //AKS
-            { "arifle_SDAR_F", "", 45000, -1, "mav_ttm_var_rebel > 0" }, //sdar
-            { "arifle_Mk20_plain_F", "", 50000, -1, "mav_ttm_var_rebel > 0" }, //mk20
-            { "arifle_TRG21_F", "", 50000, -1, "mav_ttm_var_rebel > 0" }, //TRG21
-            { "arifle_SPAR_01_khk_F", "", 65000, -1, "mav_ttm_var_rebel >= 2" }, //spar16	
-            { "arifle_Katiba_F", "", 80000, -1, "mav_ttm_var_rebel >= 2" }, //katibia
-			{ "arifle_ARX_blk_F", "", 90000, -1, "mav_ttm_var_rebel >= 2" }, //type115
-            { "srifle_DMR_07_ghex_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //CMR
-            { "arifle_MXM_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //MXM
-			{ "arifle_AKM_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //AKM
-			{ "srifle_DMR_01_DMS_BI_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //rahim
-			{ "arifle_SPAR_03_khk_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //spar17
-            { "srifle_DMR_06_olive_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //mk14
-	        { "arifle_CTARS_hex_F", "", 150000, -1, "mav_ttm_var_rebel >= 5" },//Car-95-1
-            { "srifle_EBR_F", "", 175000, -1, "mav_ttm_var_rebel >= 5" }, //mk18
-			{ "srifle_DMR_03_khaki_F", "", 185000, -1, "mav_ttm_var_rebel >= 5" } //mk1
->>>>>>> parent of ff42f00... Rebel
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
-            { "30Rnd_556x45_Stanag", "", 100, 50, "" }, //sdar,mk20,trg21,spar16 
-			{ "30Rnd_762x39_Mag_F", "", 200, 100, "" }, //akm
-            { "20Rnd_762x51_Mag", "", 200, 100, "" }, //mk1, mk14, mk18, spar17
-			{ "10Rnd_762x54_Mag", "", 150, 75, "" }, //rahim
             { "20Rnd_650x39_Cased_Mag_F", "", 100, 50, "" }, //cmr
 			{ "30Rnd_45ACP_Mag_SMG_01", "", 100, 50, "" }, //vermin
-            { "30Rnd_65x39_caseless_green", "", 100, 50, "" }, //type115, katibia
-            { "30Rnd_65x39_caseless_mag", "", 200, 100, "" }, //MXM
-			{ "30Rnd_545x39_Mag_F", "", 200, 100, "" }, //aks
 			{ "30Rnd_9x21_Mag", "", 100, 50, "" }, //9mm
 			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
             { "6Rnd_45ACP_Cylinder", "", 100, 50, "" }, //zubr
             { "9Rnd_45ACP_Mag", "", 100, 50, "" }, //acp
-<<<<<<< HEAD
 			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //MK20
 			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //TRG
 			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //spar16
@@ -134,10 +107,6 @@ class WeaponShops {
 			{ "10Rnd_93x64_DMR_05_Mag", "", 100, 50, "" }, //Cyrus
 			{ "10Rnd_338_Mag", "", 100, 50, "" }, //MAR-10
 			{ "150Rnd_762x54_Box", "", 1000, 50, "" } //Zafir
-=======
-		    { "100Rnd_580x42_Mag_F", "", 100, 50, "" },//Car-95-1
-			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" } //car95
->>>>>>> parent of ff42f00... Rebel
         };
         accs[] = {
 			{ "optic_ACO_grn_smg", "", 1500, -1, "" }, //aco
