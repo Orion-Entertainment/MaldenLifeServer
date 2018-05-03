@@ -48,28 +48,28 @@ class WeaponShops {
 			{ "arifle_TRG21_F", "", 35000, -1, "mav_ttm_var_rebel > 0" }, //TRG21
 			{ "arifle_SPAR_01_blk_F", "", 45000, -1, "mav_ttm_var_rebel > 0" }, //SPAR16
 			{ "arifle_SDAR_F", "", 30000, -1, "mav_ttm_var_rebel > 0" }, //SDAR
-			{ "arifle_MXC_khk_F", "", 55000, -1, "mav_ttm_var_rebel > 2" }, //MXC
-			{ "arifle_MX_F", "", 65000, -1, "mav_ttm_var_rebel > 2" }, //MX
-			{ "arifle_CTAR_blk_F", "", 60000, -1, "mav_ttm_var_rebel > 2" }, //Car-95
-			{ "arifle_Katiba_F", "", 70000, -1, "mav_ttm_var_rebel > 2" }, //Katiba
-			{ "srifle_DMR_07_blk_F", "", 80000, -1, "mav_ttm_var_rebel > 2" }, //CMR-76
-			{ "arifle_ARX_blk_F", "", 80000, -1, "mav_ttm_var_rebel > 3" }, //Type 115
-			{ "arifle_MXM_F", "", 90000, -1, "mav_ttm_var_rebel > 3" }, //MXM
-			{ "arifle_SPAR_02_blk_F", "", 120000, -1, "mav_ttm_var_rebel > 3" }, //Spar-16
-			{ "LMG_03_F", "", 150000, -1, "mav_ttm_var_rebel > 3" }, //Lim-85
-			{ "arifle_AKM_F", "", 100000, -1, "mav_ttm_var_rebel > 3" }, //AKM
-			{ "srifle_DMR_01_F", "", 150000, -1, "mav_ttm_var_rebel > 3" }, //Rehim
-			{ "srifle_DMR_03_F", "", 200000, -1, "mav_ttm_var_rebel > 4" }, //Mk-1 EMR
-			{ "srifle_DMR_06_olive_F", "", 170000, -1, "mav_ttm_var_rebel > 4" }, //MK14
-			{ "arifle_SPAR_03_blk_F", "", 175000, -1, "mav_ttm_var_rebel > 4" }, //Spar-17
-			{ "arifle_CTARS_blk_F", "", 150000, -1, "mav_ttm_var_rebel > 4" }, //Car-95-1
-			{ "arifle_AK12_F", "", 175000, -1, "mav_ttm_var_rebel > 4" }, //AK-12
-			{ "LMG_Mk200_F", "", 300000, -1, "mav_ttm_var_rebel > 4" }, //MK200
-			{ "arifle_MX_SW_F", "", 200000, -1, "mav_ttm_var_rebel > 4" }, //MX SW
-			{ "srifle_EBR_F", "", 180000, -1, "mav_ttm_var_rebel > 5" }, //Mk18 ABR
-			{ "srifle_DMR_05_tan_F", "", 600000, -1, "mav_ttm_var_rebel > 5" }, //Cyrus
-			{ "srifle_DMR_02_sniper_F	", "", 500000, -1, "mav_ttm_var_rebel > 5" }, //MAR-10
-			{ "LMG_Zafir_F", "", 800000, -1, "mav_ttm_var_rebel > 5" } //Zafir	
+			{ "arifle_MXC_khk_F", "", 55000, -1, "mav_ttm_var_rebel >= 2" }, //MXC
+			{ "arifle_MX_F", "", 65000, -1, "mav_ttm_var_rebel > =2" }, //MX
+			{ "arifle_CTAR_blk_F", "", 60000, -1, "mav_ttm_var_rebel >= 2" }, //Car-95
+			{ "arifle_Katiba_F", "", 70000, -1, "mav_ttm_var_rebel >= 2" }, //Katiba
+			{ "srifle_DMR_07_blk_F", "", 80000, -1, "mav_ttm_var_rebel >= 2" }, //CMR-76
+			{ "arifle_ARX_blk_F", "", 80000, -1, "mav_ttm_var_rebel >= 3" }, //Type 115
+			{ "arifle_SPAR_02_blk_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //Spar-16
+			{ "LMG_03_F", "", 150000, -1, "mav_ttm_var_rebel >= 3" }, //Lim-85
+			{ "arifle_AKM_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //AKM
+			{ "srifle_DMR_01_F", "", 150000, -1, "mav_ttm_var_rebel >= 3" }, //Rehim
+			{ "arifle_MXM_F", "", 90000, -1, "mav_ttm_var_rebel >= 4" }, //MXM
+			{ "srifle_DMR_03_F", "", 200000, -1, "mav_ttm_var_rebel >= 4" }, //Mk-1 EMR
+			{ "srifle_DMR_06_olive_F", "", 170000, -1, "mav_ttm_var_rebel >= 4" }, //MK14
+			{ "arifle_SPAR_03_blk_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //Spar-17
+			{ "arifle_CTARS_blk_F", "", 150000, -1, "mav_ttm_var_rebel >= 4" }, //Car-95-1
+			{ "arifle_AK12_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //AK-12
+			{ "LMG_Mk200_F", "", 300000, -1, "mav_ttm_var_rebel >= 4" }, //MK200
+			{ "arifle_MX_SW_F", "", 200000, -1, "mav_ttm_var_rebel >= 4" }, //MX SW
+			{ "srifle_EBR_F", "", 180000, -1, "mav_ttm_var_rebel >= 5" }, //Mk18 ABR
+			{ "srifle_DMR_05_tan_F", "", 600000, -1, "mav_ttm_var_rebel >= 5" }, //Cyrus
+			{ "srifle_DMR_02_sniper_F	", "", 500000, -1, "mav_ttm_var_rebel >= 5" }, //MAR-10
+			{ "LMG_Zafir_F", "", 800000, -1, "mav_ttm_var_rebel >= 5" } //Zafir	
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
