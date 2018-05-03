@@ -67,9 +67,9 @@ class WeaponShops {
 			{ "arifle_AK12_F", "", 175000, -1, "mav_ttm_var_rebel > 4" }, //AK-12
 			{ "LMG_Mk200_F", "", 300000, -1, "mav_ttm_var_rebel > 4" }, //MK200
 			{ "arifle_MX_SW_F", "", 200000, -1, "mav_ttm_var_rebel > 4" }, //MX SW
-			{ "srifle_DMR_05_blk_F", "", 600000, -1, "mav_ttm_var_rebel > 5" }, //Cyrus
-			{ "srifle_DMR_02_F", "", 500000, -1, "mav_ttm_var_rebel > 5" }, //MAR-10
-			{ "LMG_Zafir_F", "", 800000, -1, "mav_ttm_var_rebel > 5" } //Zafir	
+			{ "srifle_DMR_05_blk_F", "", 600000, -1, "mav_ttm_var_rebel > 4" }, //Cyrus
+			{ "srifle_DMR_02_F", "", 500000, -1, "mav_ttm_var_rebel > 4" }, //MAR-10
+			{ "LMG_Zafir_F", "", 800000, -1, "mav_ttm_var_rebel > 4" } //Zafir	
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
