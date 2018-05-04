@@ -80,7 +80,6 @@ class CarShops {
             { "B_Quadbike_01_F", "" },
             { "B_G_Offroad_01_F", "" },
             { "O_MRAP_02_F", "" },
-			{ "O_T_MRAP_02_ghex_F", "" },
             { "B_Heli_Light_01_stripped_F", "" },
             { "O_T_LSV_02_unarmed_F", "" },
 			{ "B_T_LSV_01_unarmed_F", "" },
