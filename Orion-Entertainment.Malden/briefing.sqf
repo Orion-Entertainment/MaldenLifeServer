@@ -77,11 +77,17 @@ Consider this your one and only warning.<br/><br/>
             "Cop Interaction",
                 "
 Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-1. Civilians can be arrested for looking in cops' backpacks/vehicles. Constantly doing this will result in your removal from the server.<br/>
-2. Civilians can be arrested for following cops in game in order to give away their position.<br/>
-3. Civilians or Rebels who take up arms to kill cops in town or elsewhere for no RP reason will be considered RDMing. See RDMing section.<br/>
-4. Following and or harassing cops for long periods of time will be considered griefing and/or spamming, and will result in your removal from the server.<br/>
-5. Actively blocking cops from doing their duties can lead to your arrest. Constantly doing this will result in your removal from the server.<br/><br/>
+1. Officers must try their best to roleplay even when civilians are in jail and must not just restrict them to their cells unless having a good reason.<br/>
+2. Police must always crush vehicles used at Fed or Bank, whether the vehicle is illegal or not.<br/>
+3. Police must not crush vehicles at Fed or Bank until all robbers have been killed or restrained.<br/>
+4. Police are NOT to revive civilians.<br/>
+5. Police are ONLY allowed to spike strip moving vehicles.<br/>
+6. Officers are obliged to provide civilians with their name and rank.<br/>
+7. Officer may pull people out of a vehicle once it is immobilized or stationary.<br/>
+8. Do NOT use tasers to disable vehicles - it is considered FailRP.<br/>
+9. Do NOT use tasers to heal other officers.<br/>
+10. Do NOT detain civs in safe zones for having illegal guns on their back. Roleplay it out!!<br/>
+11. Armed vehicles are only allowed to be out/used for Major Crimes & Martial Law<br/><br/>
                 "
         ]
     ];
