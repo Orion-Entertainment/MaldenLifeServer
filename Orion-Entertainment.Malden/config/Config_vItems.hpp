@@ -1649,7 +1649,7 @@ class VirtualItems {
         variable = "heroinProcessed";
         displayName = "STR_Item_HeroinP";
         weight = 4;
-        buyPrice = 1200;
+        buyPrice = 3375;
         sellPrice = 2375;
         illegal = true;
         edible = -1;
