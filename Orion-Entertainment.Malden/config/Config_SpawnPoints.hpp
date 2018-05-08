@@ -117,13 +117,6 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
             };
-			
-			class Donator {
-                displayName = "Donator";
-                spawnMarker = "don_spawn";
-                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
-            };
         };
 
         class Cop {
