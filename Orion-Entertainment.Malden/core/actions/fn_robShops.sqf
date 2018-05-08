@@ -5,7 +5,7 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alrig
 _action = [_this,2] call BIS_fnc_param;//Action name
 _cops = (west countSide playableUnits);
 
-if(_cops < 5) exitWith {["You cannot rob this shop, 5 or more police need to be on",false,"slow"] call life_fnc_notificationSystem;};
+if(_cops < 3) exitWith {["You cannot rob this shop, 3 or more police need to be on",false,"slow"] call life_fnc_notificationSystem;};
 if(side _robber isEqualTo west) exitWith { ["What do you think you are doing?",false,"slow"] call life_fnc_notificationSystem; };
 if(side _robber isEqualTo independent) exitWith { ["What do you think you are doing?",false,"slow"] call life_fnc_notificationSystem; };
 if(_robber distance _shop > 20) exitWith { ["You need to be within 5 meters to rob this shop!",false,"slow"] call life_fnc_notificationSystem; };

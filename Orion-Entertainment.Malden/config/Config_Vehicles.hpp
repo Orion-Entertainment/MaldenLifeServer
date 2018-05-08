@@ -674,7 +674,7 @@ class LifeCfgVehicles {
             }, "call life_donorlevel >= 1" },
             { "Red", "civ", {
                 "images\textures\Donator\ifrit_red_front.jpg",
-                "images\textures\Donator\ifrit_red_back.jpg",
+                "images\textures\Donator\ifrit_red_back.jpg"
             }, "call life_donorlevel >= 2" },
             { "Gold", "civ", {
                 "images\textures\Donator\Ifrit_Gold_Front.jpg",

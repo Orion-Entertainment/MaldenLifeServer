@@ -68,7 +68,7 @@ class WeaponShops {
 			{ "arifle_MX_SW_F", "", 200000, -1, "mav_ttm_var_rebel >= 4" }, //MX SW
 			{ "srifle_EBR_F", "", 180000, -1, "mav_ttm_var_rebel >= 5" }, //Mk18 ABR
 			{ "srifle_DMR_05_tan_F", "", 600000, -1, "mav_ttm_var_rebel >= 5" }, //Cyrus
-			{ "srifle_DMR_02_sniper_F	", "", 500000, -1, "mav_ttm_var_rebel >= 5" }, //MAR-10
+			{ "srifle_DMR_02_sniper_F", "", 500000, -1, "mav_ttm_var_rebel >= 5" }, //MAR-10
 			{ "LMG_Zafir_F", "", 800000, -1, "mav_ttm_var_rebel >= 5" } //Zafir	
         };
         mags[] = {

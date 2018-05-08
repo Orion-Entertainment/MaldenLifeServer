@@ -58,8 +58,8 @@ class Life_Settings {
     /* ATM & Federal Reserve System Configurations */
     global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
     noatm_timer = 10; //Time in minutes that players cannot deposit money after selling stolen gold.
-    minimum_cops = 10; //!!!!!!change this before server launch
-    minimum_cops_bank = 7; //New bank
+    minimum_cops = 7; //!!!!!!change this before server launch
+    minimum_cops_bank = 5; //New bank
 
     /*Death settings*/
     drop_weapons_onDeath = true; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
@@ -133,9 +133,9 @@ class Life_Settings {
     hospital_heal_fee = 2000; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 750000; //Amount of cash in bank for new cops
-    bank_civ = 750000; //Amount of cash in bank for new civillians
-    bank_med = 750000; //Amount of cash in bank for new medics
+    bank_cop = 250000; //Amount of cash in bank for new cops
+    bank_civ = 250000; //Amount of cash in bank for new civillians
+    bank_med = 250000; //Amount of cash in bank for new medics
 
     paycheck_cop = 1350; //Payment for cops
     paycheck_civ = 1150; //Payment for civillians

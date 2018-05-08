@@ -9,7 +9,7 @@ _action = [_this,2] call BIS_fnc_param;//Action name
 _cops = (west countSide playableUnits);
 _vault = param [0,ObjNull,[ObjNull]];
 if(typeOf _vault == "Land_CargoBox_V1_F" && time - (bank_bank getVariable ["reset",time]) < 3200) exitWith {hint "The bank was recently robbed!";};
-if(_cops < 7) exitWith {["You cannot rob this shop, 7 or more police need to be on",false,"slow"] call life_fnc_notificationSystem;};
+if(_cops < 5) exitWith {["You cannot rob bank, 5 or more police need to be on",false,"slow"] call life_fnc_notificationSystem;};
 if(side _robber isEqualTo west) exitWith { ["What do you think you are doing?",false,"slow"] call life_fnc_notificationSystem; };
 if(side _robber isEqualTo independent) exitWith { ["What do you think you are doing?",false,"slow"] call life_fnc_notificationSystem; };
 if(_robber distance _shop > 25) exitWith { ["You need to be within 25 meters to rob this shop!",false,"slow"] call life_fnc_notificationSystem; };
