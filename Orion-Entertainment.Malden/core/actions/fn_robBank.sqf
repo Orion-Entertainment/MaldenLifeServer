@@ -18,15 +18,14 @@ if !(alive _robber) exitWith {};
 
 if(!([false,"codeCracker",1] call life_fnc_handleInv)) exitWith { ["You dont have a code Cracker",false,"slow"] call life_fnc_notificationSystem; };
 
-_bankReward = [
-
-	"goldenbarz3"
-];
-_reward = _bankReward select floor random count _bankReward;
+//Caculate Money To Give
+_copMoney = (west countSide playableUnits) * 15000;
+if (_copMoney > 175000) then {_copMoney = 175000;};
+if (_copMoney < 75000) then {_copMoney = 75000;};
+_kassa = _copmoney + round(random 50000);
 
 life_inv_codeCracker = life_inv_codeCracker - 1;
 
-_kassa = 80000 + round(random 30000);
 [1,format["ALARM! - %1 Robbery in progress", _shop]] remoteExec ["life_fnc_broadcast",west]; 
 remoteExec ['life_fnc_AAN_Bank2',-2];
 disableSerialization;
@@ -61,8 +60,7 @@ while{true} do
 	if(life_istazed) exitWith {  life_rip = false; ["You have been downed!",false,"slow"] call life_fnc_notificationSystem; 5 cutText ["","PLAIN"]; call life_fnc_hudUpdate;};
 
 5 cutText ["","PLAIN"];
-titleText[format["You have recieved $%1 and some gold bars from the robbery, Run!!",[_kassa] call life_fnc_numberText],"PLAIN"];
-[true,_reward,5] call life_fnc_handleInv;
+titleText[format["You have stolen $%1, Run!!",[_kassa] call life_fnc_numberText],"PLAIN"];
 findNearestPerson = findNearestPerson + _kassa;
 ["robbank"] spawn mav_ttm_fnc_addExp;
 [] call life_fnc_hudSetup;
@@ -72,8 +70,8 @@ _rip = false;
 life_use_atm = true; // Robber can not use the ATM at this point.
 //playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", player];
 if!(alive _robber) exitWith {};
-[0,format["Police News: The bank has just been robbed: the stolen ammount of money was $%3 and some gold bars!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",west];
-[0,format["Police News: The bank has just been robbed: the stolen ammount of money was $%3 and some gold bars, if you have seen the robbers, contact police!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",civilian];
+[0,format["Police News: The Bank has just been robbed: the stolen ammount of money was $%3!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",0];
+[0,format["Police News: The Bank has just been robbed: the stolen ammount of money was $%3!",name _robber, _shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast",0];
 [getPlayerUID _robber,name _robber,"19"] remoteExec ["life_fnc_wantedAdd",2];
 
 [] call life_fnc_hudUpdate;
