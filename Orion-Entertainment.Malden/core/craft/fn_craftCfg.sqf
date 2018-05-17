@@ -51,7 +51,7 @@ if (!alive player) then  {
 				["srifle_DMR_03_khaki_F", ["barrel",4, "trigger",5, "butt",4, "sight",6, "iron_refined",2, "steelplate",3, "sulfur",3, "cloth",4]], //145k - mk1
 				["arifle_AK12_F", ["barrel",4, "trigger",5, "butt",4, "sight",6, "iron_refined",4, "steelplate",3, "sulfur",3, "cloth",4]], //155k - ak12
 				["LMG_03_F", ["barrel",5, "trigger",5, "butt",4, "sight",6, "iron_refined",2, "steelplate",3, "sulfur",3, "cloth",4, "steel",10]], //250k - LIM
-				["srifle_LRR_tna_F", ["barrel",8, "trigger",8, "butt",8, "sight",10, "iron_refined",4, "steelplate",8, "sulfur",6, "cloth",8, "steel",15]] //280k - 408
+				["srifle_LRR_tna_F", ["barrel",15, "trigger",15, "butt",15, "sight",15, "iron_refined",7, "steelplate",12, "sulfur",9, "cloth",20, "steel",15]] //280k - 408
 			];
 		};
 
