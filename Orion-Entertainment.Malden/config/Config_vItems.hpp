@@ -613,8 +613,6 @@ class VirtualItems {
         icon = "images\icons\craft\barrel.paa";
 	};
 
-    };
-
     	class BTip {
         variable = "BTip";
         displayName = "STR_Item_BTip";
