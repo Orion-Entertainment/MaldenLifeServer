@@ -580,6 +580,52 @@ class VirtualItems {
         icon = "images\icons\craft\barrel.paa";
 	};
 
+    	class BPowder {
+        variable = "BPowder";
+        displayName = "STR_Item_BPowder";
+        weight = 1;
+        buyPrice = 10000;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "images\icons\craft\barrel.paa";
+	};
+
+    	class BPrimer {
+        variable = "BPrimer";
+        displayName = "STR_Item_BPrimer";
+        weight = 1;
+        buyPrice = 10000;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "images\icons\craft\barrel.paa";
+	};
+
+    	class BShell {
+        variable = "BShell";
+        displayName = "STR_Item_BShell";
+        weight = 1;
+        buyPrice = 10000;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "images\icons\craft\barrel.paa";
+	};
+
+    };
+
+    	class BTip {
+        variable = "BTip";
+        displayName = "STR_Item_BTip";
+        weight = 1;
+        buyPrice = 10000;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "images\icons\craft\barrel.paa";
+	};
+
 	class butt {
         variable = "butt";
         displayName = "STR_Item_Butt";

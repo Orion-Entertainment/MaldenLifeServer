@@ -120,7 +120,9 @@ class WeaponShops {
 			{ "optic_DMS", "", 3000, -1, "" }, //dms
 			{ "acc_flashlight", "", 750, -1, "" }, //flashlight
 			{ "acc_flashlight_pistol", "", 750, -1, "" }, //flashlight
-			{ "bipod_01_F_blk", "", 2000, -1, "" } //bipod
+			{ "bipod_01_F_blk", "", 2000, -1, "" }, //bipod
+			{ "optic_AMS_snd", "", 700000, -1, "mav_ttm_var_rebel >= 5" }, //AMS
+			{ "optic_LRPS_tna_F", "", 1000000, -1, "mav_ttm_var_rebel >= 5" } //LRPS
         };
     };
 
