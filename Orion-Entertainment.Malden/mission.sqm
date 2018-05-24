@@ -493,7 +493,7 @@ class AddonsMetaData
 randomSeed=15937995;
 class ScenarioData
 {
-	author="OrionLife.enjin.com";
+	author="orion-entertainment.net";
 	overviewText="Orion-Entertainment Team";
 	overviewTextLocked="Orion-Entertainment Team";
 	overViewPicture="images\textures\armalife.paa";

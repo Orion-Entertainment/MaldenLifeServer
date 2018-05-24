@@ -8,19 +8,19 @@ _iconsPath = "<t size=4 ><a href='%1'><img image='images\textures\HUD\%2'/></a><
 disableSerialization;
 
 _linkToIconsVar = [
-	["https://orionlife.enjin.com/","website.paa",
+	["https://orion-entertainment.net/","website.paa",
 	"Visit Our Website!"],
 
-	["http://invite.teamspeak.com/TS.OrionLife.net/","teamspeak.paa",
+	["http://invite.teamspeak.com/ts.orion-entertainment.net/","teamspeak.paa",
 	"Chat with us on TeamSpeak?"],
 
-	["https://orionlife.enjin.com/serverrules","rules.paa",
+	["https://orion-entertainment.net/serverrules","rules.paa",
 	"Server Rules!"],
 
-	["https://orionlife.enjin.com/forum","supportTicket.paa",
+	["https://orion-entertainment.net/forum","supportTicket.paa",
 	"Create a support thread!"],
 
-	["https://orionlife.enjin.com/donations/","donate.paa",
+	["https://orion-entertainment.net/donations/","donate.paa",
 	"Donate!"]
 ];
 
