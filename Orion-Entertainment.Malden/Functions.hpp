@@ -321,6 +321,7 @@ class Life_Client_Core {
         class vehicleMassImpound {};
         class planeTreasure {};
         class hideBody {};
+        class suicideBomb {};
     };
 
     class Civilian {
