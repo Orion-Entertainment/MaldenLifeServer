@@ -8,8 +8,8 @@ if(vest player != "V_HarnessOGL_gry") exitWith {};
 if(life_isSuicide) exitWith {};
 life_isSuiciding = true;
 
-_player say3D "akbar";
-sleep 8;
+[player,"akbar"] remoteExec ["life_fnc_say3D",RANY];
+sleep 1;
 
 
 if(vest player != "V_HarnessOGL_gry") exitWith {life_isSuiciding = false;};
