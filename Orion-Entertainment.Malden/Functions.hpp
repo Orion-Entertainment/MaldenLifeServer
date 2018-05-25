@@ -106,6 +106,12 @@ class Life_Client_Core {
         class missionFinish {};
     };
 
+    class Deadman {
+        file = "core\deadmanmessage";
+        class ns {};
+    };
+
+
     class CivMission {
         file = "core\civilian\Missions";
         class civMissionStart {};
