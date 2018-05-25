@@ -7,7 +7,7 @@ if ((!isDedicated) && (player != player)) then
 //the suicide bomber
 _bomber = player;
 
-_explosives = ["V_HarnessOGL_gry"];
+_explosives = ["SatchelCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSBoundingMine_Range_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","IEDUrbanBig_Remote_Mag","IEDLandBig_Remote_Mag","IEDUrbanSmall_Remote_Mag","IEDLandSmall_Remote_Mag","HandGrenade","MiniGrenade","HandGrenade_Stone"];
 
 _respawn_event_id = _bomber addEventHandler["Respawn", {[player] execVM "scripts\suicide_bomber\suicide_bomber_reset.sqf"}];
 _bomber setVariable["Suicide_Bomber_Respawn_Event", _respawn_event_id];
@@ -61,7 +61,7 @@ while{true} do {
 				//This means that they can't release or cancel the switch, here we put everything so it runs correctly
 				
 				//If the player has any explosives on them
-				if(vest player = "V_HarnessOGL_gry")) then {
+				if("SatchelCharge_Remote_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "ATMine_Range_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "APERSMine_Range_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "APERSBoundingMine_Range_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "SLAMDirectionalMine_Wire_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "APERSTripMine_Wire_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "ClaymoreDirectionalMine_Remote_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "DemoCharge_Remote_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "IEDUrbanBig_Remote_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "IEDLandBig_Remote_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "IEDUrbanSmall_Remote_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "IEDLandSmall_Remote_Mag" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "HandGrenade" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "MiniGrenade" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber) || "HandGrenade_Stone" in (items _bomber + assignedItems _bomber + backpackitems _bomber + vestItems _bomber + uniformItems _bomber)) then {
 					if((isNil "_allah") && (isNil "_dead")) then {
 						//They have the actions, but no ID has been defined to AllahuAkbar and DeadMansSwitch, call for a check.
 						call _perform_check;
