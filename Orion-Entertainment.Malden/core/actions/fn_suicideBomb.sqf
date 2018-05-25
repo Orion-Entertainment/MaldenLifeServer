@@ -13,11 +13,9 @@ sleep 8;
 
 
 if(vest player != "V_HarnessOGL_gry") exitWith {life_isSuiciding = false;};
-if((player getVariable "restrained")) exitWith {life_isSuiciding = false;}; //He's restrained.
-if((player getVariable "zipted")) exitWith {life_isSuiciding = false;}; //He's restrained.
-if(vest player = "V_HarnessOGL_gry") then _player addAction ["Deadman Switch", "fn_deadman.sqf"]
-_player=_this select 0;
-if (!alive player) then life_isSuiciding = true
+if((player getVariable "restrained")) exitWith {life_isSuiciding = true;}; //He's restrained.
+if((player getVariable "zipted")) exitWith {life_isSuiciding = true;}; //He's restrained.
+if (!alive player) then {life_isSuiciding = true;};
 
 //BOOM    
 removeVest player;
