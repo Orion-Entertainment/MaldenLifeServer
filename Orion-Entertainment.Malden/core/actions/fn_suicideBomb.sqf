@@ -5,18 +5,21 @@
 */
 private["_boom", "_list"];
 _player = player;
-hint "I'm a noob dev"
+hint "I'm a noob dev";
 // Pre checks
-if(vest player != "V_HarnessOGL_gry" || player getVariable "restrained" || player getVariable "zipted") exitWith {}; // If restrained, don't allow blow up.
+if(vest player != "V_HarnessOGL_gry") exitWith {hint "c";}; // If restrained, don't allow blow up.
+if(player getVariable "restrained") exitWith {hint "b";};
+if(player getVariable "zipted") exitWith {hint "a";};
+
 
 // If switch not set, assign switch and listen for player death
 if(!(player getVariable "is_dead_man")) then {
-  hint "1"
+  hint "1";
   player setVariable["is_dead_man", true]; // Enable dead man
 
   // add an event listener for when the player dies, explode when occurs.
 	player addEventHandler ["Killed", {
-    hint "2"
+    hint "2";
     // Explosion Begin - Advise you put this in its own script file and call it here, like so
     // execVM "location/to/the_below_code.sqf";
     // ------------------- Begin explosion code -----------------------------
