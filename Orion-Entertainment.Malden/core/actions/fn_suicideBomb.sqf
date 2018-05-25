@@ -5,7 +5,7 @@
 */
 private["_boom", "_list"];
 _player = player;
-
+hint "You now have a Suicide Vest!";
 // Pre checks
 if(vest player != "V_HarnessOGL_gry" || player getVariable "restrained" || player getVariable "zipted") exitWith {}; // If restrained, don't allow blow up.
 
