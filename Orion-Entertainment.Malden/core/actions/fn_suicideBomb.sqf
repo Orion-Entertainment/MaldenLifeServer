@@ -15,7 +15,6 @@ sleep 8;
 if(vest player != "V_HarnessOGL_gry") exitWith {life_isSuiciding = false;};
 if((player getVariable "restrained")) exitWith {life_isSuiciding = false;}; //He's restrained.
 if((player getVariable "zipted")) exitWith {life_isSuiciding = false;}; //He's restrained.
-if (!alive player) then life_isSuiciding = false;
 
 //BOOM    
 removeVest player;
