@@ -5,12 +5,12 @@
 */
 private["_boom", "_list"];
 _player = player;
-hint "You now have a Suicide Vest!";
+hint "TEST"
 // Pre checks
 if(vest player != "V_HarnessOGL_gry" || player getVariable "restrained" || player getVariable "zipted") exitWith {}; // If restrained, don't allow blow up.
 
 // If switch not set, assign switch and listen for player death
-if(player getVariable "is_dead_man" == false) then {
+if(isNil player getVariable "is_dead_man") then {
   player setVariable["is_dead_man", true]; // Enable dead man
 
   // add an event listener for when the player dies, explode when occurs.
@@ -37,7 +37,7 @@ if(player getVariable "is_dead_man" == false) then {
 };
 
 // If switch already enabled, blow up and remove previous event listener
-if(player getVariable "is_dead_man" == true) then {
+if(player getVariable "is_dead_man") then {
   // remove the event handler previously set by the switch, might interfere with any other death events you have!
   // It may be possible for it to work wihtout the below line, depending on if the framework sorts any killed events out for you
   player removeEventHandler ["Killed", 0];
