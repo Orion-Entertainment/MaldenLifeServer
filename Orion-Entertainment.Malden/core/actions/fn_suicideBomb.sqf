@@ -3,35 +3,25 @@
     ALAH SNACKBAR!
     Tim is bae, hopefully this code works, I haven't done arma 3 sqfs in years
 */
-private["_boom", "_list"];
-_player = player;
-hint "I'm a noob dev";
-// Pre checks
-if(vest player != "V_HarnessOGL_gry") exitWith {hint "c";}; // If restrained, don't allow blow up.
-if(player getVariable "restrained") exitWith {hint "b";};
-if(player getVariable "zipted") exitWith {hint "a";};
 
+private["_boom"];
 
-// If switch not set, assign switch and listen for player death
-if(!(player getVariable "is_dead_man")) then {
-  hint "1";
-  player setVariable["is_dead_man", true]; // Enable dead man
+// Pre-checks
+if(vest player != "V_HarnessOGL_gry" || player getVariable "restrained" || player getVariable "zipted") exitWith {};
 
-  // add an event listener for when the player dies, explode when occurs.
-	player addEventHandler ["Killed", {
-    hint "2";
-    // Explosion Begin - Advise you put this in its own script file and call it here, like so
-    // execVM "location/to/the_below_code.sqf";
+if(isNil {player getVariable "is_dead_man"}) then { // If no switch set, set to true and listen for death to explode
+  player setVariable["is_dead_man", true];
+	player addEventHandler ["killed", {
     // ------------------- Begin explosion code -----------------------------
-    [player,"akbar"] remoteExec ["life_fnc_say3D",RANY]; // Play pre-suicide audio
-    sleep 1; // Wait for audio to complete
+    [player,"akbar"] remoteExec ["life_fnc_say3D",RANY];
+    sleep 1;
     removeVest player;
     removeAllWeapons player:
     removeAllAssignedItems player;
-    _boom = "Bo_Mk82" createVehicle [0,0,9999]; // Create bomb high up in the air
-    _boom setPos (getPos player); // Repos bomb to player loc
-    _boom setVelocity [100,0,0]; // Set bomb damage
-    if(alive player) then {player setDamage 1;}; // Kill Player
+    _boom = "Bo_Mk82" createVehicle [0,0,9999];
+    _boom setPos (getPos player);
+    _boom setVelocity [100,0,0];
+    if(alive player) then {player setDamage 1;};
     player setVariable["zipted", false, true];
     player setVariable["restrained", false, true];
     [] call SOCK_fnc_updateRequest;
@@ -39,29 +29,23 @@ if(!(player getVariable "is_dead_man")) then {
     // ------------------- End explosion code -----------------------------
 	}];
   hint "Dead Man's Switch has been enabled! I will blow up when killed or on your next command!";
-};
-
-// If switch already enabled, blow up and remove previous event listener
-if(player getVariable "is_dead_man") then {
-  // remove the event handler previously set by the switch, might interfere with any other death events you have!
-  // It may be possible for it to work wihtout the below line, depending on if the framework sorts any killed events out for you
-  player removeEventHandler ["Killed", 0];
-
-  // Explosion Begin - Advise you put this in its own script file and call it here, like so
-  // execVM "location/to/the_below_code.sqf";
-  // ------------------- Begin explosion code -----------------------------
-  [player,"akbar"] remoteExec ["life_fnc_say3D",RANY]; // Play pre-suicide audio
-  sleep 1; // Wait for audio to complete
-  removeVest player;
-  removeAllWeapons player:
-  removeAllAssignedItems player;
-  _boom = "Bo_Mk82" createVehicle [0,0,9999]; // Create bomb high up in the air
-  _boom setPos (getPos player); // Repos bomb to player loc
-  _boom setVelocity [100,0,0]; // Set bomb damage
-  if(alive player) then {player setDamage 1;}; // Kill Player
-  player setVariable["zipted", false, true];
-  player setVariable["restrained", false, true];
-  [] call SOCK_fnc_updateRequest;
-  [0,format["BREAKING NEWS: A suicide vest was detonated by %1!",profileName]] remoteExec ["life_fnc_broadcast",0];
-  // ------------------- End explosion code -----------------------------
+} else {
+  if((player getVariable "is_dead_man") isEqualTo true) then { // If switch already set, insta-explode
+    player removeEventHandler ["killed", 0]; // Remove event handler, may cause conflicts!
+    // ------------------- Begin explosion code -----------------------------
+    [player,"akbar"] remoteExec ["life_fnc_say3D",RANY];
+    sleep 1;
+    removeVest player;
+    removeAllWeapons player:
+    removeAllAssignedItems player;
+    _boom = "Bo_Mk82" createVehicle [0,0,9999];
+    _boom setPos (getPos player);
+    _boom setVelocity [100,0,0];
+    if(alive player) then {player setDamage 1;};
+    player setVariable["zipted", false, true];
+    player setVariable["restrained", false, true];
+    [] call SOCK_fnc_updateRequest;
+    [0,format["BREAKING NEWS: A suicide vest was detonated by %1!",profileName]] remoteExec ["life_fnc_broadcast",0];
+    // ------------------- End explosion code -----------------------------
+  };
 };
