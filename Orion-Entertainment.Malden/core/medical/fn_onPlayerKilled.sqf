@@ -20,6 +20,23 @@ if(playerside isEqualTo west) then
 	life_deadcopgear = [uniform player,[uniformItems player],vest player,[vestItems player],backpack player,[backpackItems player],headgear player, goggles player, secondaryWeapon player,[secondaryWeaponItems player]];
 };
 
+if((_unit getVariable "needs_suicide_action") isEqualTo true) then {
+  _unit setVariable["needs_suicide_action", false];
+  // ------------------- Begin explosion code -----------------------------
+  removeVest _unit;
+  removeAllWeapons _unit:
+  removeAllAssignedItems _unit;
+  _boom = "Bo_Mk82" createVehicle [0,0,9999];
+  _boom setPos (getPos _unit);
+  _boom setVelocity [100,0,0];
+  if(alive _unit) then {_unit setDamage 1;};
+  _unit setVariable["zipted", false, true];
+  _unit setVariable["restrained", false, true];
+  [] call SOCK_fnc_updateRequest;
+  [0,format["BREAKING NEWS: A suicide vest was detonated!"]] remoteExec ["life_fnc_broadcast",0];
+  // ------------------- End explosion code -----------------------------
+};
+
 
 if  !((vehicle _unit) isEqualTo _unit) then {
     UnAssignVehicle _unit;
