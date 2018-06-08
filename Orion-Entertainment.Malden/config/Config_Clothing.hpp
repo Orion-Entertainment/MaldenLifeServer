@@ -69,7 +69,11 @@ class Clothing {
             { "U_OrestesBody", "Surfing On Land", 550, "" },
             { "U_C_man_sport_1_F", "", 75, "" },
             { "U_NikosBody", "Nikos", 2500, "" },
-            { "U_NikosAgedBody", "Casual Wears", 2500, "" }
+            { "U_NikosAgedBody", "Casual Wears", 2500, "" },
+            { "U_I_Soldier_VR", "Admin Suit - Mod", 0, "call life_adminlevel >= 1" },
+            { "U_B_Soldier_VR", "Admin Suit - Admin", 0, "call life_adminlevel >= 1" },
+            { "U_C_Soldier_VR", "Admin Suit - Senior Admin", 0, "call life_adminlevel >= 1" },
+            { "U_O_Soldier_VR", "Founder", 0, "call life_adminlevel >= 1" }
 
         };
         headgear[] = {
