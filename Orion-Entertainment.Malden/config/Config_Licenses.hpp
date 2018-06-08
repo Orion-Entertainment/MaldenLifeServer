@@ -32,10 +32,26 @@ class Licenses {
         side = "civ";
     };
 
-    class gun {
+    class gun1 {
         variable = "gun";
-        displayName = "STR_License_Firearm";
+        displayName = "Class 1 Firearms";
         price = 10000;
+        illegal = false;
+        side = "civ";
+    };
+
+    class gun2 {
+        variable = "gun";
+        displayName = "Class 2 Firearms";
+        price = 25000;
+        illegal = false;
+        side = "civ";
+    };
+
+    class gun3 {
+        variable = "gun";
+        displayName = "Class 3 Firearms";
+        price = 45000;
         illegal = false;
         side = "civ";
     };
