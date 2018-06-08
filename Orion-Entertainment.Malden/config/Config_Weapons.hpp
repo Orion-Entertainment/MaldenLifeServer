@@ -2,19 +2,27 @@ class WeaponShops {
     class gun {
         name = "Gun Shop";
         side = "civ";
-        conditions = "license_civ_gun";
+        conditions = "";
         items[] = {
-			{ "hgun_Rook40_F", "", 5000, -1, "" }, //Rook
-            { "hgun_Pistol_heavy_02_F", "", 7500, -1, "" }, //Zubr
-            { "hgun_ACPC2_F", "", 15000, -1, "" }, //45 ACP
-			{ "hgun_P07_F", "", 17000, -1, "" }, //P07
-			{ "hgun_PDW2000_F", "", 20000, -1, "" } //PDW
+			{ "hgun_Rook40_F", "", 5000, -1, "license_civ_gun1" }, //Rook
+            { "hgun_Pistol_heavy_02_F", "", 7500, -1, "license_civ_gun1" }, //Zubr
+            { "hgun_ACPC2_F", "", 15000, -1, "license_civ_gun1" }, //45 ACP
+			{ "hgun_PDW2000_F", "", 20000, -1, "license_civ_gun2" }, //PDW
+			{ "SMG_05_F", "", 25000, -1, "license_civ_gun2" }, //Protector
+			{ "SMG_01_F", "", 30000, -1, "license_civ_gun2" }, //Vermin
+			{ "arifle_TRG21_F", "", 45000, -1, "license_civ_gun3" }, //TRG
+			{ "arifle_Mk20_F", "", 45000, -1, "license_civ_gun3" }, //Mk-20
+			{ "arifle_SPAR_01_blk_F", "", 140000, -1, "license_civ_gun3" } //Spar16
         };
         mags[] = {
 			{ "30Rnd_9x21_Mag", "", 100, 50, "" }, //9mm
 			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
             { "6Rnd_45ACP_Cylinder", "", 100, 50, "" }, //zubr
-            { "9Rnd_45ACP_Mag", "", 100, 50, "" } //acp
+            { "9Rnd_45ACP_Mag", "", 100, 50, "" }, //acp
+			{ "30Rnd_45ACP_Mag_SMG_01", "", 100, 50, "" }, //vermin
+			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //MK20
+			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //TRG
+			{ "30Rnd_556x45_Stanag", "", 100, 50, "" } //spar16
         };
         accs[] = {
 			{ "optic_Arco", "", 2500, -1, "" }, //arco
@@ -54,7 +62,7 @@ class WeaponShops {
 			{ "arifle_Katiba_F", "", 70000, -1, "mav_ttm_var_rebel >= 2" }, //Katiba
 			{ "srifle_DMR_07_blk_F", "", 80000, -1, "mav_ttm_var_rebel >= 2" }, //CMR-76
 			{ "arifle_ARX_blk_F", "", 80000, -1, "mav_ttm_var_rebel >= 3" }, //Type 115
-			{ "arifle_SPAR_02_blk_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //Spar-16
+			{ "arifle_SPAR_02_blk_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //Spar-16s
 			{ "LMG_03_F", "", 150000, -1, "mav_ttm_var_rebel >= 3" }, //Lim-85
 			{ "arifle_AKM_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //AKM
 			{ "srifle_DMR_01_F", "", 150000, -1, "mav_ttm_var_rebel >= 3" }, //Rehim
