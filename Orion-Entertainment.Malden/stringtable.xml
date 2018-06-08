@@ -7738,8 +7738,30 @@
             <Portuguese>Licença de Barco</Portuguese>
             <Polish>Patent Motorowodny</Polish>
         </Key>
-        <Key ID="STR_License_Firearm">
-            <Original>Firearm License</Original>
+        <Key ID="STR_License_Firearm1">
+            <Original>Class 1 Firearms License</Original>
+            <Czech>zbrojní průkaz</Czech>
+            <Spanish>Licencia de Armas</Spanish>
+            <Russian></Russian>
+            <German>Waffenschein</German>
+            <French>Permis de Port d'Arme</French>
+            <Italian>Porto d'Armi</Italian>
+            <Portuguese>Licença de Porte de Armas</Portuguese>
+            <Polish>Pozwolenie na broń</Polish>
+        </Key>
+        <Key ID="STR_License_Firearm2">
+            <Original>Class 2 Firearms License</Original>
+            <Czech>zbrojní průkaz</Czech>
+            <Spanish>Licencia de Armas</Spanish>
+            <Russian></Russian>
+            <German>Waffenschein</German>
+            <French>Permis de Port d'Arme</French>
+            <Italian>Porto d'Armi</Italian>
+            <Portuguese>Licença de Porte de Armas</Portuguese>
+            <Polish>Pozwolenie na broń</Polish>
+        </Key>
+        <Key ID="STR_License_Firearm3">
+            <Original>Class 3 Firearms License</Original>
             <Czech>zbrojní průkaz</Czech>
             <Spanish>Licencia de Armas</Spanish>
             <Russian></Russian>

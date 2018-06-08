@@ -34,7 +34,7 @@ class Licenses {
 
     class gun1 {
         variable = "gun1";
-        displayName = "Class 1 Firearms";
+        displayName = "STR_License_Firearm1";
         price = 10000;
         illegal = false;
         side = "civ";
@@ -42,7 +42,7 @@ class Licenses {
 
     class gun2 {
         variable = "gun2";
-        displayName = "Class 2 Firearms";
+        displayName = "STR_License_Firearm2";
         price = 25000;
         illegal = false;
         side = "civ";
@@ -50,7 +50,7 @@ class Licenses {
 
     class gun3 {
         variable = "gun3";
-        displayName = "Class 3 Firearms";
+        displayName = "STR_License_Firearm3";
         price = 45000;
         illegal = false;
         side = "civ";
