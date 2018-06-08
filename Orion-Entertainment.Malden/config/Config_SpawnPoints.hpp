@@ -117,6 +117,13 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
             };
+
+            class reb_spawn {
+                displayName = "Rebel Spawn";
+                spawnMarker = "reb_spawn";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
         };
 
         class Cop {

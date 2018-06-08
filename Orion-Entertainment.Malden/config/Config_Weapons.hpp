@@ -143,28 +143,14 @@ class WeaponShops {
 			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
             { "Binocular", "", 150, 75, "" },      //Binocular
             { "ItemGPS", "", 100, 50, "" },       //GPS
-			{ "hgun_Rook40_F", "", 5000, -1, "" }, //Rook
-            { "hgun_Pistol_heavy_02_F", "", 7500, -1, "" }, //Zubr
-            { "hgun_ACPC2_F", "", 15000, -1, "" }, //45 ACP
-			{ "hgun_PDW2000_F", "", 20000, -1, "" }, //PDW
-			{ "SMG_05_F", "", 25000, -1, "" }, //Protector
-			{ "SMG_01_F", "", 30000, -1, "" }, //vermin
-			{ "arifle_AKS_F", "", 40000, -1, "" }, //AKS
-            { "arifle_SDAR_F", "", 45000, -1, "" }, //sdar
-            { "arifle_Mk20_plain_F", "", 50000, -1, "" }, //mk20
-            { "arifle_TRG21_F", "", 50000, -1, "" }, //TRG21
-			{ "arifle_CTAR_hex_F", "", 55000, -1, "" } //car95
+			{ "MMG_01_tan_F", "", 1300000, 50, "mav_ttm_var_rebel >= 5" },       //Navid
+			{ "MMG_02_sand_F", "", 1500000, 50, "mav_ttm_var_rebel >= 5" },       //GPS
+			{ "launch_RPG7_F", "", 700000, 50, "mav_ttm_var_rebel >= 5" }       //RPG-7
         };
         mags[] = {
-            { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
-            { "30Rnd_556x45_Stanag", "", 100, 50, "" }, //sdar,mk20,trg21,spar16 
-			{ "30Rnd_45ACP_Mag_SMG_01", "", 100, 50, "" }, //vermin
-			{ "30Rnd_545x39_Mag_F", "", 200, 100, "" }, //aks
-			{ "30Rnd_9x21_Mag", "", 100, 50, "" }, //9mm
-			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
-            { "6Rnd_45ACP_Cylinder", "", 100, 50, "" }, //zubr
-            { "9Rnd_45ACP_Mag", "", 100, 50, "" }, //acp
-			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" } //car95
+            { "150Rnd_93x64_Mag", "", 50000, 50, "" }, //Navid
+            { "130Rnd_338_Mag", "", 50000, 50, "" }, //SPMG
+			{ "RPG7_F", "", 250000, 50, "" } //RPG-7
         };
         accs[] = {
 			{ "optic_ACO_grn_smg", "", 2500, 1250, "" }, //aco
@@ -178,6 +164,15 @@ class WeaponShops {
 			{ "optic_DMS", "", 10000, -1, "" }, //dms
 			{ "acc_flashlight", "", 750, 375, "" }, //flashlight
 			{ "acc_flashlight_pistol", "", 750, 375, "" }, //flashlight
+			{ "muzzle_snds_H", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_L", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_M", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_B", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_H_MG", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_338_sand", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_58_blk_F", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_65_TI_blk_F", "", 1000, 375, "" }, //Suppressor
+			{ "muzzle_snds_93mmg_tan", "", 1000, 375, "" }, //Suppressor
 			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
         };
     };
