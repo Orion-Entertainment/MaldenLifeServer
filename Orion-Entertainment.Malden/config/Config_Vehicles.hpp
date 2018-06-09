@@ -553,7 +553,7 @@ class LifeCfgVehicles {
     class I_MRAP_03_F {
         vItemSpace = 100;
         conditions = "";
-        price = 200000;
+        price = 2000000;
         textures[] = {
 			{ "EMS Strider", "med", {
                 "images\textures\Vehicles\Medical\ems_strider.paa"
@@ -1182,7 +1182,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "images\textures\Vehicles\Medical\medHeli.paa)"
             }, "" },
             { "Police", "cop", {
-                "images\textures\Vehicles\Cop\Police_Orca_white.jpg"
+                "images\Textures\Vehicles\Cop\Police_Orca_white.jpg"
             }, "" }
         };
     };
@@ -1205,7 +1205,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
             { "Police", "cop", {
-                "images\textures\Vehicles\Cop\Police_Orca_white.jpg"
+                "images\Textures\Vehicles\Cop\Police_Orca_white.jpg"
             }, "" },
             { "EMS", "med", {
                 "images\textures\Vehicles\Medical\EMSOrca.paa"
