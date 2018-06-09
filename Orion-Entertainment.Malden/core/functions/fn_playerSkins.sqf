@@ -18,7 +18,7 @@ switch (playerSide) do {
     };
 
     case west: {
-        if (uniform player isEqualTo "U_Rangemaster" && FETCH_CONST(life_coplevel) >= 1) then {
+        if (uniform player isEqualTo "U_B_CombatUniform_mcam" && FETCH_CONST(life_coplevel) >= 1) then {
             player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\1jeriah.paa"];
         };
         if (uniform player isEqualTo "U_B_CombatUniform_mcam" && FETCH_CONST(life_coplevel) >= 2) then {

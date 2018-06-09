@@ -362,7 +362,6 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_Rangemaster", $STR_C_Cop_uniforms, 75, "" },
             { "U_B_CombatUniform_mcam", $STR_C_Cop_uniforms, 200, "" }
         };
         headgear[] = {

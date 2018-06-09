@@ -21,7 +21,7 @@ class CarShops {
         side = "civ";
         conditions = "mav_ttm_var_rebel >= 5";
         vehicles[] = {
-            { "B_Quadbike_01_F", "" }		
+            { "I_MRAP_03_F", "" }		
         };
     };
 
@@ -560,6 +560,9 @@ class LifeCfgVehicles {
             }, "" },
 			{ "EMS Strider Breast Cancer", "med", {
                 "images\textures\Vehicles\Medical\BC_medicstrider.paa"
+            }, "" },
+            { "Galaxy", "civ", {
+                "images\textures\Vehicles\Civ\galaxy_strider.jpg"
             }, "" }
         };
     };
@@ -1177,6 +1180,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
             { "EMS", "med", {
                 "images\textures\Vehicles\Medical\medHeli.paa)"
+            }, "" },
+            { "Police", "cop", {
+                "images\textures\Vehicles\Cop\Police_Orca_white.jpg"
             }, "" }
         };
     };
