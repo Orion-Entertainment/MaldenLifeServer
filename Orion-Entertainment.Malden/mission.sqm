@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=554;
+	toggles=682;
 	class ItemIDProvider
 	{
-		nextID=46423;
+		nextID=46425;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2692;
+		nextID=2840;
 	};
 	class Camera
 	{
-		pos[]={696.13574,52.494915,12179.055};
-		dir[]={-0.11486207,-0.89728892,-0.42629081};
-		up[]={-0.2334445,0.44144994,-0.86638808};
-		aside[]={-0.96558511,-2.5716145e-007,0.26017201};
+		pos[]={712.08112,94.39492,12190.755};
+		dir[]={-0.082410641,-0.77674729,-0.62444127};
+		up[]={-0.10163213,0.62979442,-0.77008635};
+		aside[]={-0.99143088,-2.3879693e-008,0.13084342};
 	};
 };
 binarizationWanted=0;
@@ -540,7 +540,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			dataType="Layer";
@@ -32999,7 +32999,7 @@ class Mission
 					position[]={6116.5918,85.562988,10844.32};
 					name="reb_car_1";
 					type="Empty";
-					angle=178.24898;
+					angle=178.24895;
 					id=3250;
 					atlOffset=-34.480446;
 				};
@@ -34199,7 +34199,7 @@ class Mission
 					colorName="Color1_FD_F";
 					a=0.69999999;
 					b=0.69999999;
-					angle=359.50089;
+					angle=359.50085;
 					id=46379;
 					atlOffset=0.0097808838;
 				};
@@ -34459,7 +34459,7 @@ class Mission
 					position[]={699.08502,28.919922,12172.914};
 					name="black_car_1";
 					type="Empty";
-					angle=359.24896;
+					angle=359.2489;
 					id=46421;
 					atlOffset=-7.8201294e-005;
 				};
@@ -34468,7 +34468,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={700.29498,29.971363,12137.804};
+						position[]={699.97046,29.971363,12137.758};
 						angles[]={0,3.0696852,0};
 					};
 					side="Empty";
@@ -34525,7 +34525,7 @@ class Mission
 				};
 			};
 			id=46050;
-			atlOffset=82.897415;
+			atlOffset=82.888985;
 		};
 		class Item5
 		{
@@ -100700,7 +100700,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Towns";
-			state=1;
 			class Entities
 			{
 				items=6;
@@ -105434,7 +105433,7 @@ class Mission
 							colorName="ColorGreen";
 							a=0.80000001;
 							b=0.80000001;
-							angle=105.99995;
+							angle=105.99993;
 							id=46254;
 							atlOffset=0.060407639;
 						};
@@ -107561,7 +107560,7 @@ class Mission
 									position[]={8355.4531,20.24057,3119.4014};
 									name="civ_car_1";
 									type="Empty";
-									angle=195.44717;
+									angle=195.44714;
 									id=3143;
 									atlOffset=0.90056992;
 								};
@@ -107571,7 +107570,7 @@ class Mission
 									position[]={8363.3359,21.281693,3117.9241};
 									name="civ_car_1_1";
 									type="Empty";
-									angle=196.65747;
+									angle=196.65744;
 									id=3144;
 									atlOffset=1.9416924;
 								};
@@ -107626,7 +107625,7 @@ class Mission
 									position[]={8181.1978,18.018066,3142.2346};
 									name="civ_spawn_Port";
 									type="Empty";
-									angle=295.71198;
+									angle=295.71194;
 									id=6982;
 									atlOffset=-4.0834541;
 								};
@@ -107654,7 +107653,7 @@ class Mission
 									colorName="ColorBlue";
 									a=0.69999999;
 									b=0.69999999;
-									angle=338.36639;
+									angle=338.36636;
 									id=7019;
 									atlOffset=209.58171;
 								};
@@ -107731,7 +107730,7 @@ class Mission
 									position[]={8367.8037,240.30986,3087.1904};
 									name="car_g_11";
 									type="Empty";
-									angle=281.56644;
+									angle=281.56641;
 									id=31852;
 									atlOffset=220.96986;
 								};
@@ -107751,7 +107750,7 @@ class Mission
 									position[]={8180.6968,0,3142.4819};
 									name="jail_release";
 									type="Empty";
-									angle=289.31769;
+									angle=289.31766;
 									id=40604;
 									atlOffset=-22.101685;
 								};
@@ -131827,7 +131826,7 @@ class Mission
 										{
 											dataType="Trigger";
 											position[]={8757.3018,3.8652878,3728.6179};
-											angle=3.1400387;
+											angle=3.1400385;
 											class Attributes
 											{
 												onActivation="BarGate_Bridge1 animate [""Door_1_rot"", 1]";
@@ -132149,16 +132148,18 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8007.4771,39.101192,4076.6235};
+								position[]={8007.4771,39.100998,4076.624};
 								angles[]={0,0.61086524,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=46240;
 							type="Land_CashDesk_F";
+							atlOffset=0.11100006;
 						};
 						class Item97
 						{
@@ -132213,7 +132214,6 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								disableSimulation=1;
 								dynamicSimulation=1;
 							};
 							id=46239;
@@ -132312,7 +132312,7 @@ class Mission
 						};
 					};
 					id=45439;
-					atlOffset=2.7047157;
+					atlOffset=2.7047043;
 				};
 				class Item4
 				{
@@ -134887,7 +134887,7 @@ class Mission
 							colorName="ColorGreen";
 							a=0.69999999;
 							b=0.69999999;
-							angle=294.33829;
+							angle=294.33826;
 							id=46341;
 							atlOffset=214.76035;
 						};
@@ -140605,7 +140605,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={9684.1318,38.889999,3902.542};
-							angle=3.1051321;
+							angle=3.1051316;
 							class Attributes
 							{
 								onActivation="Gate_3 animate [""Door_1_rot"", 1]";
@@ -182647,7 +182647,7 @@ class Mission
 					colorName="Color1_FD_F";
 					a=0.69999999;
 					b=0.69999999;
-					angle=359.50089;
+					angle=359.50085;
 					id=46383;
 					atlOffset=-7.8201294e-005;
 				};
@@ -182656,7 +182656,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={699.07141,29.983364,12137.815};
+						position[]={698.5799,29.983364,12137.713};
 						angles[]={0,3.1910553,0};
 					};
 					side="Empty";
@@ -183100,6 +183100,77 @@ class Mission
 			};
 			id=46380;
 			atlOffset=0.23955727;
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7994.6011,38.866486,4067.24};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=46424;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=46423;
 		};
 	};
 };
