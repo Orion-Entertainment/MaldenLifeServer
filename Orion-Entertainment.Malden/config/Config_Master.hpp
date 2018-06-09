@@ -62,7 +62,7 @@ class Life_Settings {
     minimum_cops_bank = 5; //New bank
 
     /*Death settings*/
-    drop_weapons_onDeath = true; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
+    drop_weapons_onDeath = false; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
 
     /* Lumber Related Settings */
     enable_lumbering = true;

@@ -17,6 +17,14 @@ class CarShops {
         };
     };
 
+    class civ_black {
+        side = "civ";
+        conditions = "mav_ttm_var_rebel >= 5";
+        vehicles[] = {
+            { "B_Quadbike_01_F", "" }		
+        };
+    };
+
     class kart_shop {
         side = "civ";
         conditions = "";
@@ -838,7 +846,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
             { "Police", "cop", {
-                "images\Textures\Vehicles\Cop\police_offroad.paa"
+                "images\Textures\Vehicles\Cop\Police_offroad_orion_white.jpg"
             }, "" },
             { "EMS", "med", {
                 "images\Textures\Vehicles\Medical\med_offroad.paa"
@@ -889,7 +897,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
             { "Police", "cop", {
-                "images\Textures\Vehicles\Cop\police_hatchback.paa"
+                "images\Textures\Vehicles\Cop\Police_Hatchback_orion_white.jpg"
             }, "" },
 			{ "Bugatti", "civ", {
                 "images\Textures\Donator\BugattiHatchback.paa"
@@ -1031,7 +1039,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
             { "Police", "cop", {
-                "images\Textures\Vehicles\Cop\police_suv.paa"
+                "images\Textures\Vehicles\Cop\Police_suv_orion_white.jpg"
             }, "" },
             { "EMS", "med", {
                 "images\Textures\Vehicles\Medical\Msuv.paa"
@@ -1110,7 +1118,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 245000;
         textures[] = {
             { "Police", "cop", {
-                "images\Textures\Vehicles\Cop\police_heli.paa"
+                "images\Textures\Vehicles\Cop\Police_Hummingbird_orion_white.jpg"
             }, "" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -1189,6 +1197,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Black", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
+            }, "" },
+            { "Police", "cop", {
+                "images\textures\Vehicles\Cop\Police_Orca_white.jpg"
             }, "" },
             { "EMS", "med", {
                 "images\textures\Vehicles\Medical\EMSOrca.paa"
