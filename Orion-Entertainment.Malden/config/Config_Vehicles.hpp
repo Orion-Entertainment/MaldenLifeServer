@@ -161,20 +161,20 @@ class CarShops {
 
     class cop_swat {
         side = "cop";
-        conditions = "License_cop_swat";
+        conditions = "license_cop_swat";
         vehicles[] = {
-            { "B_MRAP_01_F", "License_cop_swat" },
-            { "I_MRAP_03_F", "License_cop_swat" },
-            { "B_MRAP_01_hmg_F", "License_cop_swat" },
-			{ "I_MRAP_03_hmg_F", "License_cop_swat" }
+            { "B_MRAP_01_F", "license_cop_swat" },
+            { "I_MRAP_03_F", "license_cop_swat" },
+            { "B_MRAP_01_hmg_F", "license_cop_swat" },
+			{ "I_MRAP_03_hmg_F", "license_cop_swat" }
         };
     };
 
     class swat_air {
         side = "cop";
-        conditions = "License_cop_swat";
+        conditions = "license_cop_swat";
         vehicles[] = {
-            { "B_Heli_Transport_01_camo_F", "License_cop_swat" }
+            { "B_Heli_Transport_01_camo_F", "license_cop_swat" }
         };
     };
 
@@ -1278,7 +1278,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
             { "Police", "cop", {
-                "images\Textures\Vehicles\Cop\Police_Orca_white.jpg"
+                "images\textures\Vehicles\Cop\Police_Orca_white.jpg"
             }, "" },
             { "EMS", "med", {
                 "images\textures\Vehicles\Medical\EMSOrca.paa"

@@ -324,7 +324,7 @@ class WeaponShops {
 	class cop_swat {
         name = "S.W.A.T. Armory";
         side = "cop";
-        license = "license_cop_swat";
+		conditions = "license_cop_swat";
         items[] = { 
 			{ "Binocular", "", 50 },
 			{ "Rangefinder", "", 100 },

@@ -390,7 +390,7 @@ class Clothing {
 
     class swat {
         title = "S.W.A.T. Clothing Shop";
-        conditions = "";
+        conditions = "license_cop_swat";
         side = "cop";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
