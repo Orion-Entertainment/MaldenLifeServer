@@ -147,6 +147,13 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
 			};
+
+            class SwatHQ {
+                displayName = "S.W.A.T. HQ";
+                spawnMarker = "swat_spawn";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
 			
 			class training {
 				displayName = "Training Grounds";

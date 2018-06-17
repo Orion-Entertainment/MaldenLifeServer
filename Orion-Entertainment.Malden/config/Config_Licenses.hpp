@@ -261,6 +261,14 @@ class Licenses {
         side = "civ";
     };
 
+    class swat {
+        variable = "swat";
+        displayName = "STR_Swat";
+        price = 0;
+        illegal = false;
+        side = "cop";
+    };
+
     class cg {
         variable = "cg";
         displayName = "STR_License_CG";

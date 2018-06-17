@@ -388,6 +388,38 @@ class Clothing {
         };
     };
 
+    class swat {
+        title = "S.W.A.T. Clothing Shop";
+        conditions = "";
+        side = "cop";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+            { "U_B_T_Soldier_F", "S.W.A.T. Uniform", 200, "" }
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+            { "H_Cap_police", "", 25, "" },
+			{ "H_CrewHelmetHeli_B", "Gas Mask", 1000, "" },
+			{ "H_Beret_blk_POLICE", "", 25, "" },
+			{ "H_Beret_Colonel", "", 25, "" }
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" },
+            { "G_Aviator", "", 100, "" }
+        };
+        vests[] = {
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+            { "V_TacVest_blk_POLICE", "", 1000, "" },
+			{ "V_PlateCarrier2_blk", "", 1000, "" },
+            { "V_PlateCarrier1_blk", "", 2500, "" }
+        };
+        backpacks[] = {
+            { "NONE", $STR_C_Remove_backpacks, 0, "" },
+            { "B_Carryall_cbr", "", 3500, "" },
+			{ "B_Parachute", "", 1500, "" }
+        };
+    };
+
     class dive {
         title = "STR_Shops_C_Diving";
         conditions = "license_civ_dive";

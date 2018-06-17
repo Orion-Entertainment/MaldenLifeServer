@@ -389,6 +389,17 @@
             <Portuguese>Roupa Mike's</Portuguese>
             <Polish>Mike's Odzież</Polish>
         </Key>
+        <Key ID="STR_Swat">
+            <Original>S.W.A.T. License </Original>
+            <Czech>Jeriah's Střelné zbraně</Czech>
+            <Spanish>Tienda de Armas de Jeriah's</Spanish>
+            <Russian></Russian>
+            <German>Jeriah's Schusswaffen</German>
+            <Italian>Armeria di Jeriah's</Italian>
+            <French>Armurerie de Jeriah's</French>
+            <Portuguese>Armas de fogo Jeriah's</Portuguese>
+            <Polish>Broń palna Jeriah's</Polish>
+        </Key>
         <Key ID="STR_Shops_W_Gun">
             <Original>Jeriah's Firearms</Original>
             <Czech>Jeriah's Střelné zbraně</Czech>

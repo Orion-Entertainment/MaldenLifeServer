@@ -154,7 +154,27 @@ class CarShops {
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
 			{ "C_Offroad_02_unarmed_black_F", "call life_coplevel >= 4" },
             { "B_MRAP_01_F", "call life_coplevel >= 4" },
-			{ "B_T_LSV_01_unarmed_black_F", "call life_coplevel >= 5" }
+			{ "B_T_LSV_01_unarmed_black_F", "call life_coplevel >= 5" },
+            { "B_MRAP_01_hmg_F", "call life_coplevel >= 6" }
+        };
+    };
+
+    class cop_swat {
+        side = "cop";
+        conditions = "License_cop_swat";
+        vehicles[] = {
+            { "B_MRAP_01_F", "License_cop_swat" },
+            { "I_MRAP_03_F", "License_cop_swat" },
+            { "B_MRAP_01_hmg_F", "License_cop_swat" },
+			{ "I_MRAP_03_hmg_F", "License_cop_swat" }
+        };
+    };
+
+    class swat_air {
+        side = "cop";
+        conditions = "License_cop_swat";
+        vehicles[] = {
+            { "B_Heli_Transport_01_camo_F", "License_cop_swat" }
         };
     };
 
@@ -538,6 +558,18 @@ class LifeCfgVehicles {
         textures[] = { };
     };
 
+    class B_Heli_Transport_01_camo_F {
+        vItemSpace = 45;
+        conditions = "";
+        price = 5000;
+        textures[] = { 
+            { "S.W.A.T.", "cop", {
+                "images\textures\Vehicles\Cop\police_ghost1.paa",
+                "images\textures\Vehicles\Cop\police_ghost2.paa"
+            }, "" }
+        };
+    };
+
     class B_Heli_Transport_01_F {
         vItemSpace = 200;
         conditions = "license_cop_cAir || {!(playerSide isEqualTo west)}";
@@ -563,6 +595,29 @@ class LifeCfgVehicles {
             }, "" },
             { "Galaxy", "civ", {
                 "images\textures\Vehicles\Civ\galaxy_strider.jpg"
+            }, "" },
+            { "S.W.A.T.", "cop", {
+                "images\textures\Vehicles\Cop\swatstrider.paa"
+            }, "" }
+        };
+    };
+
+    class I_MRAP_03_hmg_F {
+        vItemSpace = 100;
+        conditions = "";
+        price = 200000;
+        textures[] = {
+			{ "EMS Strider", "med", {
+                "images\textures\Vehicles\Medical\ems_strider.paa"
+            }, "" },
+			{ "EMS Strider Breast Cancer", "med", {
+                "images\textures\Vehicles\Medical\BC_medicstrider.paa"
+            }, "" },
+            { "Galaxy", "civ", {
+                "images\textures\Vehicles\Civ\galaxy_strider.jpg"
+            }, "" },
+            { "S.W.A.T.", "cop", {
+                "images\textures\Vehicles\Cop\swatstrider.paa"
             }, "" }
         };
     };
@@ -1097,9 +1152,27 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "";
         price = 90000;
         textures[] = {
-            { "Special Ops", "cop", {
+            { "Police", "cop", {
                 "images\Textures\Vehicles\Cop\police_hunterFront.paa",
                 "images\Textures\Vehicles\Cop\police_hunterBack.paa"
+            }, "" },
+             { "S.W.A.T.", "cop", {
+                "images\Textures\Vehicles\Cop\hunterswat.paa"
+            }, "" },
+        };
+    };
+
+    class B_MRAP_01_hmg_F {
+        vItemSpace = 85;
+        conditions = "";
+        price = 100000;
+        textures[] = {
+            { "Police", "cop", {
+                "images\Textures\Vehicles\Cop\police_hunterFront.paa",
+                "images\Textures\Vehicles\Cop\police_hunterBack.paa"
+            }, "" },
+             { "S.W.A.T.", "cop", {
+                "images\Textures\Vehicles\Cop\hunterswat.paa"
             }, "" },
         };
     };
