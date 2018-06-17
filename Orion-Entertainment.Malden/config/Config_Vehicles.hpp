@@ -1247,7 +1247,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {
+    class C_Heli_Light_01_civil_F {
         vItemSpace = 75;
         price = 245000;
         textures[] = {
@@ -1262,7 +1262,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 150;
-        conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
+        conditions = "";
         price = 450000;
         textures[] = {
             { "White / Blue", "civ", {
