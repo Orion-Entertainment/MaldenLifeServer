@@ -80,6 +80,7 @@ class Clothing {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_CrewHelmetHeli_B", "Hazmat Breather", 6000, "" },
             { "H_Bandanna_blu", "Blue Bandanna", 60, "" },
+			{ "H_PASGT_neckprot_blue_press_F", "Press Helmet", 60, "" },
             { "H_Bandanna_surfer", "Surfer Bandanna", 65, "" },
             { "H_Bandanna_gry", "Grey Bandanna", 75, "" },
             { "H_Bandanna_cbr", "", 80, "" },
@@ -135,6 +136,7 @@ class Clothing {
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
+			{ "V_Press_F", "", 2500, "" },
             { "V_DeckCrew_blue_F", "", 4500, "" }, //Apex
             { "V_DeckCrew_brown_F", "", 4500, "" },
             { "V_DeckCrew_green_F", "", 4500, "" },
@@ -565,6 +567,7 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_5_F", "", 100, "" },
 			{ "U_I_Wetsuit", "", 100, "" },
             { "U_I_C_Soldier_Bandit_3_F", "", 100, "" },
+			{ "U_C_ConstructionCoverall_Red_F", "", 100, "" },
             { "U_IG_Guerilla1_1", "", 4500, "" },
             { "U_I_G_Story_Protagonist_F", "", 8750, "" },
             { "U_I_G_resistanceLeader_F", "", 4750, "" },
@@ -607,6 +610,7 @@ class Clothing {
             { "H_MilCap_oucamo", "", 500, "" },
             { "H_MilCap_gen_F", "", 400, "" },
             { "H_MilCap_tna_F", "", 400, "" },
+			{ "H_Construction_basic_red_F", "", 400, "" },
             { "H_Beret_gen_F", "", 2000, "" },
             { "H_Bandanna_mcamo", "", 250, "" },
             { "H_Bandanna_camo", "", 250, "" },
@@ -614,6 +618,8 @@ class Clothing {
             { "H_Booniehat_indp", " Booniehat (Khaki)", 500, "" },
             { "H_Booniehat_tna_F", "Booniehat (Tropic)", 500, "" },
             { "H_TurbanO_blk", "Black Turban", 500, "" },
+			{ "H_Beret_blk", "Black Beret", 500, "" },
+			{ "H_Beret_red", "Red Beret", 500, "" },
             { "H_Hat_camo", "", 500, "" },
             { "H_HelmetO_ocamo", "", 1000, "" },
             { "H_HelmetO_ghex_F", "", 1000, "" },
@@ -661,10 +667,16 @@ class Clothing {
             { "G_Bandanna_oli", "", 150, "" },
             { "G_Bandanna_shades", "", 150, "" },
             { "G_Bandanna_sport", "", 150, "" },
+			{ "G_Bandana_aviator", "", 150, "" },
+			{ "H_BandMask_demon", "", 150, "" },
+			{ "H_BandMask_blk", "", 150, "" },
+			{ "	H_BandMask_reaper", "", 150, "" },
             { "G_Bandanna_tan", "", 150, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
+			{ "V_DeckCrew_red_F", "", 1500, "" },
+			{ "V_Plain_crystal_F", "", 1500, "" },
             { "V_TacVest_camo", "", 3250, "" },
             { "V_TacVest_khk", "", 3250, "" },
 			{ "V_PlateCarrier1_rgr", "", 12000, "" },
