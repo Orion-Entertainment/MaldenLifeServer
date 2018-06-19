@@ -22,7 +22,10 @@ switch (playerSide) do {
             player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\1jeriah.paa"];
         };
         if (uniform player isEqualTo "U_B_T_Soldier_F" && FETCH_CONST(life_coplevel) >= 1) then {
-            player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\swat.jpg"];
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\marshalt.jpg"];
+        };
+        if (uniform player isEqualTo "U_Marshal" && FETCH_CONST(life_coplevel) >= 1) then {
+            player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\marshal.jpg"];
         };
         if (uniform player isEqualTo "U_B_CombatUniform_mcam" && FETCH_CONST(life_coplevel) >= 2) then {
             player setObjectTextureGlobal [0, "images\Textures\Uniform\Cop\2jeriah.paa"];

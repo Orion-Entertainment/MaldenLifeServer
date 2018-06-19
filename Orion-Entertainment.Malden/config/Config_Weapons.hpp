@@ -322,7 +322,7 @@ class WeaponShops {
     };
 
 	class cop_swat {
-        name = "S.W.A.T. Armory";
+        name = "Marshal Armory";
         side = "cop";
 		conditions = "license_cop_swat";
         items[] = { 
@@ -397,7 +397,7 @@ class WeaponShops {
 			{ "srifle_LRR_camo_F", "", 500 },
 			{ "launch_MRAWS_sand_F", "", 500 },
 			{ "HandGrenade_Stone", "Flashbang", 500 },
-			{ "SmokeShellYellow", "Tear Gas", 500, -1 }
+			{ "SmokeShellGreen", "Tear Gas", 500, -1 }
             
         };
         mags[] = {

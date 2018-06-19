@@ -19,9 +19,10 @@ if !(alive _robber) exitWith {};
 
 
 //Caculate how many gold bars to give
-_goldBarAmount = round((west countSide playableUnits) * 0.5);
-if (_goldBarAmount > 10) then {_goldBarAmount = 10;};
-if (_goldBarAmount < 3) then {_goldBarAmount = 3;};
+_goldBarAmount = 14;
+//round((west countSide playableUnits) * 0.5);
+//if (_goldBarAmount > 10) then {_goldBarAmount = 10;};
+//if (_goldBarAmount < 3) then {_goldBarAmount = 3;};
 
 if(!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith { ["You dont have a Blasting Charge",false,"slow"] call life_fnc_notificationSystem; };
 life_inv_blastingcharge = life_inv_blastingcharge - 1;

@@ -391,16 +391,18 @@ class Clothing {
     };
 
     class swat {
-        title = "S.W.A.T. Clothing Shop";
+        title = "Marshal Clothing Shop";
         conditions = "license_cop_swat";
         side = "cop";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_B_T_Soldier_F", "S.W.A.T. Uniform", 200, "" }
+            { "U_Marshal", "Marshal Uniform", 200, "" },
+            { "U_B_T_Soldier_F", "Marshal Tactical Uniform", 200, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_Cap_police", "", 25, "" },
+            { "H_Cap_marshal", "", 25, "" },
 			{ "H_CrewHelmetHeli_B", "Gas Mask", 1000, "" },
 			{ "H_Beret_blk_POLICE", "", 25, "" },
 			{ "H_Beret_Colonel", "", 25, "" }
@@ -618,7 +620,6 @@ class Clothing {
             { "H_Booniehat_indp", " Booniehat (Khaki)", 500, "" },
             { "H_Booniehat_tna_F", "Booniehat (Tropic)", 500, "" },
             { "H_TurbanO_blk", "Black Turban", 500, "" },
-			{ "H_Beret_blk", "Black Beret", 500, "" },
 			{ "H_Beret_red", "Red Beret", 500, "" },
             { "H_Hat_camo", "", 500, "" },
             { "H_HelmetO_ocamo", "", 1000, "" },

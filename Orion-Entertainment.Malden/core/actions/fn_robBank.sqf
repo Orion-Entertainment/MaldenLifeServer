@@ -19,9 +19,10 @@ if !(alive _robber) exitWith {};
 if(!([false,"codeCracker",1] call life_fnc_handleInv)) exitWith { ["You dont have a code Cracker",false,"slow"] call life_fnc_notificationSystem; };
 
 //Caculate Money To Give
-_copMoney = (west countSide playableUnits) * 15000;
-if (_copMoney > 175000) then {_copMoney = 175000;};
-if (_copMoney < 75000) then {_copMoney = 75000;};
+_copMoney = 750000; 
+//(west countSide playableUnits) * 15000;
+//if (_copMoney > 750000) then {_copMoney = 750000;};
+//if (_copMoney < 75000) then {_copMoney = 75000;};
 _kassa = _copmoney + round(random 50000);
 
 life_inv_codeCracker = life_inv_codeCracker - 1;

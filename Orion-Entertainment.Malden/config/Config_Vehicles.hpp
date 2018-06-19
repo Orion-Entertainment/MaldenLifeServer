@@ -21,7 +21,8 @@ class CarShops {
         side = "civ";
         conditions = "mav_ttm_var_rebel >= 5";
         vehicles[] = {
-            { "I_MRAP_03_F", "" }		
+            { "I_MRAP_03_F", "" },		
+            { "O_MRAP_02_hmg_F", "" }
         };
     };
 
@@ -166,7 +167,13 @@ class CarShops {
             { "B_MRAP_01_F", "license_cop_swat" },
             { "I_MRAP_03_F", "license_cop_swat" },
             { "B_MRAP_01_hmg_F", "license_cop_swat" },
-			{ "I_MRAP_03_hmg_F", "license_cop_swat" }
+			{ "I_MRAP_03_hmg_F", "license_cop_swat" },
+            { "O_LSV_02_armed_black_F", "license_cop_swat" },
+            { "C_Hatchback_01_F", "license_cop_swat" },
+            { "C_Offroad_01_F", "license_cop_swat" },
+            { "C_SUV_01_F", "license_cop_swat" },
+            { "C_Hatchback_01_sport_F", "license_cop_swat" },
+            { "C_Offroad_02_unarmed_F", "license_cop_swat" }
         };
     };
 
@@ -208,7 +215,7 @@ class CarShops {
             { "C_Scooter_Transport_01_F", "" },
             { "C_Boat_Civil_01_police_F", "" },
             { "C_Boat_Transport_02_F", "" }, 
-            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 3" },
+            { "O_Boat_Armed_01_hmg_F", "call life_coplevel >= 3" },
             { "B_SDV_01_F", "" }
         };
     };
@@ -284,6 +291,15 @@ class LifeCfgVehicles {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_red_co.paa"
             }, "" },
             { "White", "civ", {
+                "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
+            }, "" },
+            { "Orange", "cop", {
+                "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_orange_co.paa"
+            }, "" },
+            { "Red", "cop", {
+                "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_red_co.paa"
+            }, "" },
+            { "White", "cop", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
             }, "" }
         };
@@ -411,6 +427,29 @@ class LifeCfgVehicles {
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
             }, "" },
             { "Green Hex", "civ", {
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa"
+            }, "" }
+        };
+    };
+
+    class O_LSV_02_armed_black_F {
+        vItemSpace = 100;
+        conditions = "";
+        price = 100000;
+        textures[] = {
+            { "Arid", "cop", {
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_arid_CO.paa"
+            }, "" },
+            { "Black", "cop", {
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_black_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+            }, "" },
+            { "Green Hex", "cop", {
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa",
                 "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa"
@@ -596,8 +635,8 @@ class LifeCfgVehicles {
             { "Galaxy", "civ", {
                 "images\textures\Vehicles\Civ\galaxy_strider.jpg"
             }, "" },
-            { "S.W.A.T.", "cop", {
-                "images\textures\Vehicles\Cop\swatstrider.paa"
+            { "Marshal", "cop", {
+                "images\textures\Vehicles\Cop\Marshal_Strider.jpg"
             }, "" }
         };
     };
@@ -616,13 +655,13 @@ class LifeCfgVehicles {
             { "Galaxy", "civ", {
                 "images\textures\Vehicles\Civ\galaxy_strider.jpg"
             }, "" },
-            { "S.W.A.T.", "cop", {
-                "images\textures\Vehicles\Cop\swatstrider.paa"
+            { "Marshal.", "cop", {
+                "images\textures\Vehicles\Cop\Marshal_Strider.jpg"
             }, "" }
         };
     };
 
-    class B_Boat_Armed_01_minigun_F {
+    class O_Boat_Armed_01_hmg_F {
         vItemSpace = 175;
         conditions = "license_cop_cg || {!(playerSide isEqualTo west)}";
         price = 75000;
@@ -729,6 +768,29 @@ class LifeCfgVehicles {
         vItemSpace = 150;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 750000;
+        textures[] = {
+			{ "Arid", "civ", {
+                "a3\soft_f\MRAP_02\data\MRAP_02_ext_01_co.paa",
+				"a3\soft_f\MRAP_02\data\MRAP_02_ext_02_co.paa"
+            }, "" },
+            { "Camo", "civ", {
+                "images\textures\Donator\ifrit_r1.paa",
+                "images\textures\Donator\ifrit_r2.paa",
+            }, "call life_donorlevel >= 1" },
+            { "Red", "civ", {
+                "images\textures\Donator\ifrit_red_front.jpg",
+                "images\textures\Donator\ifrit_red_back.jpg"
+            }, "call life_donorlevel >= 2" },
+            { "Gold", "civ", {
+                "images\textures\Donator\Ifrit_Gold_Front.jpg",
+                "images\textures\Donator\Ifrit_Gold_Back.jpg"
+            }, "call life_donorlevel >= 3" }
+		};
+
+        class O_MRAP_02_hmg_F {
+        vItemSpace = 150;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 5000000;
         textures[] = {
 			{ "Arid", "civ", {
                 "a3\soft_f\MRAP_02\data\MRAP_02_ext_01_co.paa",
@@ -908,6 +970,21 @@ class LifeCfgVehicles {
             }, "" },
             { "EMS", "med", {
                 "images\Textures\Vehicles\Medical\med_offroad.paa"
+            }, "" },
+            { "Blue", "cop", {
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa",
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa"
+            }, "" },
+            { "Dark Red", "cop", {
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa",
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa"
+            }, "" },
+            { "Blue / White", "cop", {
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
+                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
+            }, "" },
+            { "Taxi", "cop", {
+                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" }
         };
     };
@@ -965,7 +1042,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "call life_donorlevel >= 1" },
 			{ "Galaxy", "civ", {
                 "images\Textures\Donator\CivGalaxy.paa"
-            }, "call life_donorlevel >= 2" }
+            }, "call life_donorlevel >= 2" },
+            { "Bugatti", "cop", {
+                "images\Textures\Donator\BugattiHatchback.paa"
+            }, "" },
+			{ "Retro", "cop", {
+                "images\Textures\Donator\RetroHatchback.paa"
+            }, "" },
+			{ "Galaxy", "cop", {
+                "images\Textures\Donator\CivGalaxy.paa"
+            }, "" }
         };
     };
 
@@ -1075,6 +1161,18 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
+            }, "" },
+            { "Yellow", "cop", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa"
+            }, "" },
+            { "White", "cop", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa"
+            }, "" },
+            { "Grey", "cop", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa"
+            }, "" },
+            { "Black", "cop", {
+                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             }, "" }
         };
     };
@@ -1113,7 +1211,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "call life_donorlevel >= 2" },
 			{ "Weeaboo", "civ", {
                 "images\Textures\Donator\WEEABOOSUV.paa"
-            }, "call life_donorlevel >= 2" }
+            }, "call life_donorlevel >= 2" },
+            { "Gold and Black", "cop", {
+                "images\Textures\Donator\GoldandBlackSUV.paa"
+            }, "" },
+			{ "Graffiti", "cop", {
+                "images\Textures\Donator\GraffitiSUV.paa"
+            }, "" },
         };
     };
 
@@ -1156,9 +1260,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "images\Textures\Vehicles\Cop\police_hunterFront.paa",
                 "images\Textures\Vehicles\Cop\police_hunterBack.paa"
             }, "" },
-             { "S.W.A.T.", "cop", {
-                "images\Textures\Vehicles\Cop\hunterswat.paa"
-            }, "" },
+             { "Marshal", "cop", {
+                "images\Textures\Vehicles\Cop\Marshal_Hunter_Front.jpg",
+                "images\Textures\Vehicles\Cop\Marshal_Hunter_Back.jpg"
+            }, "" }
         };
     };
 
@@ -1171,9 +1276,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "images\Textures\Vehicles\Cop\police_hunterFront.paa",
                 "images\Textures\Vehicles\Cop\police_hunterBack.paa"
             }, "" },
-             { "S.W.A.T.", "cop", {
-                "images\Textures\Vehicles\Cop\hunterswat.paa"
-            }, "" },
+             { "Marshal", "cop", {
+                "images\Textures\Vehicles\Cop\Marshal_Hunter_Front.jpg",
+                "images\Textures\Vehicles\Cop\Marshal_Hunter_Back.jpg"
+            }, "" }
         };
     };
 
