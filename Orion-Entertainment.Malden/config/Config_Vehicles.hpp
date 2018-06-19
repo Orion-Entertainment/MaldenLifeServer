@@ -786,6 +786,7 @@ class LifeCfgVehicles {
                 "images\textures\Donator\Ifrit_Gold_Back.jpg"
             }, "call life_donorlevel >= 3" }
 		};
+    };
 
         class O_MRAP_02_hmg_F {
         vItemSpace = 150;
