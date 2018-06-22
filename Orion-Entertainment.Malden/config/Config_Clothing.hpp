@@ -597,6 +597,7 @@ class Clothing {
             { "U_B_CombatUniform_mcam_tshirt", "", 2500, "" },
             { "U_B_CombatUniform_mcam", "", 2500, "" },
             { "U_I_CombatUniform_shortsleeve", "", 2500, "" },
+			{ "U_C_Scientist", "", 2500, "" },
             { "U_B_GEN_Soldier_F", "", 3500, "" },
             { "U_BG_Guerilla1_1", "", 2500, "" },
             { "U_BG_Guerilla2_2", "", 2500, "" },
@@ -667,12 +668,7 @@ class Clothing {
             { "G_Bandanna_khk", "", 150, "" },
             { "G_Bandanna_oli", "", 150, "" },
             { "G_Bandanna_shades", "", 150, "" },
-            { "G_Bandanna_sport", "", 150, "" },
-			{ "G_Bandana_aviator", "", 150, "" },
-			{ "H_BandMask_demon", "", 150, "" },
-			{ "H_BandMask_blk", "", 150, "" },
-			{ "	H_BandMask_reaper", "", 150, "" },
-            { "G_Bandanna_tan", "", 150, "" }
+            { "G_Bandanna_sport", "", 150, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
