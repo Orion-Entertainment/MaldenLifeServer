@@ -475,7 +475,7 @@ class Clothing {
 
     class gun_clothing {
         title = "STR_Shops_C_Gun";
-        conditions = "license_civ_gun";
+        conditions = "license_civ_gun1 || license_civ_gun2 || license_civ_gun3";
         side = "civ";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" }

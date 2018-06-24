@@ -155,8 +155,7 @@ class CarShops {
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
 			{ "C_Offroad_02_unarmed_black_F", "call life_coplevel >= 4" },
             { "B_MRAP_01_F", "call life_coplevel >= 4" },
-			{ "B_T_LSV_01_unarmed_black_F", "call life_coplevel >= 5" },
-            { "B_MRAP_01_hmg_F", "call life_coplevel >= 6" }
+			{ "B_T_LSV_01_unarmed_black_F", "call life_coplevel >= 5" }
         };
     };
 
@@ -166,9 +165,8 @@ class CarShops {
         vehicles[] = {
             { "B_MRAP_01_F", "license_cop_swat" },
             { "I_MRAP_03_F", "license_cop_swat" },
-            { "B_MRAP_01_hmg_F", "license_cop_swat" },
-			{ "I_MRAP_03_hmg_F", "license_cop_swat" },
             { "O_LSV_02_armed_black_F", "license_cop_swat" },
+            { "C_Offroad_02_unarmed_black_F", "license_cop_swat" },
             { "C_Hatchback_01_F", "license_cop_swat" },
             { "C_Offroad_01_F", "license_cop_swat" },
             { "C_SUV_01_F", "license_cop_swat" },
@@ -466,6 +464,9 @@ class LifeCfgVehicles {
 			{ "Police", "cop", {
                 "#(argb,8,8,3)color(0.0,0.0,0.0,1)",
                 "#(argb,8,8,3)color(0.0,0.0,0.0,1)"
+            }, "" },
+            { "Marshal", "cop", {
+                "images\textures\Vehicles\Cop\Marshal_Prowler.jpg"
             }, "" }
 		};
 	};
@@ -602,7 +603,7 @@ class LifeCfgVehicles {
         conditions = "";
         price = 5000;
         textures[] = { 
-            { "S.W.A.T.", "cop", {
+            { "Marshal", "cop", {
                 "images\textures\Vehicles\Cop\police_ghost1.paa",
                 "images\textures\Vehicles\Cop\police_ghost2.paa"
             }, "" }
@@ -1219,6 +1220,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Graffiti", "cop", {
                 "images\Textures\Donator\GraffitiSUV.paa"
             }, "" },
+            { "Marshal", "cop", {
+                "images\Textures\Vehicles\Cop\Marshal_SUV.jpg"
+            }, "" }
         };
     };
 

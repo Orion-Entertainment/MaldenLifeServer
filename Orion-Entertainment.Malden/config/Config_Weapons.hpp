@@ -334,7 +334,6 @@ class WeaponShops {
             { "ItemWatch", "", 5 },
             { "FirstAidKit", "", 5 },
             { "NVGoggles_OPFOR", "", 500 },
-			{ "NVGogglesB_blk_F", "", 500 },
 			{ "arifle_SPAR_01_blk_F", "", 500, -1 },
 			{ "arifle_SPAR_01_khk_F", "", 500, -1 },
 			{ "arifle_SPAR_01_snd_F", "", 500, -1 },

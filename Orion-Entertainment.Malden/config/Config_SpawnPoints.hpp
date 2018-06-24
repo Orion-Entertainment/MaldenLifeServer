@@ -148,9 +148,9 @@ class CfgSpawnPoints {
                 conditions = "";
 			};
 
-            class SwatHQ {
+            class MarshalHQ {
                 displayName = "Marshal HQ";
-                spawnMarker = "swat_spawn";
+                spawnMarker = "marshal_spawn";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
             };
