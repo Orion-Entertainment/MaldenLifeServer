@@ -13,8 +13,8 @@ _zone9 = getMarkerPos "safezone_Don";
 _zone10 = getMarkerPos "Medic_HQ1";
 _zone11 = getMarkerPos "Medic_HQ2";
 _zone12 = getMarkerPos "Medic_HQ3";
-_zone13 = getMarkerPos "safezone_port_1";
-_zone14 = getMarkerPos "safezone_rebel_2";
+_zone13 = getMarkerPos "safezone_pp";
+_zone14 = getMarkerPos "safezone_reb";
 
 _zone1dis = 40;
 _zone2dis = 125;
