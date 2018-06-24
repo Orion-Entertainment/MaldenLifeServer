@@ -9,8 +9,8 @@
 private ["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui"];
 _building = param [0,objNull,[objNull]];
 
-private _vaultHouse = [[["Malden", "Land_Cargo_House_V4_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
-private _maldenArray = [4429.187,1648.093,77.782];
+private _vaultHouse = [[["Malden", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _maldenArray = [6282.28,7562.94,2.31465];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
 private _pos = [[["Malden", _maldenArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
 

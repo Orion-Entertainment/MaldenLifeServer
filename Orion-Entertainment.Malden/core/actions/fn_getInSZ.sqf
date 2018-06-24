@@ -2,7 +2,7 @@
 
 params ["_player","_position","_vehicle"];
 
-if((_position isEqualTo "driver")&&{playerSide isEqualTo civilian}&&{!(_vehicle in life_vehicles)}&&{(player inArea "safezone_port")||(player inArea "safezone_Trinite")||
+if((_position isEqualTo "driver")&&{playerSide isEqualTo civilian}&&{!(_vehicle in life_vehicles)}&&{(player inArea "safezone_port")||(player inArea "safezone_port_1")||(player inArea "safezone_rebel_1")||(player inArea "safezone_rebel_2")||(player inArea "safezone_Trinite")||
 (player inArea "safezone_Pessagne")||(player inArea "safezone_ter1")||(player inArea "safezone_reb1")||(player inArea "safezone_air1")||(player inArea "safezone_gun1")||
 (player inArea "safezone_gun2")})exitWith {
 	player action ["GetOut",_vehicle];
