@@ -153,10 +153,8 @@ publicVariable "TON_fnc_playtime_values";
 publicVariable "TON_fnc_playtime_values_request";
 
 /* Setup the federal reserve building(s) */
-private _vaultHouse = [[["Malden", "Land_Cargo_House_V1_F"], ["tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
-private _maldenArray = [1564,1441.61,68.7893];
-private _vaultHouse = [[["Malden", "Land_Cargo_House_V4_F"], ["tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
-private _maldenArray = [4429.187,1648.093,77.782];
+private _vaultHouse = [[["Malden", "Land_Research_house_V1_F"], ["tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _maldenArray = [6282.28,7562.94,2.31465];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
 private _pos = [[["Malden", _maldenArray], ["tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
 
