@@ -166,7 +166,7 @@ class CarShops {
             { "B_MRAP_01_F", "license_cop_swat" },
             { "I_MRAP_03_F", "license_cop_swat" },
             { "O_LSV_02_armed_black_F", "license_cop_swat" },
-            { "C_Offroad_02_unarmed_black_F", "license_cop_swat" },
+            { "B_T_LSV_01_unarmed_black_F", "license_cop_swat" },
             { "C_Hatchback_01_F", "license_cop_swat" },
             { "C_Offroad_01_F", "license_cop_swat" },
             { "C_SUV_01_F", "license_cop_swat" },
@@ -464,9 +464,6 @@ class LifeCfgVehicles {
 			{ "Police", "cop", {
                 "#(argb,8,8,3)color(0.0,0.0,0.0,1)",
                 "#(argb,8,8,3)color(0.0,0.0,0.0,1)"
-            }, "" },
-            { "Marshal", "cop", {
-                "images\textures\Vehicles\Cop\Marshal_Prowler.jpg"
             }, "" }
 		};
 	};
@@ -477,7 +474,15 @@ class LifeCfgVehicles {
         vItemSpace = 100;
         conditions = "";
         price = 65000;
-        textures[] = {};
+        textures[] = {
+            { "Police", "cop", {
+                "#(argb,8,8,3)color(0.0,0.0,0.0,1)",
+                "#(argb,8,8,3)color(0.0,0.0,0.0,1)"
+            }, "" },
+            { "Marshal", "cop", {
+                "images\textures\Vehicles\Cop\Marshal_Prowler.jpg"
+            }, "" }
+        };
 	};
 
 	//Prowler
