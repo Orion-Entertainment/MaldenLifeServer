@@ -1,4 +1,4 @@
-private ["_eh1","_inArea","_zone1","_zone2","_zone3","_zone4","_zone5","_zone6","_zone7","_zone8","_zone9","_zone10","_zone11","_zone12","_zone1dis","_zone2dis","_zone3dis","_zone4dis","_zone5dis","_zone6dis","_zone7dis","_zone8dis","_zone9dis","_zone10dis","_zone11dis","_zone12dis","_dis","_zone13dis","_zone14dis"];
+private ["_eh1","_inArea","_zone1","_zone2","_zone3","_zone4","_zone5","_zone6","_zone7","_zone8","_zone9","_zone10","_zone11","_zone12","_zone1dis","_zone2dis","_zone3dis","_zone4dis","_zone5dis","_zone6dis","_zone7dis","_zone8dis","_zone9dis","_zone10dis","_zone11dis","_zone12dis","_dis","_zone13dis","_zone14dis","_zone13","_zone14"];
 
 // MARKERS FOR SAFEZONE
 _zone1 = getMarkerPos "safezone_port";
