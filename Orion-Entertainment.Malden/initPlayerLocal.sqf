@@ -59,3 +59,6 @@ _pic = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
 "ColorCorrections" ppEffectCommit 0;
 
 [] execVM "core\init.sqf";
+
+[] execVM "Custom\phone\Config_Phone.sqf";
+[] execVM "Custom\phone\fnc_phone_ui.sqf";
