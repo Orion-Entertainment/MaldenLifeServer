@@ -113,6 +113,7 @@ fnc_phone_generic_grid = {
             if(_currentConfig select 4 == "") then { _currentConfig set [4, "true"];};
  
             if(call compile (_currentConfig select 4)) then {
+                diag_log("Here?");
                 _image = _display ctrlCreate ["Life_RscPicture", -1];
                 _image ctrlSetPosition [(Orion_Life_Phone_StartPos select 0) + ((_width + Orion_Life_Phone_Padding) * _j),             //X
                                         (Orion_Life_Phone_StartPos select 1) + ((_height  + (Orion_Life_Phone_Padding * (4/3))) * _i), //Y
