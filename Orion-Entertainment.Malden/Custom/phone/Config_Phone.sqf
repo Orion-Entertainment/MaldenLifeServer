@@ -21,8 +21,8 @@ Orion_Life_Phone_Config = [
 	["22","hint 'Settings'","Settings","images\textures\Phone\subIcons\p_Settings.paa",""],
 	["33","hint 'Skills'","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
 	["44","hint 'Wanted'","Wanted","images\textures\Phone\subIcons\p_Wanted.paa",""],
-	["55","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""],
-	["66","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""],
+	["55","hint 'RArrow'","RArrow","images\textures\Phone\subIcons\p_Rarrow.paa",""],
+	["66","hint 'LArrow'","LArrow","images\textures\Phone\subIcons\p_Larrow.paa",""],
 	["77","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""],
 	["88","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""]
 ];
