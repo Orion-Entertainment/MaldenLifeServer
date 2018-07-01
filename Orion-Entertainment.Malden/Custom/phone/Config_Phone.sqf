@@ -26,3 +26,9 @@ Orion_Life_Phone_Config = [
 	["77","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""],
 	["88","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""]
 ];
+
+Orion_Life_Phone_StartPos = [0.34,0.13];    //defines the corner that the images will be placed relative to
+Orion_Life_Phone_SizeOfImage = 32;          //Size of the image elements square
+Orion_Life_Phone_Padding = 0.03;            //Padding between Images
+Orion_Life_Phone_Grid_Height = 5;
+Orion_Life_Phone_Grid_Width = 3;
