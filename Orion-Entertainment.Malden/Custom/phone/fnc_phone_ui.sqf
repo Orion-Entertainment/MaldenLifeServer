@@ -22,20 +22,20 @@ fnc_phone_on_init = {
         W = 0.4 * safezoneW
         H = (0.4 * safezoneW) * (4/3)
     */
-    _phone = _display ctrlCreate["Life_RscPicture", 1623];
+    _phone = _display ctrlCreate["RscPicture", 1623];
     _phone ctrlSetPosition [0.298906 * safezoneW + safezoneX,0.17 * safezoneH + safezoneY,0.4 * safezoneW,(0.4 * safezoneW) * (4/3)];
     _phone ctrlSetBackgroundColor [0, 0, 0, 0];
     _phone ctrlSetText "images\textures\Phone\Phone_Main.paa";
     _phone ctrlCommit 0;
  
-    _previousButton = _display ctrlCreate ["Life_RscButton", 1222];
+    _previousButton = _display ctrlCreate ["RscButton", 1222];
     _previousButton ctrlSetPosition _previousButtonPos;
     _previousButton ctrlSetText "Previous Page";
     _previousButton ctrlShow false;
     _previousButton buttonSetAction "call fnc_phone_previous_page";
     _previousButton ctrlCommit 0;
  
-    _nextButton = _display ctrlCreate ["Life_RscButton", 1223];
+    _nextButton = _display ctrlCreate ["RscButton", 1223];
     _nextButton ctrlSetPosition _nextButtonPos;
     _nextButton ctrlSetText "Next Page";
     _nextButton ctrlShow false;
@@ -53,7 +53,7 @@ fnc_phone_next_page = {
     _ctrls = allControls _display;
     {
         //Hide current Images and buttons
-        if(ctrlClassName _x == "Life_RscInvisibleButton" || ctrlClassName _x == "Life_RscPicture" && ctrlIDC _x != 1623) then {_x ctrlShow false; _x ctrlCommit 0;};
+        if(ctrlClassName _x == "Life_RscInvisibleButton" || ctrlClassName _x == "RscPicture" && ctrlIDC _x != 1623) then {_x ctrlShow false; _x ctrlCommit 0;};
     }  forEach _ctrls;
     _data  = [Orion_Life_Phone_Config, (Orion_Life_Phone_Grid_Width*Orion_Life_Phone_Grid_Height) * (phoneUiPage + 1)] call BIS_fnc_subSelect;
     [Orion_Life_Phone_Grid_Width,Orion_Life_Phone_Grid_Height,_data, _display] call fnc_phone_generic_grid;
@@ -63,7 +63,7 @@ fnc_phone_next_page = {
     _nB = _display displayCtrl 1223;
     _pB ctrlShow true;
     _pB ctrlCommit 0;
-    if(count Orion_Life_Phone_Config < (3*6) * (phoneUiPage + 1)) then {_nB ctrlShow false; _nB ctrlCommit 0; };
+    if(count Orion_Life_Phone_Config < (Orion_Life_Phone_Grid_Width*6) * (phoneUiPage + 1)) then {_nB ctrlShow false; _nB ctrlCommit 0; };
 };
  
  
@@ -75,7 +75,7 @@ fnc_phone_previous_page = {
     _ctrls = allControls _display;
     {
         //Hide current Images and buttons
-        if(ctrlClassName _x == "Life_RscInvisibleButton" || ctrlClassName _x == "Life_RscPicture" && ctrlIDC _x != 1623) then {_x ctrlShow false; _x ctrlCommit 0;};
+        if(ctrlClassName _x == "Life_RscInvisibleButton" || ctrlClassName _x == "RscPicture" && ctrlIDC _x != 1623) then {_x ctrlShow false; _x ctrlCommit 0;};
     }  forEach _ctrls;
     _data = [Orion_Life_Phone_Config, ((Orion_Life_Phone_Grid_Width*Orion_Life_Phone_Grid_Height) * (phoneUiPage - 1))] call BIS_fnc_subSelect;
     [Orion_Life_Phone_Grid_Width,Orion_Life_Phone_Grid_Height,_data, _display] call fnc_phone_generic_grid;
@@ -114,7 +114,7 @@ fnc_phone_generic_grid = {
  
             if(call compile (_currentConfig select 4)) then {
                 diag_log("Here?");
-                _image = _display ctrlCreate ["Life_RscPicture", -1];
+                _image = _display ctrlCreate ["RscPicture", -1];
                 _image ctrlSetPosition [(Orion_Life_Phone_StartPos select 0) + ((_width + Orion_Life_Phone_Padding) * _j),             //X
                                         (Orion_Life_Phone_StartPos select 1) + ((_height  + (Orion_Life_Phone_Padding * (4/3))) * _i), //Y
                                         _width,                                                                                        //W
