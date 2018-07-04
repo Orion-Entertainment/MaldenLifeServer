@@ -10,6 +10,7 @@ if (hasInterface) then {
     [] execVM "Custom\safezones.sqf";
     [] execVM "core\gps\fn_deletetask.sqf";
     [] execVM "Custom\jeriahsteargas.sqf";
+    [] execVM "Custom\status_bar\init_statusBar.sqf"};
 };
 [] execVM "KRON_Strings.sqf";
 
