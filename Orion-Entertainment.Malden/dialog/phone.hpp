@@ -1,5 +1,5 @@
 /*
-//--Repentz 
+//+Jeirah
 */
 
 class phone {
@@ -23,30 +23,30 @@ class phone {
       idc = 2401;
       onButtonClick = "createDialog ""life_inventory_menu"";";
       tooltip = "View and manage your virtual items in your inventory";
-      x = 0.425194 * safezoneW + safezoneX;
-			y = 0.195 * safezoneH + safezoneY;
-			w = 0.029 * safezoneW;
-			h = 0.049 * safezoneH;
+		x = 0.425194 * safezoneW + safezoneX;
+		y = 0.195 * safezoneH + safezoneY;
+		w = 0.029 * safezoneW;
+		h = 0.049 * safezoneH;
     };
 
     class Life_RscButtonInvisible_2400: Life_RscButtonInvisible {
       idc = 2400;
       onButtonClick = "createDialog ""life_license_menu"";";
       tooltip = "Check your licenses";
-      x = 0.425194 * safezoneW + safezoneX;
-			y = 0.256 * safezoneH + safezoneY;
-			w = 0.029 * safezoneW;
-			h = 0.049 * safezoneH;
+		x = 0.425194 * safezoneW + safezoneX;
+		y = 0.256 * safezoneH + safezoneY;
+		w = 0.029 * safezoneW;
+		h = 0.049 * safezoneH;
     };
     
     class Life_RscButtonInvisible_2402: Life_RscButtonInvisible {
       idc = 2402;
       onButtonClick = "createDialog ""Life_key_management"";";
       tooltip = "View and share your car keys";
-      x = 0.425194 * safezoneW + safezoneX;
-			y = 0.3143 * safezoneH + safezoneY;
-      w = 0.029 * safezoneW;
-			h = 0.049 * safezoneH;
+		x = 0.425194 * safezoneW + safezoneX;
+		y = 0.3143 * safezoneH + safezoneY;
+		w = 0.029 * safezoneW;
+		h = 0.049 * safezoneH;
     };
 
     class Life_RscButtonInvisible_2408: Life_RscButtonInvisible {
