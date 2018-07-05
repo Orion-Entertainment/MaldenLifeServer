@@ -161,7 +161,7 @@ _unit = _this select 0;
             if (_value > 0) then {
                 _pos = _unit modelToWorld[0,3,0];
                 _pos = [(_pos select 0),(_pos select 1),0];
-                _obj = "Land_LuggageHeap_02_F" createVehicle _pos;
+                _obj = "Land_Suitcase_F" createVehicle _pos;
                 [_obj] remoteExecCall ["life_fnc_simDisable",RANY];
                 _obj setPos _pos;
                 _obj setVariable ["item",[_item,_value],true];
