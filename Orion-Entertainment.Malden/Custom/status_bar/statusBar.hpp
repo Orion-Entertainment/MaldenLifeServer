@@ -24,7 +24,7 @@ class statusBar {
 			size = "0.02 * safezoneH";
 			type = 13;
 			style = 2;
-			text="[Orion Altis Life] Loading game server info...";
+			text="[Orion Malden Life] Loading game server info...";
 			class Attributes {
 				align="center";
 				color = "#ffffff";//#5fe60c
