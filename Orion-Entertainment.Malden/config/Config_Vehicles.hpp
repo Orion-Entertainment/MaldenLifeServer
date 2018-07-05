@@ -175,6 +175,20 @@ class CarShops {
         };
     };
 
+    class cop_carucu {
+        side = "cop";
+        conditions = "";
+        vehicles[] = {
+            { "B_Quadbike_01_F", "" },
+            { "C_Hatchback_01_F", "" },
+            { "C_Offroad_01_F", "" },
+            { "C_SUV_01_F", "" },
+            { "C_Hatchback_01_sport_F", "" },
+            { "B_T_LSV_01_unarmed_olive_F", "" },
+			{ "O_T_LSV_02_unarmed_F", "" },		
+        };
+    };
+
     class swat_air {
         side = "cop";
         conditions = "license_cop_swat";
@@ -410,6 +424,29 @@ class LifeCfgVehicles {
 
     // Apex DLC
     class O_T_LSV_02_unarmed_F {
+        vItemSpace = 100;
+        conditions = "";
+        price = 100000;
+        textures[] = {
+            { "Arid", "civ", {
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_arid_CO.paa"
+            }, "" },
+            { "Black", "civ", {
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_black_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+            }, "" },
+            { "Green Hex", "civ", {
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa",
+                "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa"
+            }, "" }
+        };
+    };
+
+    class B_T_LSV_01_unarmed_olive_F {
         vItemSpace = 100;
         conditions = "";
         price = 100000;

@@ -65,7 +65,7 @@ class WeaponShops {
 			{ "arifle_SPAR_02_blk_F", "", 120000, -1, "mav_ttm_var_rebel >= 3" }, //Spar-16s
 			{ "LMG_03_F", "", 150000, -1, "mav_ttm_var_rebel >= 3" }, //Lim-85
 			{ "arifle_AKM_F", "", 100000, -1, "mav_ttm_var_rebel >= 3" }, //AKM
-			{ "srifle_DMR_01_F", "", 150000, -1, "mav_ttm_var_rebel >= 3" }, //Rehim
+			{ "srifle_DMR_01_F", "", 150000, -1, "mav_ttm_var_rebel >= 3" }, //Rahim
 			{ "arifle_MXM_F", "", 90000, -1, "mav_ttm_var_rebel >= 4" }, //MXM
 			{ "srifle_DMR_03_F", "", 200000, -1, "mav_ttm_var_rebel >= 4" }, //Mk-1 EMR
 			{ "srifle_DMR_06_olive_F", "", 170000, -1, "mav_ttm_var_rebel >= 4" }, //MK14
@@ -312,12 +312,102 @@ class WeaponShops {
 			{ "optic_Arco_blk_F", "", 2500, -1, "" }, //black arco
 			{ "optic_ERCO_blk_F", "", 2500, -1, "" }, //black erco
 			{ "optic_AMS", "", 2500, -1, "call life_coplevel >= 8" }, //black AMS
-			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holo
+			{ "optic_Holosight_blk_F", "", 2500, -1, "" }, //black holov9re
 			{ "optic_Holosight_smg_blk_F", "", 2500, -1, "" }, //black holo smg
 			{ "optic_MRCO", "", 2500, -1, "" }, //mrco
             { "optic_Hamr", "", 2500, -1, "" }, //rco
 			{ "optic_DMS", "", 5000, -1, "" }, //dms
 			{ "bipod_01_F_blk", "", 2500, -1, "" } //bipod
+        };
+    };
+
+	class cop_ucu {
+        name = "Malden Cop Shop";
+        side = "cop";
+        conditions = "call life_coplevel >= 1";
+        items[] = {
+			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
+            { "Binocular", "", 150, 75, "" },      //Binocular
+            { "ItemGPS", "", 100, 50, "" },        //GPS
+			{ "SmokeShellGreen", "Tear Gas", 2500, 50, "" },//TearGas
+            { "hgun_Pistol_heavy_01_F", $STR_W_items_StunPistol, 4000, -1, "" }, //TASER
+            { "hgun_PDW2000_F", "", 5000, -1, "" }, //PDW
+			{ "SMG_05_F", "", 5000, -1, "" }, //Protector
+			{ "SMG_01_F", "", 5000, -1, "" }, //Vermin
+			{ "arifle_TRG21_F", "", 5000, -1, "" }, //TRG
+			{ "arifle_Mk20_F", "", 5000, -1, "" }, //Mk-20
+			{ "arifle_SPAR_01_blk_F", "", 5000, -1, "" }, //Spar16
+			{ "arifle_MXC_khk_F", "", 5000, -1, "" }, //MXC
+			{ "arifle_MX_F", "", 5000, -1, "" }, //MX
+			{ "srifle_DMR_07_blk_F", "", 5000, -1, "" }, //CMR-76
+            { "arifle_Katiba_F", "", 5000, -1, "" }, //Katiba
+			{ "arifle_AKM_F", "", 5000, -1, "" }, //AKM
+			{ "srifle_DMR_01_F", "", 5000, -1, "" } //Rahim
+        };
+        mags[] = {
+			{ "11Rnd_45ACP_Mag", "Rubber Bullets", 20, -1, "call life_coplevel >= 1" }, //4five
+			{ "30Rnd_65x39_caseless_mag_Tracer", "Rubber Bullets", 20, -1, "" }, //MXC/MX/MXM RUBBERS
+			{ "30Rnd_9x21_Mag_SMG_02", "Rubber Bullets", 13, -1, "" }, //sting
+			{ "30Rnd_556x45_Stanag", "", 13, -1, "" }, //sdar,mk20c,trg21,spar16
+			{ "30Rnd_580x42_Mag_F", "", 13, -1, "" }, //car95
+            { "30Rnd_65x39_caseless_mag", "", 20, -1, "" }, //mxc, mx, mxm
+            { "20Rnd_650x39_Cased_Mag_F", "", 20, -1, "" }, //cmr
+			{ "30Rnd_45ACP_Mag_SMG_01", "", 20, -1, "" }, //vermin
+			{ "100Rnd_65x39_caseless_mag", "", 300, 150, "" }, //mxsw
+            { "20Rnd_762x51_Mag", "", 30, -1, "" }, //mk1, mk14, mk18, spar17
+			{ "10Rnd_338_Mag", "", 40, -1, "" }, // mar10
+            { "30Rnd_762x39_Mag_F", "", 40, -1, "" }, //Ak-12
+			{ "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
+            { "20Rnd_650x39_Cased_Mag_F", "", 100, 50, "" }, //cmr
+			{ "30Rnd_45ACP_Mag_SMG_01", "", 100, 50, "" }, //vermin
+			{ "30Rnd_9x21_Mag", "", 100, 50, "" }, //9mm
+			{ "30Rnd_9x21_Mag_SMG_02", "", 100, 50, "" }, //9mm
+            { "6Rnd_45ACP_Cylinder", "", 100, 50, "" }, //zubr
+            { "9Rnd_45ACP_Mag", "", 100, 50, "" }, //acp
+			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //MK20
+			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //TRG
+			{ "30Rnd_556x45_Stanag", "", 100, 50, "" }, //spar16
+			{ "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //acp
+			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" }, //MXC
+			{ "30Rnd_65x39_caseless_mag", "", 100, 50, "" }, //MX
+			{ "30Rnd_65x39_caseless_mag", "", 100, 50, "" }, //Black MX
+			{ "30Rnd_580x42_Mag_F", "", 100, 50, "" }, //Car-95
+			{ "30Rnd_65x39_caseless_green", "", 100, 50, "" }, //Katiba
+			{ "20Rnd_650x39_Cased_Mag_F", "", 100, 50, "" }, //CMR-78
+			{ "30Rnd_65x39_caseless_green", "", 100, 50, "" }, //Type 115
+			{ "10Rnd_50BW_Mag_F", "", 50000, 50, "" }, //50 Cal Mag
+			{ "30Rnd_65x39_caseless_mag", "", 100, 50, "" }, // MXM 
+			{ "150Rnd_556x45_Drum_Mag_F", "", 100, 50, "" }, //Spar-16s
+			{ "200Rnd_556x45_Box_F", "", 1000, 50, "" }, //Lim-85
+			{ "100Rnd_580x42_Mag_F", "", 100, 50, "" }, //Car-95-1
+			{ "30Rnd_762x39_Mag_F", "", 100, 50, "" }, //AKM
+			{ "10Rnd_762x54_Mag", "", 100, 50, "" }, //Rahim
+			{ "20Rnd_762x51_Mag", "", 100, 50, "" }, //Mk-1
+			{ "20Rnd_762x51_Mag", "", 100, 50, "" }, //Mk18 ABR
+			{ "20Rnd_762x51_Mag", "", 100, 50, "" }, //Mk14
+			{ "20Rnd_762x51_Mag", "", 100, 50, "" }, //Spar-17
+			{ "30Rnd_762x39_Mag_F", "", 100, 50, "" }, //AK-12
+			{ "200Rnd_65x39_cased_Box", "", 1000, 50, "" }, //MK200
+			{ "100Rnd_65x39_caseless_mag", "", 100, 50, "" }, //MX SW
+			{ "10Rnd_93x64_DMR_05_Mag", "", 100, 50, "" }, //Cyrus
+			{ "10Rnd_338_Mag", "", 100, 50, "" }, //MAR-10
+			{ "150Rnd_762x54_Box", "", 1000, 50, "" } //Zafir
+        };
+        accs[] = {
+            { "optic_ACO_grn_smg", "", 1500, -1, "" }, //aco
+			{ "optic_Arco", "", 1500, -1, "" }, //arco
+			{ "optic_Arco_blk_F", "", 1500, -1, "" }, //black arco
+			{ "optic_ERCO_blk_F", "", 1500, -1, "" }, //black erco
+			{ "optic_Holosight_blk_F", "", 1500, -1, "" }, //black holo
+			{ "optic_Holosight_smg_blk_F", "", 1500, -1, "" }, //black holo smg
+			{ "optic_MRCO", "", 1500, -1, "" }, //mrco
+            { "optic_Hamr", "", 1500, -1, "" }, //rco
+			{ "optic_DMS", "", 3000, -1, "" }, //dms
+			{ "acc_flashlight", "", 750, -1, "" }, //flashlight
+			{ "acc_flashlight_pistol", "", 750, -1, "" }, //flashlight
+			{ "bipod_01_F_blk", "", 2000, -1, "" }, //bipod
+			{ "optic_AMS_snd", "", 1000, -1, "" }, //AMS
+			{ "optic_LRPS_tna_F", "", 1000, -1, "" } //LRPS
         };
     };
 
