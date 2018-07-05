@@ -48,7 +48,7 @@ class RscTitles {
     #include "Custom\UPM\Rsc\RscNotification.hpp"
     #include "dialog\RL_progress.hpp"
     #include "core\derleon\vis\vehInfo.hpp"
-    #include "dialog\statusBar.hpp"
+    #include "Custom\status_bar\statusBar.hpp"
 };
 
 class CfgFunctions {
