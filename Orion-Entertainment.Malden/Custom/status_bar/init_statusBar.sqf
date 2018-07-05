@@ -22,14 +22,14 @@ if ((getPlayerUID player) in _sb_admin_list) then  //admins id here
 { 
 	if (_WSC) then
 	{
-		[] execVM "scripts\status_bar\PlayerBar.sqf";
+		[] execVM "Custom\status_bar\PlayerBar.sqf";
 	}
 	else
 	{
-		[] execVM "scripts\status_bar\PlayerBar.sqf";
+		[] execVM "Custom\status_bar\PlayerBar.sqf";
 	};
 } 
 else 
 {
-	[] execVM "scripts\status_bar\PlayerBar.sqf";
+	[] execVM "Custom\status_bar\PlayerBar.sqf";
 };
