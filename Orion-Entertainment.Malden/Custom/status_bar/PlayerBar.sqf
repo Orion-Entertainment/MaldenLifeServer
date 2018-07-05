@@ -44,8 +44,8 @@ waitUntil{isNull (findDisplay 38500)};
 		
 		//initialize variables and set values
 		_unit = _this select 0;
-		_nakit = [life_cash] call life_fnc_numberText;
-		_bank = ([life_atmbank] call life_fnc_numberText);
+		_nakit = [life_firstHealth] call life_fnc_numberText;
+		_bank = ([life_errorCheckStatus] call life_fnc_numberText);
 		_fps = format["%1", diag_fps];
 		_polis = (west countSide playableUnits);
 		_doktor = (independent countSide playableUnits);
