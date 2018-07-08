@@ -1094,7 +1094,7 @@ class VirtualItems {
         displayName = "STR_Item_goldenbarz3";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 250000;
+        sellPrice = 1000000;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_goldenbarz3.paa";

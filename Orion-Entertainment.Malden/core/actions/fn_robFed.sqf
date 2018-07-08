@@ -19,7 +19,7 @@ if !(alive _robber) exitWith {};
 
 
 //Caculate how many gold bars to give
-_goldBarAmount = 14;
+_goldBarAmount = 9;
 //round((west countSide playableUnits) * 0.5);
 //if (_goldBarAmount > 10) then {_goldBarAmount = 10;};
 //if (_goldBarAmount < 3) then {_goldBarAmount = 3;};
