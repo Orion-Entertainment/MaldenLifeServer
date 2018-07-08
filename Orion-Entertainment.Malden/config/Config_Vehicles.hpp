@@ -127,11 +127,11 @@ class CarShops {
         side = "med";
         conditions = "";
         vehicles[] = {
-            { "C_Offroad_01_F", "call life_mediclevel >= 3" },
+            { "C_Offroad_01_F", "call life_mediclevel <= 4" },
 			{ "C_IDAP_Van_02_medevac_F", "call life_mediclevel >= 3" },
 			{ "C_Van_02_medevac_F", "call life_mediclevel >= 3" },
-            { "C_Van_01_box_F", "call life_mediclevel >= 1" },
-            { "C_SUV_01_F", "call life_mediclevel >= 3" },
+            { "C_Van_01_box_F", "call life_mediclevel <= 4" },
+            { "C_SUV_01_F", "call life_mediclevel <= 5" },
 			{ "I_MRAP_03_F", "call life_mediclevel >= 6" }
         };
     };
