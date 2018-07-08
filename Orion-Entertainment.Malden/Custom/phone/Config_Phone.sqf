@@ -7,32 +7,19 @@ Config Signature
 ]
 */
 Orion_Life_Phone_Config = [
-// General
-	["1","createDialog 'RscDisplayServerInfoMenu'","Info","images\textures\Phone\subIcons\p_Info.paa",""],
-	["2","createDialog 'life_license_menu'","ID","images\textures\Phone\subIcons\p_ID.paa",""],
-	["3","createDialog 'life_inventory_menu'","Inventory","images\textures\Phone\subIcons\p_Inventory.paa",""],
-	["4","createDialog 'Life_key_management'","Key","images\textures\Phone\subIcons\p_Key.paa",""],
-	["6","createDialog 'life_money_menu'","Money","images\textures\Phone\subIcons\p_Money.paa",""],
-	["5","createDialog 'life_fnc_settingsMenu'","Settings","images\textures\Phone\subIcons\p_Settings.paa",""],
-	["7","createDialog 'TTM_GUI_RscDisplayTalentOverview'","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
-	["8","createDialog 'life_my_telephone_menu'","Chat","images\textures\Phone\subIcons\p_Chat.paa",""],
-	["9","createDialog 'Market'","Market","images\textures\Phone\subIcons\p_Market.paa",""],
-	["0","createDialog 'holy_bug'","Bug Report","images\textures\Phone\subIcons\p_Bug.paa",""],
-
-	
-// Civ
-	["11","createDialog 'life_my_gang_menu'","Gang","images\textures\Phone\subIcons\p_Gang.paa","side player ==  Civilian"],
-	["22","createDialog 'life_my_group_menu'","Group","images\textures\Phone\subIcons\p_Group.paa","side player ==  Civilian"],
-	
-// Cop+Medic
-	["33","createDialog 'Barrier'","Barrier","images\textures\Phone\subIcons\p_Barrier.paa","side player ==  independent || side player == west"],
-	["44","createDialog 'life_wanted_menu'","Wanted","images\textures\Phone\subIcons\p_Wanted.paa","side player == west"],
-	
-
-	["55","hint 'RArrow'","RArrow","images\textures\Phone\subIcons\p_Rarrow.paa",""],
-	["66","hint 'LArrow'","LArrow","images\textures\Phone\subIcons\p_Larrow.paa",""],
-	["77","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""],
-	["88","hint 'Blank'","Blank","images\textures\Phone\subIcons\p_Wanted.paa",""]
+	["1","createDialog 'Life_My_Gang_Diag'; _d = findDisplay -1; _d closeDisplay 1","Gang","Resources\Gang1.paa",""],
+	["2","createDialog 'holy_bug'; _d = findDisplay -1; _d closeDisplay 1","Bug Report","Resources\Bug1.paa",""],
+	["3","createDialog 'Life_Cop_Placeables'; _d = findDisplay -1; _d closeDisplay 1","Barrier","Resources\Barrier1.paa",""],
+	["4","createDialog 'Life_my_smartphone'; _d = findDisplay -1; _d closeDisplay 1","Chat","Resources\Chat1.paa",""],
+	["5","createDialog 'life_my_group_Diag'; _d = findDisplay -1; _d closeDisplay 1","Group","Resources\Group1.paa",""],
+	["7","createDialog 'RscDisplayServerInfoMenu'; _d = findDisplay -1; _d closeDisplay 1","Info","Resources\Info1.paa",""],
+	["8","createDialog 'Life_inventory_menu'; _d = findDisplay -1; _d closeDisplay 1","Inventory","Resources\Inventory1.paa",""],
+	["9","createDialog 'Life_key_management'; _d = findDisplay -1; _d closeDisplay 1","Key","Resources\Key1.paa",""],
+	["0","","Market is Disabled","Resources\Market1.paa",""],
+	["22","createDialog 'Life_money_menu'; _d = findDisplay -1; _d closeDisplay 1","Money","Resources\Money1.paa",""],
+	["55","createDialog 'SettingsMenu'; _d = findDisplay -1; _d closeDisplay 1","Settings","Resources\Settings1.paa",""],
+	["66","createDialog 'TTM_GUI_RscDisplayTalentOverview'; _d = findDisplay -1; _d closeDisplay 1","Skills","Resources\Skills1.paa",""],
+	["77","createDialog 'life_wanted_menu'; _d = findDisplay -1; _d closeDisplay 1","Wanted","Resources\Wanted1.paa",""]
 ];
 
 Orion_Life_Phone_StartPos = [0.34,0.13];    //defines the corner that the images will be placed relative to

@@ -18,11 +18,11 @@ class marketView
         {
             idc = -1;
             //moving = 1;
-            text = "images\Textures\Phone\Phone_Blank.paa";
-			X = 0.298906 * safezoneW + safezoneX
-			Y = 0.17 * safezoneH + safezoneY
-			W = 0.4 * safezoneW
-			H = (0.4 * safezoneW) * (4/3)
+            text = "images\Textures\Phone\phoneBlank.paa";
+            x = -0.0625;
+            y = -0.3;
+            w = 1.1375;
+            h = 1.5;
         };
 		class lblResourceName: RscText
 		{

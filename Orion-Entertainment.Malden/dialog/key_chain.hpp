@@ -14,7 +14,7 @@ onLoad = "[] spawn life_fnc_keyMenu;";
     class BackgroundImage: Life_RscPictureKeepAspect
     {
     	idc = -1;
-    	text = "images\Textures\Phone\phoneKeys.paa";
+    	text = "images\Textures\Phone\Phone Inventory Menu.paa";
     	x = -0.0625;
     	y = -0.3;
     	w = 1.1375;
@@ -48,29 +48,17 @@ onLoad = "[] spawn life_fnc_keyMenu;";
     	idc = -1;
       onButtonClick = "[] call life_fnc_keyGive";
       tooltip = "Give keys to selected player";
-      x = 0.345;
-      y = 0.857;
-      w = 0.072;
-      h = 0.04;
+      x = 0.40294 * safezoneW + safezoneX;
+      y = 0.733 * safezoneH + safezoneY;
+      w = 0.059 * safezoneW;
+      h = 0.049 * safezoneH;
     };
     class DropKeyButton: Life_RscButtonInvisible2
     {
     	idc = -1;
       onButtonClick = "[] call life_fnc_keyDrop";
       tooltip = "Remove Keys";
-      x = 0.5430;
-      y = 0.857;
-      w = 0.096;
-      h = 0.04;
-    };
-    class CloseKeyMenu: Life_RscButtonInvisible2
-    {
-      idc = -1;
-      shortcuts[] = {0x00050000 + 2};
-      text = "";
-      onButtonClick = "closeDialog 0; createDialog ""smartphone"";";
-			tooltip = "Previous Menu";
-      x = 0.40294 * safezoneW + safezoneX;
+      x = 0.47294 * safezoneW + safezoneX;
       y = 0.733 * safezoneH + safezoneY;
       w = 0.059 * safezoneW;
       h = 0.049 * safezoneH;

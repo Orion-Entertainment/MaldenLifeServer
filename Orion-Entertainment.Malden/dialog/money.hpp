@@ -16,11 +16,11 @@ onLoad = "[] spawn life_fnc_money";
     {
     	idc = -1;
       //moving = 1;
-    	text = "images\Textures\Phone\Money_Menu.paa";
-		X = 0.298906 * safezoneW + safezoneX
-		Y = 0.17 * safezoneH + safezoneY
-		W = 0.4 * safezoneW
-		H = (0.4 * safezoneW) * (4/3)
+    	text = "images\Textures\Phone\Phone Inventory Menu.paa";
+    	x = -0.0625;
+    	y = -0.3;
+    	w = 1.1375;
+    	h = 1.5;
     };
     class inBank: Life_RscPicture
     {
@@ -82,17 +82,6 @@ onLoad = "[] spawn life_fnc_money";
       y = 0.76;
       w = 0.3;
       h = 0.04;
-    };
-    class closebutton: Life_RscButtonInvisible
-    {
-    	idc = -1;
-      shortcuts[] = {0x00050000 + 2};
-      onButtonClick = "closeDialog 0; createDialog ""smartphone"";";
-			tooltip = "Previous Menu";
-      x = 0.40294 * safezoneW + safezoneX;
-      y = 0.733 * safezoneH + safezoneY;
-      w = 0.059 * safezoneW;
-      h = 0.049 * safezoneH;
     };
     class givemoneybutton: Life_RscButtonInvisible
     {

@@ -14,10 +14,10 @@ class Life_inventory_menu {
     class RscPicture_1200: Life_RscPictureKeepAspect {
       idc = 1200;
       text = "images\Textures\Phone\Phone Inventory Menu.paa";
-       X = 0.298906 * safezoneW + safezoneX
-       Y = 0.17 * safezoneH + safezoneY
-       W = 0.4 * safezoneW
-       H = (0.4 * safezoneW) * (4/3)
+      x = -0.0625;
+      y = -0.3;
+      w = 1.1375;
+      h = 1.5;
     };
   };
   class controls {

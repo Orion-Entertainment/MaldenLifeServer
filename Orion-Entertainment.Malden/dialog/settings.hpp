@@ -8,11 +8,11 @@ class SettingsMenu {
         class BackgroundImage: Life_RscPictureKeepAspect
         {
           idc = -1;
-          text = "images\Textures\Phone\Phone_Main.paa";
-			X = 0.298906 * safezoneW + safezoneX
-			Y = 0.17 * safezoneH + safezoneY
-			W = 0.4 * safezoneW
-			H = (0.4 * safezoneW) * (4/3)
+          text = "images\Textures\Phone\Phone Inventory Menu.paa";
+          X = 0.298906 * safezoneW + safezoneX
+          Y = 0.17 * safezoneH + safezoneY
+          W = 0.4 * safezoneW
+          H = (0.4 * safezoneW) * (4/3)
         };
 
         class PlayerTagsHeader: Life_RscText {

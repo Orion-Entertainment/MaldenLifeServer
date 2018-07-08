@@ -10,11 +10,11 @@ class Life_My_Gang_Diag {
         {
             idc = -1;
             //moving = 1;
-            text = "images\Textures\Phone\Phone_Blank.paa";
-			X = 0.298906 * safezoneW + safezoneX
-			Y = 0.17 * safezoneH + safezoneY
-			W = 0.4 * safezoneW
-			H = (0.4 * safezoneW) * (4/3)
+            text = "images\Textures\Phone\Phone_Main.paa";
+            X = 0.298906 * safezoneW + safezoneX
+            Y = 0.17 * safezoneH + safezoneY
+            W = 0.4 * safezoneW
+            H = (0.4 * safezoneW) * (4/3)
         };
     };
 
