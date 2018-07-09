@@ -7,8 +7,8 @@ Config Signature
 ]
 */
 Orion_Life_Phone_Config = [
-	["1","createDialog 'Life_My_Gang_Diag'; _d = findDisplay -1; _d closeDisplay 1","Gang","images\textures\Phone\subIcons\p_Gang.paa",""],
-	["2","createDialog 'life_my_group_Diag'; _d = findDisplay -1; _d closeDisplay 1","Group","images\textures\Phone\subIcons\p_Group.paa",""],
+	["1","createDialog 'Life_My_Gang_Diag'; _d = findDisplay -1; _d closeDisplay 1","Gang","images\textures\Phone\subIcons\p_Gang.paa","side player == civilian"],
+	["2","createDialog 'life_my_group_Diag'; _d = findDisplay -1; _d closeDisplay 1","Group","images\textures\Phone\subIcons\p_Group.paa","side player == civilian"],
 	["3","createDialog 'holy_bug'; _d = findDisplay -1; _d closeDisplay 1","Bug Report","images\textures\Phone\subIcons\p_Bug.paa",""],
 	["4","createDialog 'Life_my_smartphone'; _d = findDisplay -1; _d closeDisplay 1","Chat","images\textures\Phone\subIcons\p_Chat.paa",""],
 	["5","createDialog 'RscDisplayServerInfoMenu'; _d = findDisplay -1; _d closeDisplay 1","Info","images\textures\Phone\subIcons\p_Info.paa",""],
@@ -18,8 +18,8 @@ Orion_Life_Phone_Config = [
 	["22","createDialog 'Life_money_menu'; _d = findDisplay -1; _d closeDisplay 1","Money","images\textures\Phone\subIcons\p_Money.paa",""],
 	["33","createDialog 'SettingsMenu'; _d = findDisplay -1; _d closeDisplay 1","Settings","images\textures\Phone\subIcons\p_Settings.paa",""],
 	["44","createDialog 'TTM_GUI_RscDisplayTalentOverview'; _d = findDisplay -1; _d closeDisplay 1","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
-	["55","createDialog 'life_wanted_menu'; _d = findDisplay -1; _d closeDisplay 1","Wanted","images\textures\Phone\subIcons\p_Wanted.paa",""],
-	["66","createDialog 'Life_Cop_Placeables'; _d = findDisplay -1; _d closeDisplay 1","Barrier","images\textures\Phone\subIcons\p_Barrier.paa",""]
+	["55","createDialog 'life_wanted_menu'; _d = findDisplay -1; _d closeDisplay 1","Wanted","images\textures\Phone\subIcons\p_Wanted.paa","side player == west"],
+	["66","createDialog 'Life_Cop_Placeables'; _d = findDisplay -1; _d closeDisplay 1","Barrier","images\textures\Phone\subIcons\p_Barrier.paa","side player == independent || side player == west"]
 ];
 
 Orion_Life_Phone_StartPos = [0.34,0.13];    //defines the corner that the images will be placed relative to
