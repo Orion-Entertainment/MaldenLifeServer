@@ -18,8 +18,8 @@ Orion_Life_Phone_Config = [
 	["22","createDialog 'Life_money_menu'; _d = findDisplay -1; _d closeDisplay 1","Money","images\textures\Phone\subIcons\p_Money.paa",""],
 	["33","createDialog 'SettingsMenu'; _d = findDisplay -1; _d closeDisplay 1","Settings","images\textures\Phone\subIcons\p_Settings.paa",""],
 	["44","createDialog 'TTM_GUI_RscDisplayTalentOverview'; _d = findDisplay -1; _d closeDisplay 1","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
-	["55","createDialog 'life_wanted_menu'; _d = findDisplay -1; _d closeDisplay 1","Wanted","images\textures\Phone\subIcons\p_Wanted.paa",""]
-	["66","createDialog 'Life_Cop_Placeables'; _d = findDisplay -1; _d closeDisplay 1","Barrier","images\textures\Phone\subIcons\p_Barrier.paa",""],
+	["55","createDialog 'life_wanted_menu'; _d = findDisplay -1; _d closeDisplay 1","Wanted","images\textures\Phone\subIcons\p_Wanted.paa",""],
+	["66","createDialog 'Life_Cop_Placeables'; _d = findDisplay -1; _d closeDisplay 1","Barrier","images\textures\Phone\subIcons\p_Barrier.paa",""]
 ];
 
 Orion_Life_Phone_StartPos = [0.34,0.13];    //defines the corner that the images will be placed relative to
