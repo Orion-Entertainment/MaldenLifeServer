@@ -6,7 +6,6 @@ waitUntil{isNull (findDisplay 38500)};
 
 	_rscLayer = "statusBar" call BIS_fnc_rscLayer;
 	_rscLayer cutRsc["statusBar","PLAIN"];
-	systemChat format["Status Bar...", _rscLayer];
 	[] spawn 
 	{
 
