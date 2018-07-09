@@ -14,13 +14,13 @@ _zone10 = getMarkerPos "Medic_HQ1";
 _zone11 = getMarkerPos "Medic_HQ2";
 _zone12 = getMarkerPos "Medic_HQ3";
 _zone13 = getMarkerPos "safezone_pp";
-_zone14 = getMarkerPos "safezone_reb";
+_zone14 = getMarkerPos "";
 
 _zone1dis = 40;
 _zone2dis = 125;
 _zone3dis = 125;
 _zone4dis = 250;
-_zone5dis = 25;
+_zone5dis = 140;
 _zone6dis = 150;
 _zone7dis = 75;
 _zone8dis = 75;
@@ -29,7 +29,7 @@ _zone10dis = 75;
 _zone11dis = 75;
 _zone12dis = 75;
 _zone13dis = 40;
-_zone14dis = 25;
+_zone14dis = 0;
 
 _dis = 350;
 _inArea = false;
