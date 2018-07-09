@@ -111,9 +111,12 @@ fnc_phone_generic_grid = {
             if(_index >= (count _config)) then {breakOut "Main"};
  
             if(_currentConfig select 4 == "") then { _currentConfig set [4, "true"];};
- 
-            if(call compile (_currentConfig select 4)) then {
-                diag_log("Here?");
+
+
+
+            diag_log format["PHONEUI DEBUG: %1 %2", call compile (_currentConfig select 4), typeName(_currentConfig select 4)];
+            if(call compile (format["%1",_currentConfig select 4])) then {
+                //diag_log("Here?");
                 _image = _display ctrlCreate ["RscPicture", -1];
                 _image ctrlSetPosition [(Orion_Life_Phone_StartPos select 0) + ((_width + Orion_Life_Phone_Padding) * _j),             //X
                                         (Orion_Life_Phone_StartPos select 1) + ((_height  + (Orion_Life_Phone_Padding * (4/3))) * _i), //Y
