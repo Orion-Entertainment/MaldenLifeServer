@@ -21,9 +21,8 @@ player addEventHandler["GetInMan", {_this call life_fnc_saveVehicle}];
 player addEventHandler["GetOutMan", {vis_saveNow = true}];
 player addEventHandler["GetOutMan", {_this call life_fnc_saveVehicle}];
 player addEventHandler["Killed", {vis_saveNow = true}];
-//player addEventHandler["GetOutMan", {_this call life_fnc_forceHolster}]; //holster weapons fuck off
-
-//player addEventHandler["GetOut", {(_this select 0) setVariable ["lastVehUpdate",serverTime,true]}];
+player addEventHandler["Put", {[] call SOCK_fnc_updateRequest}];
+player addEventHandler["Take", {[] call SOCK_fnc_updateRequest}];
 
 [] spawn {
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
