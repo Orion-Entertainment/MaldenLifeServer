@@ -8,7 +8,7 @@ Config Signature
 */
 Orion_Life_Phone_Config = [
 	["1","createDialog 'TTM_GUI_RscDisplayTalentOverview'; _d = findDisplay -1; _d closeDisplay 1","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
-	["2","createDialog 'smartphone'; _d = findDisplay -1; _d closeDisplay 1","Chat","images\textures\Phone\subIcons\p_Chat.paa",""],
+	["2","createDialog 'Life_my_smartphone'; _d = findDisplay -1; _d closeDisplay 1","Chat","images\textures\Phone\subIcons\p_Chat.paa",""],
 	["3","createDialog 'RscDisplayServerInfoMenu'; _d = findDisplay -1; _d closeDisplay 1","Info","images\textures\Phone\subIcons\p_Info.paa",""],
 	["4","createDialog 'Life_inventory_menu'; _d = findDisplay -1; _d closeDisplay 1","Inventory","images\textures\Phone\subIcons\p_Inventory.paa",""],
 	["5","createDialog 'Life_key_management'; _d = findDisplay -1; _d closeDisplay 1","Key","images\textures\Phone\subIcons\p_Key.paa",""],
