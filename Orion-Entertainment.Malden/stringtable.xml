@@ -12805,7 +12805,7 @@
     </Package>
     <Package name="FlabbyThings">
         <Key ID="STR_KilledPlayer">
-            <Original>You just Killed %1! (%2)</Original>
+            <Original>You Fragged %1! (%2)</Original>
             <Czech>Jenom jsi zabil %1! (%2)</Czech>
             <French>Vous venez de tuer %1! (%2)</French>
             <Spanish>Usted acaba de matar %1! (%2)</Spanish>
