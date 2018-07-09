@@ -7,11 +7,11 @@ Config Signature
 ]
 */
 Orion_Life_Phone_Config = [
-	["1","createDialog 'TTM_GUI_RscDisplayTalentOverview'; _d = findDisplay -1; _d closeDisplay 1","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
-	["2","createDialog 'Life_my_smartphone'; _d = findDisplay -1; _d closeDisplay 1","Chat","images\textures\Phone\subIcons\p_Chat.paa",""],
-	["3","createDialog 'RscDisplayServerInfoMenu'; _d = findDisplay -1; _d closeDisplay 1","Info","images\textures\Phone\subIcons\p_Info.paa",""],
-	["4","createDialog 'Life_inventory_menu'; _d = findDisplay -1; _d closeDisplay 1","Inventory","images\textures\Phone\subIcons\p_Inventory.paa",""],
-	["5","createDialog 'Life_key_management'; _d = findDisplay -1; _d closeDisplay 1","Key","images\textures\Phone\subIcons\p_Key.paa",""],
+	["1","createDialog 'Life_inventory_menu'; _d = findDisplay -1; _d closeDisplay 1","Inventory","images\textures\Phone\subIcons\p_Inventory.paa",""],
+	["2","createDialog 'Life_key_management'; _d = findDisplay -1; _d closeDisplay 1","Key","images\textures\Phone\subIcons\p_Key.paa",""],
+	["3","createDialog 'Life_my_smartphone'; _d = findDisplay -1; _d closeDisplay 1","Chat","images\textures\Phone\subIcons\p_Chat.paa",""],
+	["4","createDialog 'RscDisplayServerInfoMenu'; _d = findDisplay -1; _d closeDisplay 1","Info","images\textures\Phone\subIcons\p_Info.paa",""],
+	["5","createDialog 'TTM_GUI_RscDisplayTalentOverview'; _d = findDisplay -1; _d closeDisplay 1","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
 	["6","","Market is Disabled","images\textures\Phone\subIcons\p_Market.paa",""],
 	["7","createDialog 'Life_money_menu'; _d = findDisplay -1; _d closeDisplay 1","Money","images\textures\Phone\subIcons\p_Money.paa",""],
 	["8","[] call life_fnc_settingsMenu; _d = findDisplay -1; _d closeDisplay 1","Settings","images\textures\Phone\subIcons\p_Settings.paa",""],
