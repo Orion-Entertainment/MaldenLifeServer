@@ -627,7 +627,7 @@ class Clothing {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_Marshal", "Marshal Uniform", 200, "" },
             { "U_B_T_Soldier_F", "Marshal Tactical Uniform", 200, "" },
-            { "I_ghillie_sard_F", "Marshal Ghillie Uniform", 200, "" }
+            { "I_ghillie_ard_F", "Marshal Ghillie Uniform", 200, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
