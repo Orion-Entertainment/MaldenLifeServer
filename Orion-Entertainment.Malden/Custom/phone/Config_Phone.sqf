@@ -9,8 +9,8 @@ Config Signature
 Orion_Life_Phone_Config = [
 	["1","if (isNil 'life_action_gangInUse') then {if (isNil {(group player) getVariable 'gang_owner'}) then {createDialog 'Life_Create_Gang_Diag';} else {[] spawn life_fnc_gangMenu;};};","Gang","images\textures\Phone\subIcons\p_Gang.paa","side player == civilian"],
 	["2","[] call life_fnc_groupMenu;","Group","images\textures\Phone\subIcons\p_Group.paa","side player == civilian"],
-	["3","createDialog 'life_wanted_menu'; _d = findDisplay -1; _d closeDisplay 1","Wanted","images\textures\Phone\subIcons\p_Wanted.paa","side player == west"],
-	["4","createDialog 'Life_Cop_Placeables'; _d = findDisplay -1; _d closeDisplay 1","Barrier","images\textures\Phone\subIcons\p_Barrier.paa","side player == independent || side player == west"],
+	["3","[] call life_fnc_wantedMenu; _d = findDisplay -1; _d closeDisplay 1","Wanted","images\textures\Phone\subIcons\p_Wanted.paa","side player == west"],
+	["4","[] spawn life_fnc_placeablesMenu; _d = findDisplay -1; _d closeDisplay 1","Barrier","images\textures\Phone\subIcons\p_Barrier.paa","side player == independent || side player == west"],
 	["5","createDialog 'TTM_GUI_RscDisplayTalentOverview'; _d = findDisplay -1; _d closeDisplay 1","Skills","images\textures\Phone\subIcons\p_Skills.paa",""],
 	["6","closeDialog 0; createDialog 'phone';","Chat","images\textures\Phone\subIcons\p_Chat.paa",""],
 	["7","createDialog 'RscDisplayServerInfoMenu'; _d = findDisplay -1; _d closeDisplay 1","Info","images\textures\Phone\subIcons\p_Info.paa",""],
