@@ -123,7 +123,7 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
 
     _list = ["landVehicle","Ship","Air"];
     _isVehicle = if (KINDOF_ARRAY(_curObject,_list)) then {true} else {false};
-    _miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_LuggageHeap_02_F"];
+    _miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F"];
 
     //It's a vehicle! open the vehicle interaction key!
     if (_isVehicle) then {
