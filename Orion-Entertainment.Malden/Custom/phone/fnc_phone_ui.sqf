@@ -134,8 +134,8 @@ fnc_phone_generic_grid = {
                 _button ctrlSetTooltip (_currentConfig select 2);
                 _button ctrlCommit 0;
  
-                _index = _index + 1;
             };
+            _index = _index + 1;
         };
     };
 };
