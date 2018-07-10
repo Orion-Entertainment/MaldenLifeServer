@@ -72,12 +72,12 @@ class WeaponShops {
 			{ "arifle_SPAR_03_blk_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //Spar-17
 			{ "arifle_CTARS_blk_F", "", 150000, -1, "mav_ttm_var_rebel >= 4" }, //Car-95-1
 			{ "arifle_AK12_F", "", 175000, -1, "mav_ttm_var_rebel >= 4" }, //AK-12
-			{ "LMG_Mk200_F", "", 300000, -1, "mav_ttm_var_rebel >= 4" }, //MK200
-			{ "arifle_MX_SW_F", "", 200000, -1, "mav_ttm_var_rebel >= 4" }, //MX SW
+			{ "LMG_Mk200_F", "", 250000, -1, "mav_ttm_var_rebel >= 4" }, //MK200
+			{ "arifle_MX_SW_F", "", 190000, -1, "mav_ttm_var_rebel >= 4" }, //MX SW
 			{ "srifle_EBR_F", "", 180000, -1, "mav_ttm_var_rebel >= 5" }, //Mk18 ABR
-			{ "srifle_DMR_05_tan_F", "", 600000, -1, "mav_ttm_var_rebel >= 5" }, //Cyrus
+			{ "srifle_DMR_05_tan_F", "", 550000, -1, "mav_ttm_var_rebel >= 5" }, //Cyrus
 			{ "srifle_DMR_02_sniper_F", "", 500000, -1, "mav_ttm_var_rebel >= 5" }, //MAR-10
-			{ "LMG_Zafir_F", "", 800000, -1, "mav_ttm_var_rebel >= 5" } //Zafir	
+			{ "LMG_Zafir_F", "", 700000, -1, "mav_ttm_var_rebel >= 5" } //Zafir	
         };
         mags[] = {
             { "20Rnd_556x45_UW_mag", "", 100, 50, "" }, //sdar
@@ -129,8 +129,8 @@ class WeaponShops {
 			{ "acc_flashlight", "", 750, -1, "" }, //flashlight
 			{ "acc_flashlight_pistol", "", 750, -1, "" }, //flashlight
 			{ "bipod_01_F_blk", "", 2000, -1, "" }, //bipod
-			{ "optic_AMS_snd", "", 700000, -1, "mav_ttm_var_rebel >= 5" }, //AMS
-			{ "optic_LRPS_tna_F", "", 1000000, -1, "mav_ttm_var_rebel >= 5" } //LRPS
+			{ "optic_AMS_snd", "", 70000, -1, "mav_ttm_var_rebel >= 5" }, //AMS
+			{ "optic_LRPS_tna_F", "", 80000, -1, "mav_ttm_var_rebel >= 5" } //LRPS
         };
     };
 
@@ -143,9 +143,9 @@ class WeaponShops {
 			{ "NVGoggles_OPFOR", "", 5000, 75, ""}, //Black NightVision
             { "Binocular", "", 150, 75, "" },      //Binocular
             { "ItemGPS", "", 100, 50, "" },       //GPS
-			{ "MMG_01_tan_F", "", 1300000, 50, "mav_ttm_var_rebel >= 5" },       //Navid
-			{ "MMG_02_sand_F", "", 1500000, 50, "mav_ttm_var_rebel >= 5" },       //GPS
-			{ "launch_RPG7_F", "", 700000, 50, "mav_ttm_var_rebel >= 5" },       //RPG-7
+			{ "MMG_01_tan_F", "", 1000000, 50, "mav_ttm_var_rebel >= 5" },       //Navid
+			{ "MMG_02_sand_F", "", 1200000, 50, "mav_ttm_var_rebel >= 5" },       //SPMG
+			{ "launch_RPG7_F", "", 650000, 50, "mav_ttm_var_rebel >= 5" },       //RPG-7
 			{ "muzzle_snds_H", "", 1000, 375, "" }, //Suppressor
 			{ "muzzle_snds_L", "", 1000, 375, "" }, //Suppressor
 			{ "muzzle_snds_M", "", 1000, 375, "" }, //Suppressor
@@ -157,8 +157,8 @@ class WeaponShops {
 			{ "muzzle_snds_93mmg_tan", "", 1000, 375, "" } //Suppressor
         };
         mags[] = {
-            { "150Rnd_93x64_Mag", "", 50000, 50, "" }, //Navid
-            { "130Rnd_338_Mag", "", 50000, 50, "" }, //SPMG
+            { "150Rnd_93x64_Mag", "", 25000, 50, "" }, //Navid
+            { "130Rnd_338_Mag", "", 25000, 50, "" }, //SPMG
 			{ "RPG7_F", "", 250000, 50, "" } //RPG-7
         };
         accs[] = {
@@ -331,18 +331,18 @@ class WeaponShops {
             { "ItemGPS", "", 100, 50, "" },        //GPS
 			{ "SmokeShellGreen", "Tear Gas", 2500, 50, "" },//TearGas
             { "hgun_Pistol_heavy_01_F", $STR_W_items_StunPistol, 4000, -1, "" }, //TASER
-            { "hgun_PDW2000_F", "", 5000, -1, "" }, //PDW
-			{ "SMG_05_F", "", 5000, -1, "" }, //Protector
-			{ "SMG_01_F", "", 5000, -1, "" }, //Vermin
-			{ "arifle_TRG21_F", "", 5000, -1, "" }, //TRG
-			{ "arifle_Mk20_F", "", 5000, -1, "" }, //Mk-20
-			{ "arifle_SPAR_01_blk_F", "", 5000, -1, "" }, //Spar16
-			{ "arifle_MXC_khk_F", "", 5000, -1, "" }, //MXC
-			{ "arifle_MX_F", "", 5000, -1, "" }, //MX
-			{ "srifle_DMR_07_blk_F", "", 5000, -1, "" }, //CMR-76
-            { "arifle_Katiba_F", "", 5000, -1, "" }, //Katiba
-			{ "arifle_AKM_F", "", 5000, -1, "" }, //AKM
-			{ "srifle_DMR_01_F", "", 5000, -1, "" } //Rahim
+            { "hgun_PDW2000_F", "", 500, -1, "" }, //PDW
+			{ "SMG_05_F", "", 500, -1, "" }, //Protector
+			{ "SMG_01_F", "", 500, -1, "" }, //Vermin
+			{ "arifle_TRG21_F", "", 500, -1, "" }, //TRG
+			{ "arifle_Mk20_F", "", 500, -1, "" }, //Mk-20
+			{ "arifle_SPAR_01_blk_F", "", 500, -1, "" }, //Spar16
+			{ "arifle_MXC_khk_F", "", 500, -1, "" }, //MXC
+			{ "arifle_MX_F", "", 500, -1, "" }, //MX
+			{ "srifle_DMR_07_blk_F", "", 500, -1, "" }, //CMR-76
+            { "arifle_Katiba_F", "", 500, -1, "" }, //Katiba
+			{ "arifle_AKM_F", "", 500, -1, "" }, //AKM
+			{ "srifle_DMR_01_F", "", 500, -1, "" } //Rahim
         };
         mags[] = {
 			{ "11Rnd_45ACP_Mag", "Rubber Bullets", 20, -1, "call life_coplevel >= 1" }, //4five

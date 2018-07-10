@@ -530,10 +530,10 @@ class Clothing {
             { "H_Shemag_olive", "", 4250 "" },
             { "H_HelmetCrew_O_ghex_F", "", 5000 "" },
 			{ "H_HelmetSpecB_blk", "", 7500 "" },
-			{ "H_HelmetLeaderO_ghex_F", "", 50000, "" },
-			{ "H_HelmetSpecO_ghex_F", "", 75000, "" },
-			{ "H_PilotHelmetFighter_O", "", 100000, "" },
-			{ "H_CrewHelmetHeli_B", "Gas Mask", 80000, "" }
+			{ "H_HelmetLeaderO_ghex_F", "", 5000, "" },
+			{ "H_HelmetSpecO_ghex_F", "", 7000, "" },
+			{ "H_PilotHelmetFighter_O", "", 1000, "" },
+			{ "H_CrewHelmetHeli_B", "Gas Mask", 1000, "" }
 
         };
         goggles[] = {
@@ -626,7 +626,7 @@ class Clothing {
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_Marshal", "Marshal Uniform", 200, "" },
-            { "B_ghillie_sard_F", "Marshal Ghillie Uniform", 200, "" },
+            { "U_I_FullGhillie_sard", "Marshal Ghillie Uniform", 200, "" },
             { "U_B_T_Soldier_F", "Marshal Tactical Uniform", 200, "" }
         };
         headgear[] = {
