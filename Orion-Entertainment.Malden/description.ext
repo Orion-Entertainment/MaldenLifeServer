@@ -38,6 +38,7 @@ class CfgServer {
     */
 };
 
+#include "maverick\maverick_master.cpp"
 class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
@@ -49,6 +50,7 @@ class RscTitles {
     #include "dialog\RL_progress.hpp"
     #include "core\derleon\vis\vehInfo.hpp"
     #include "Custom\status_bar\statusBar.hpp"
+    #include "maverick\maverick_titles_master.cpp"
 };
 
 class CfgFunctions {
@@ -527,4 +529,3 @@ class CfgNotifications {
 	};
 };
 
-#include "maverick\maverick_master.cpp"
