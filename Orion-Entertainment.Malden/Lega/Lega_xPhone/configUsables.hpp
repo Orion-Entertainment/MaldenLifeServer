@@ -85,9 +85,9 @@ class Lega_xPhone_UsableItems
     {
         call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_bandages;";
     };
-    class spikeStrip
+    class airhorn
     {
-        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_spikeStrip;";
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_airhorn;";
     };
 };
 

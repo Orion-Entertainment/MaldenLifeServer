@@ -3,14 +3,14 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "debitcard", "bandages", "protest", "flashlight", "campfire", "gokart", "airhorn", "axe", "timber", "pdrill", "pickaxe", "toolkit", "fuelFull", "peach", "cloth", "goldcoin", "waterBottle", "apple", "pepsi", "cocaCola", "monsterEnergy", "doritos", "shittynoodles", "kfc", "easterEggs", "beer", "whiskey", "moonshine", "redgull", "tbacon", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "debitcard", "bandages", "protest", "gokart", "airhorn", "axe", "timber", "pdrill", "pickaxe", "toolkit", "fuelFull", "peach", "cloth", "goldcoin", "waterBottle", "apple", "pepsi", "cocaCola", "monsterEnergy", "doritos", "shittynoodles", "kfc", "easterEggs", "beer", "whiskey", "moonshine", "redgull", "tbacon", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class furniture {
         name = "STR_Shops_Furniture";
         side = "civ";
         conditions = "";
-        items[] = {  "storagesmall", "storagebig", "furniturewoodtable","furnituretarget","furnitureportgen","furniturefmradio","furniturewoodblue","furnituremetalrack","furniturePalletVert","furnitureMapAltis","furnitureTentA","furnitureSunChairGreen","furnitureSunChair","furnitureSleepingBagBrown","furnitureSleepingBagBlue","furnitureSleepingBag","furniturecampingtable","furnitureopenlaptop","furniturebagshort","furniturechair","furnituredesk" };
+        items[] = {  "storagesmall", "storagebig" };
     };
 
     class med_market {
@@ -24,28 +24,28 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "";
-        items[] = { "debitcard",  "cyanideCapsule", "speedbomb", "gokart", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
+        items[] = { "debitcard", "speedbomb", "gokart", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
     };
 	
 	class black {
         name = "STR_Shops_Black";
         side = "civ";
         conditions = "";
-        items[] = { "debitcard", "speedbomb", "gokart", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "lockpick", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "barrel", "trigger", "butt", "sight", "steel", "iron_refined", "steelplate", "gunpowder", "sulfur", "cloth", "C4", "rubber", "BTip", "BShell", "BPowder", "BPrimer"};
+        items[] = { "debitcard", "speedbomb", "gokart", "zipties", "pliers", "blindfold", "lockpick", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "barrel", "trigger", "butt", "sight", "steel", "iron_refined", "steelplate", "gunpowder", "sulfur", "cloth", "C4", "rubber", "BTip", "BShell", "BPowder", "BPrimer"};
     };
 
     class donator {
         name = "STR_Shops_Donator";
         side = "civ";
         conditions = "call life_donorlevel >= 1";
-        items[] = { "debitcard", "gokart", "speedbomb", "cyanideCapsule", "gpstracker", "flashlight", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
+        items[] = { "debitcard", "gokart", "speedbomb", "zipties", "pliers", "blindfold", "codeCracker", "bandages", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "debitcard", "bandages", "gokart", "protest", "flashlight", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
+        items[] = { "debitcard", "bandages", "gokart", "protest", "morphine", "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "demolitioncharge" };
     };
 
     class wongs {
