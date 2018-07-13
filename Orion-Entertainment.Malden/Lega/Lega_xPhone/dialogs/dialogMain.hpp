@@ -15,7 +15,7 @@
 #include "contactView.hpp"
 #include "Messages.hpp"
 #include "MessagingMain.hpp"
-#include "adminMessage.hpp"
+
 
 class Lega_xPhone
 {
