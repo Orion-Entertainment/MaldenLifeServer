@@ -1,0 +1,7 @@
+#include "config.hpp"
+#include "controls.hpp"
+#include "dialogs\dialogMain.hpp"
+#include "configUsables.hpp"
+#include "config_onloads.hpp"
+#include "config_buttons.hpp"
+#include "config_backgrounds.hpp"
