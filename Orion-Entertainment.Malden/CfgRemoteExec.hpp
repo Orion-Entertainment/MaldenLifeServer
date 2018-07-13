@@ -12,9 +12,9 @@ class CfgRemoteExec {
         mode = 1;
         jip = 1;
 
+        #include "Lega\Lega_RemoteExec.hpp"
         #include "maverick\maverick_remoteExec_master.cpp"
         #include "Custom\rappel.cpp"
-        #include "Lega\Lega_RemoteExec.hpp"
 
         /* Client only functions */
         F(life_fnc_AAN,CLIENT)
