@@ -1,6 +1,6 @@
 class xPhoneMain {
   phoneNumberPrefix = "+1";//the prefix for you phone numbers.
-  phoneNumberLength = 10; // the amount of numbers after the prefix.
+  phoneNumberLength = 9; // the amount of numbers after the prefix.
   phoneNumberStart = 7;// the first number after the prefix // -1 if it doesn't matter.
   ServerTag = "nujifrewnkijufewrk";//PLX make this uniqeee
   olduseItem = false;// set this to tru if you want to use the old useItem Function
