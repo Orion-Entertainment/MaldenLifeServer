@@ -91,5 +91,6 @@ class Lega_XphoneOptions
     displayName = "MSG ADMINS";
     onCall = "['Lega_xPhone_AdminMessage_Main'] spawn Lega_fnc_changeMenu";
     image = "admin-menu.paa";
+    conditions = "call life_adminlevel >= 1";
   };
 };
