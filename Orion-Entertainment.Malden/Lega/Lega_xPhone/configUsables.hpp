@@ -1,6 +1,6 @@
 class Lega_xPhone_usablesMain
 {
-    overuseFood = true;//if you want a player to become stuffed when they eat too much food, and lose stamina 
+    overuseFood = false;//if you want a player to become stuffed when they eat too much food, and lose stamina 
     staminaLossStuffed = 50;
 };
 class Lega_xPhone_UsableItems
@@ -40,6 +40,54 @@ class Lega_xPhone_UsableItems
     class lockpick
     {
         call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_lockpick;";
+    };
+    class speedbomb
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_speedBomb;";
+    };
+    class flashlight
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_flashLight;";
+    };
+    class head
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_head;";
+    };
+    class gpstracker
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_gpsTracker;";
+    };
+    class gokart
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_gokart;";
+    };
+    class protest
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_protest;";
+    };
+    class volleyball
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_volleyball;";
+    };
+    class prize
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_prize;";
+    };
+    class cprKit
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_cprKit;";
+    };
+    class morphine
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_morphine;";
+    };
+    class bandages
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_bandages;";
+    };
+    class spikeStrip
+    {
+        call = "[] call life_fnc_hudUpdate;[] spawn life_fnc_spikeStrip;";
     };
 };
 
@@ -125,6 +173,41 @@ class Lega_xPhone_UsableFoods
         hunger = 10;
         call = "[] call life_fnc_hudUpdate;";
     };
+    class doritos
+    {
+        hunger = 20;
+        call = "[] call life_fnc_hudUpdate;";
+    };
+    class shittynoodles
+    {
+        hunger = 20;
+        call = "[] call life_fnc_hudUpdate;";
+    };
+    class kfc
+    {
+        hunger = 40;
+        call = "[] call life_fnc_hudUpdate;";
+    };
+    class easterEggs
+    {
+        hunger = 30;
+        call = "[] call life_fnc_hudUpdate;";
+    };
+    class donuts
+    {
+        hunger = 10;
+        call = "[] call life_fnc_hudUpdate;";
+    };
+    class rabbit
+    {
+        hunger = 30;
+        call = "[] call life_fnc_hudUpdate;";
+    };
+    class turtle_soup
+    {
+        hunger = 90;
+        call = "[] call life_fnc_hudUpdate;";
+    };
 };
 
 class Lega_xPhone_UsableDrinks
@@ -142,6 +225,42 @@ class Lega_xPhone_UsableDrinks
         call = "[] call life_fnc_hudUpdate;[] call Lega_fnc_use_Coffee";
     };
     class redGull
+    {
+        thirst = 20;
+        fatigue = 100;
+        call = "[] call life_fnc_hudUpdate;[] call Lega_fnc_use_redGull";
+    };
+    class pepsi
+    {
+        thirst = 30;
+        fatigue = 100;
+        call = "[] call life_fnc_hudUpdate;[] call Lega_fnc_use_redGull";
+    };
+    class cocacola
+    {
+        thirst = 20;
+        fatigue = 100;
+        call = "[] call life_fnc_hudUpdate;[] call Lega_fnc_use_redGull";
+    };
+  class monsterEnergy
+    {
+        thirst = 40;
+        fatigue = 100;
+        call = "[] call life_fnc_hudUpdate;[] call Lega_fnc_use_redGull";
+    };
+   class beer
+    {
+        thirst = 20;
+        fatigue = 100;
+        call = "[] call life_fnc_hudUpdate;[] call Lega_fnc_use_redGull";
+    };
+   class whiskey
+    {
+        thirst = 20;
+        fatigue = 100;
+        call = "[] call life_fnc_hudUpdate;[] call Lega_fnc_use_redGull";
+    };
+ class moonshine
     {
         thirst = 20;
         fatigue = 100;
