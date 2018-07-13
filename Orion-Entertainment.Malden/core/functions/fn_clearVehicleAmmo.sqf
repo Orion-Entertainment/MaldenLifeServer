@@ -28,10 +28,9 @@ if (_veh isEqualTo "O_Heli_Attack_02_black_F") then {
     _vehicle removeMagazinesTurret ["8Rnd_LG_scalpel",[0]];
     _vehicle removeMagazinesTurret ["38Rnd_80mm_rockets",[0]];
 };
-/* Added For MP
-if (_veh isEqualTo "B_Heli_Transport_01_F") then {
-    _vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[1]];
-    _vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
+/* Added For Pawnee
+if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
+    _vehicle removeMagazinesTurret ["24Rnd_missiles",[0]];
 };
 */
 clearWeaponCargoGlobal _vehicle;

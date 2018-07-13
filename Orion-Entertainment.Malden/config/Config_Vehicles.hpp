@@ -22,7 +22,8 @@ class CarShops {
         conditions = "mav_ttm_var_rebel >= 5";
         vehicles[] = {
             { "I_MRAP_03_F", "" },		
-            { "O_MRAP_02_hmg_F", "" }
+            { "O_MRAP_02_hmg_F", "" },
+            { "B_Heli_Light_01_armed_F", "" }
         };
     };
 
@@ -98,7 +99,7 @@ class CarShops {
             { "B_Heli_Transport_03_unarmed_F", "" },
             { "O_Heli_Transport_04_bench_F", "" },
             { "O_Heli_Transport_04_box_F", "" },
-			{ "O_Heli_Light_02_unarmed_F", "" }
+            { "O_Heli_Light_02_unarmed_F", "" }
         };
     };
 	
@@ -171,7 +172,8 @@ class CarShops {
             { "C_Offroad_01_F", "license_cop_swat" },
             { "C_SUV_01_F", "license_cop_swat" },
             { "C_Hatchback_01_sport_F", "license_cop_swat" },
-            { "C_Offroad_02_unarmed_F", "license_cop_swat" }
+            { "C_Offroad_02_unarmed_F", "license_cop_swat" },
+            { "B_APC_Wheeled_01_cannon_F", "license_cop_swat" }
         };
     };
 
@@ -701,6 +703,19 @@ class LifeCfgVehicles {
             { "Marshal.", "cop", {
                 "images\textures\Vehicles\Cop\Marshal_Strider.jpg"
             }, "" }
+        };
+    };
+
+    class B_APC_Wheeled_01_cannon_F {
+        vItemSpace = 100;
+        conditions = "";
+        price = 200000;
+        textures[] = {
+            { "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } }
         };
     };
 
@@ -1339,6 +1354,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             }, "" }
         };
+    };
+
+    class B_Heli_Light_01_armed_F {
+        vItemSpace = 90;
+        conditions = "";
+        price = 10000000;
+        textures[] = {};
     };
 
     class B_Heli_Light_01_F {
