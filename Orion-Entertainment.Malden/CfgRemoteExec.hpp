@@ -110,6 +110,7 @@ class CfgRemoteExec {
         F(DB_fnc_queryRequest,SERVER)
         F(DB_fnc_updatePartial,SERVER)
         F(DB_fnc_updateRequest,SERVER)
+        F(DB_fnc_logData,SERVER)
         F(life_fnc_jailSys,SERVER)
         F(life_fnc_wantedAdd,SERVER)
         F(life_fnc_wantedBounty,SERVER)
