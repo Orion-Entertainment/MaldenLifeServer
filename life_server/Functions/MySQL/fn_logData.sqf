@@ -7,7 +7,7 @@ params [
     "_option",
     "_data"
 ];
-
+diag_log str(_data);
 if (_option isEqualTo "" || _data isEqualTo "") exitWith {};
 
 private _ext = "Orion-Entertainment" callExtension ["post", [_option,_data]];
