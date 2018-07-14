@@ -33,6 +33,18 @@ if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
     _vehicle removeWeapon "missiles_DAR";
     _vehicle removeMagazine "24Rnd_missiles";
 };
+
+if (_veh isEqualTo "O_T_VTOL_02_infantry_grey_F") then {
+    _vehicle removeWeapon "gatling_30mm_VTOL_02";
+    _vehicle removeWeapon "missiles_SCALPEL";
+    _vehicle removeWeapon "rockets_Skyfire";
+};
+
+if (_veh isEqualTo "O_T_VTOL_02_vehicle_grey_F") then {
+    _vehicle removeWeapon "gatling_30mm_VTOL_02";
+    _vehicle removeWeapon "missiles_SCALPEL";
+    _vehicle removeWeapon "rockets_Skyfire";
+};
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;

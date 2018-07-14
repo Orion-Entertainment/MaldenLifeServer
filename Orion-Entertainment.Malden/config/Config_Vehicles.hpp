@@ -195,7 +195,10 @@ class CarShops {
         side = "cop";
         conditions = "license_cop_swat";
         vehicles[] = {
-            { "B_Heli_Transport_01_camo_F", "license_cop_swat" }
+            { "B_Heli_Transport_01_camo_F", "license_cop_swat" },
+            { "B_T_VTOL_01_vehicle_F", "license_cop_swat" },
+            { "O_T_VTOL_02_infantry_grey_F", "license_cop_swat" },
+            { "O_T_VTOL_02_vehicle_grey_F", "license_cop_swat" }
         };
     };
 
@@ -218,6 +221,7 @@ class CarShops {
 			{ "O_Heli_Light_02_unarmed_F", "call life_coplevel >= 4" },
             { "B_T_VTOL_01_infantry_F", "call life_coplevel >= 5" },
             { "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 5" },
+            { "B_T_VTOL_01_vehicle_F", "call life_coplevel >= 5" },
             { "C_Plane_Civil_01_F", "call life_coplevel >= 3" }
         };
     };
@@ -558,6 +562,27 @@ class LifeCfgVehicles {
     };
 	
     class B_T_VTOL_01_infantry_F {
+        vItemSpace = 250;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
+
+    class B_T_VTOL_01_vehicle_F {
+        vItemSpace = 250;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
+
+    class O_T_VTOL_02_infantry_grey_F {
+        vItemSpace = 250;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
+
+    class O_T_VTOL_02_vehicle_grey_F {
         vItemSpace = 250;
         conditions = "";
         price = 250000;
