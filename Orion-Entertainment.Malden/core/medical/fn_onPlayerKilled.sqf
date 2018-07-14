@@ -136,6 +136,7 @@ if(isNull _killer || _killer == player) then {
 		};
 	};
 };
+
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
 showCinemaBorder false;
@@ -192,12 +193,17 @@ _unit spawn {
 //Give killer notification
 [_unit,_killer] remoteExecCall ["life_fnc_KilledPlayer",_killer];
 
+if (isNil {_groupName}) then
+{
+	_groupName = "No Group";
+};
+if (isNil {_groupNameKiller}) then
+{
+	_groupNameKiller = "No Group";
+};
 
-/*
 
-Log Kill to Orion-Entertainment Panel
-
-*/
+/* Log Kill to Orion-Entertainment Panel */
 private _KillData = [
 	"Killed",
 	player getVariable["realname",""], //Name
@@ -207,9 +213,10 @@ private _KillData = [
 	getPlayerUID _killer, //Killer PID
 	_killerWeapon, //Killer Weapon
 	_groupNameKiller, //Killer Group
-	floor( _killer distance _unit) //Kill Distance
+	floor(_killer distance _unit) //Kill Distance
 ];
 ["Log",_KillData] remoteExec ["DB_fnc_logData",RSERV];
+
 
 
 _unit spawn {
