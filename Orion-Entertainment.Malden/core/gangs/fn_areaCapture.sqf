@@ -28,9 +28,9 @@ if (playerside isEqualTo west) exitWith {
 
 //set the cp rate
 if (!isNull _group) then {
-    _cpRate = 0.50;
+    _cpRate = 0.050;
 } else {
-    _cpRate = 1.00;
+    _cpRate = 0.090;
 };
 
 //Police officer checks
@@ -159,9 +159,9 @@ _gangName = _group getVariable ["gang_name",""]; //gets the gang name
         localize "STR_Global_No"
     ] call BIS_fnc_guiMessage;
 
-    _cpRate = 0.50;
+    _cpRate = 0.050;
 } else {
-    _cpRate = 1.00;
+    _cpRate = 0.090;
 };
 
 //check if area is contested
