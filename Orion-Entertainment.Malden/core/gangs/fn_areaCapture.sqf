@@ -13,7 +13,7 @@ _group = _area getVariable ["gangOwner",grpNull]; //gets the owner of the flag
 _xname = ""; //setup for popo name
 _nearUnits = _area nearEntities ["Man",500]; //searches area for players
  _areaContested = false; //sets the area to not contested
-if ((player distance _area) > 10) exitWith { hint "You must be closer to the flag to capture this area!"; }; //too far away
+if ((player distance _area) > 5) exitWith { hint "You must be closer to the flag to capture this area!"; }; //too far away
 
 /*
 #########################################
@@ -28,9 +28,9 @@ if (playerside isEqualTo west) exitWith {
 
 //set the cp rate
 if (!isNull _group) then {
-    _cpRate = 0.0045;
+    _cpRate = 0.50;
 } else {
-    _cpRate = 0.0075;
+    _cpRate = 1.00;
 };
 
 //Police officer checks
@@ -116,6 +116,10 @@ if (_gangNum == "Gang_Area_3") then {
     "gang_cap_3" setMarkerText _pText;
 };
 
+if (_gangNum == "Gang_Area_4") then {
+    "gang_cap_4" setMarkerText _pText;
+};
+
 _area setVariable ["inCapture",false,true];
 _area setVariable ["gangOwner",group player,true];
 
@@ -155,9 +159,9 @@ _gangName = _group getVariable ["gang_name",""]; //gets the gang name
         localize "STR_Global_No"
     ] call BIS_fnc_guiMessage;
 
-    _cpRate = 0.0045;
+    _cpRate = 0.50;
 } else {
-    _cpRate = 0.0075;
+    _cpRate = 1.00;
 };
 
 //check if area is contested
@@ -251,6 +255,10 @@ if (_gangNum == "Gang_Area_2") then {
 
 if (_gangNum == "Gang_Area_3") then {
     "gang_cap_3" setMarkerText _text;
+};
+
+if (_gangNum == "Gang_Area_4") then {
+    "gang_cap_4" setMarkerText _pText;
 };
 
 //Tell the world
