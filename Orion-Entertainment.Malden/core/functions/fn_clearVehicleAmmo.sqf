@@ -30,7 +30,8 @@ if (_veh isEqualTo "O_Heli_Attack_02_black_F") then {
 };
 
 if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
-    _vehicle removeMagazinesTurret ["24Rnd_missiles",[0]];
+    _vehicle removeMagazinesTurret ["24Rnd_missiles",[1]];
+    _vehicle removeMagazinesTurret ["24Rnd_missiles",[2]];
 };
 
 clearWeaponCargoGlobal _vehicle;
