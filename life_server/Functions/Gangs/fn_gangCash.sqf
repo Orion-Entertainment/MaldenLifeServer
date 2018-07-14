@@ -1,14 +1,20 @@
 #include "\life_server\script_macros.hpp"
+/*
+    File: fn_gangCash.sqf
+    Author: Fuel RebornRoleplay.com
 
+    Description:
+    checks the gang areas, then rewards the gang if they own them
+*/
 
  /*
 	#########################
- 	#	  heroin		#
+ 	#	  north outpost		#
  	#########################
  */
 
 //gets the flag locations
-_area = [2676.255,11504.252,0] nearestObject "Flag_Red_F";
+_area = [8086.973,8811.951,0] nearestObject "Flag_Red_F";
 
 //gets the gang names of the flag owners
 _owner = _area getVariable ["gangOwner",grpNull];
@@ -24,12 +30,12 @@ _owner setVariable ["gang_bank",round(_gFund+((count playableUnits)*2000)),true]
  
  /*
 	#########################
- 	#	cocaine	#
+ 	#	south pen outpost	#
  	#########################
  */
 
 //gets the flag locations
-_area2 = [5198.156,21011.883,0] nearestObject "Flag_Red_F";
+_area2 = [4294.111,6844.053,0] nearestObject "Flag_Red_F";
 
 //gets the gang names of the flag owners
 _owner = _area2 getVariable ["gangOwner",grpNull];
@@ -45,12 +51,12 @@ _owner setVariable ["gang_bank",round(_gFund+((count playableUnits)*2000)),true]
 
  /*
 	#########################
- 	#	   south rebel	#
+ 	#	   east outpost		#
  	#########################
  */
 
 //gets the flag locations
-_area3 = [12274.535,8882.376,0] nearestObject "Flag_Red_F";
+_area3 = [5778.7,3007.107,-0.256] nearestObject "Flag_Red_F";
 
 //gets the gang names of the flag owners
 _owner = _area3 getVariable ["gangOwner",grpNull];

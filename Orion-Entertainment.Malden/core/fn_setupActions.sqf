@@ -22,6 +22,8 @@ switch (playerSide) do {
         !isNull cursorObject && player distance cursorObject < 3.5 && isPlayer cursorObject && (cursorObject getVariable ["playerSurrender",false]) || animationState cursorObject == "Incapacitated"']];
         //Suicide alahsnackbar
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Activate Suicide Vest</t>",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_gry" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
+        //Gang
+        life_actions = life_actions + [player addAction["<t color='#FF0000'>Capture Gang Location</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) == "Flag_Red_F") ']];
     };
     case west: {
   		life_actions pushBack (player addAction["<t color = '#ffff1a'>Police Speaker System</t>",life_fnc_policeSpeaker,"",7,false,false,"",' vehicle player != player ']);

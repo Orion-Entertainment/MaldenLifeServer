@@ -12837,6 +12837,25 @@
             <Russian>Вы покинули Safezone!</Russian>
             <German>Sie haben die Safezone verlassen!</German>
         </Key>
+        <Key ID="STR_GNOTF_CaptureAreaAttemptPopo">
+            <Original>%1 and the police are trying to neutralize an area!</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CapturingArea">
+            <Original>Claiming Area</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CapturedArea">
+            <Original>Area has been captured.</Original>
+        </Key>
+
+        <Key ID="STR_Gang_captuerr">
+            <Original>Capture Area</Original>
+        </Key>
+
+        <Key ID="STR_GNOTF_CaptureAreaSuccess">
+            <Original>%1 and his gang: %2 - have claimed an area!</Original>
+        </Key>
         <Key ID="STR_SafezoneShooting">
             <Original>You are not allowed to shoot in safezone!</Original>
             <Czech>Nemáte povoleno střílet v safezone!</Czech>

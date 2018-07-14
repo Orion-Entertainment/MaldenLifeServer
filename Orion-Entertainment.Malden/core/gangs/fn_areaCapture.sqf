@@ -1,5 +1,11 @@
 #include "..\..\script_macros.hpp"
+/*
+    File: fn_areaCapture.sqf
+    Author: Fuel RebornRoleplay.com
 
+    Description:
+    checks the area for gangs or police before allowing you to capture an area
+*/
 private["_gangNum","_gName","_group","_area","_nil","_pos","_xname","_text","_action","_cpRate","_cP","_nearUnits","_areaContested","_progressBar","_title","_titleText","_ui"];
 
 _area = getpos player nearestObject "Flag_Red_F"; //finds the flag
@@ -7,8 +13,13 @@ _group = _area getVariable ["gangOwner",grpNull]; //gets the owner of the flag
 _xname = ""; //setup for popo name
 _nearUnits = _area nearEntities ["Man",500]; //searches area for players
  _areaContested = false; //sets the area to not contested
-if ((player distance _area) > 10) exitWith { ["You must be closer to the flag to capture this area!",false,"slow"] call life_fnc_notificationSystem; }; //too far away
+if ((player distance _area) > 10) exitWith { hint "You must be closer to the flag to capture this area!"; }; //too far away
 
+/*
+#########################################
+#       The Police Capture System       #
+#########################################
+*/
 
 if (playerside isEqualTo west) exitWith {
 
@@ -38,7 +49,7 @@ if (!isNull _group) then {
 
     //closes the capture
     if (_areaContested && _xname isEqualTo "Rebels") then {
-        ["Rebels are nearby!\nGet rid of them first!",false,"slow"] call life_fnc_notificationSystem;
+        hint "Rebels are nearby!\nGet rid of them first!";
     };
 
 } forEach _nearUnits;
@@ -70,7 +81,7 @@ if (!(_areaContested)) then {
         //interuption checks
         if (_cP >= 1 || !alive player) exitWith {_area setVariable ["inCapture",false,true];};
         if (player distance _area > 100) exitWith {_area setVariable ["inCapture",false,true];}; //how far they can go from the hideout while capturing
-        if (_areaContested) exitWith {["Area Contested",false,"slow"] call life_fnc_notificationSystem;}; //Future testing
+        if (_areaContested) exitWith {hint "Area Contested";}; //Future testing
         if (life_istazed) exitWith {_area setVariable ["inCapture",false,true];}; //Tazed
         if (life_isknocked) exitWith {_area setVariable ["inCapture",false,true];}; //Knocked
         if (life_interrupted) exitWith {_area setVariable ["inCapture",false,true];}; //interupted
@@ -110,14 +121,25 @@ _area setVariable ["gangOwner",group player,true];
 
 };
 
+/*
+#############################################
+#       End Of Police Capture System        #
+#############################################
+*/
+
+/*
+#########################################
+#       The Rebel Capture System        #
+#########################################
+*/
 
 _area = getpos player nearestObject "Flag_Red_F"; //finds the flag
 _group = _area getVariable ["gangOwner",grpNull]; //gets the ownerr of the flag
 _xname = ""; //setup for popo name
 _nearUnits = _area nearEntities ["Man",500]; //searches area for players
-if (isNil {group player getVariable "gang_name"}) exitWith { ["You must be in a gang to capture a gang area!",false,"slow"] call life_fnc_notificationSystem; }; //not in a gang
-if (_group isEqualTo group player) exitWith { ["Your gang already has control over this area!",false,"slow"] call life_fnc_notificationSystem; }; //already own it
-if ((_area getVariable ["inCapture",FALSE])) exitWith {["Only one person shall capture at once!",false,"slow"] call life_fnc_notificationSystem; }; //stops 2 people capturing at the same time
+if (isNil {group player getVariable "gang_name"}) exitWith { hint "You must be in a gang to capture a gang area!"; }; //not in a gang
+if (_group isEqualTo group player) exitWith { hint "Your gang already has control over this area!"; }; //already own it
+if ((_area getVariable ["inCapture",FALSE])) exitWith {hint "Only one person shall capture at once!"; }; //stops 2 people capturing at the same time
 
 [[0,1],"STR_GNOTF_CaptureAreaAttempt",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT]; //tells the server someone is trying to capture the outpost
 
@@ -160,9 +182,9 @@ _gangName = _group getVariable ["gang_name",""]; //gets the gang name
     //closes the capture
     if (_areaContested) exitWith {
         if (_xname isEqualTo "Police Force") then {
-            ["The Police Force are nearby!\nGet rid of them first!",false,"slow"] call life_fnc_notificationSystem;
+            hint "The Police Force are nearby!\nGet rid of them first!";
         } else {
-            ["Other rebels are nearby!\nGet rid of them first!",false,"slow"] call life_fnc_notificationSystem;
+            hint "Other rebels are nearby!\nGet rid of them first!";
         };
     };
 
@@ -184,7 +206,7 @@ _cP = 0.01;
 
 if (!(_areaContested)) then {
     for "_i" from 0 to 1 step 0 do {
-        sleep 2; //rebel capture time * 100
+        sleep  3; //rebel capture time * 100
         _cP = _cP + _cpRate;
         _progressBar progressSetPosition _cP;
         _titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
@@ -195,7 +217,7 @@ if (!(_areaContested)) then {
         //interuption checks
         if (_cP >= 1 || !alive player) exitWith {_area setVariable ["inCapture",false,true];};
         if (player distance _area > 100) exitWith {_area setVariable ["inCapture",false,true];}; //how far they can go from the hideout while capturing
-        if (_areaContested) exitWith {["Area Contested",false,"slow"] call life_fnc_notificationSystem;};
+        if (_areaContested) exitWith {hint "Area Contested";};
         if (life_istazed) exitWith {_area setVariable ["inCapture",false,true];}; //Tazed
         if (life_isknocked) exitWith {_area setVariable ["inCapture",false,true];}; //Knocked
         if (life_interrupted) exitWith {_area setVariable ["inCapture",false,true];}; //interupted
@@ -212,7 +234,6 @@ if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "ST
 life_action_inUse = false;
 
 titleText[localize "STR_GNOTF_CapturedArea","PLAIN"];
-
 
 //marker system
 _gangNum = _area getVariable ["gangNum", ""];
@@ -232,12 +253,14 @@ if (_gangNum == "Gang_Area_3") then {
     "gang_cap_3" setMarkerText _text;
 };
 
-if (_gangNum == "Gang_Area_4") then {
-    "gang_cap_4" setMarkerText _text;
-};
-
 //Tell the world
-[[0,1],"STR_GNOTF_gangCaptureSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
+[[0,1],"STR_GNOTF_CaptureAreaSuccess",true,[name player,(group player) getVariable "gang_name"]] remoteExecCall ["life_fnc_broadcast",RCLIENT];
 
 _area setVariable ["inCapture",false,true];
 _area setVariable ["gangOwner",group player,true];
+
+/*
+#############################################
+#       End Of The Rebel Capture System     #
+#############################################
+*/
