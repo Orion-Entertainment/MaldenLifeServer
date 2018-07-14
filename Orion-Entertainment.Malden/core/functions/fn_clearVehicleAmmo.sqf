@@ -29,7 +29,7 @@ if (_veh isEqualTo "O_Heli_Attack_02_black_F") then {
     _vehicle removeMagazinesTurret ["38Rnd_80mm_rockets",[0]];
 };
 
- if (_vehicle isKindOf "B_Heli_Light_01_armed_F") then { // AH-9 Pawnee
+ if (_veh isEqualTo "B_Heli_Light_01_armed_F") then { // AH-9 Pawnee
 _vehicle removeWeapon "missiles_DAGR";
 _vehicle removeMagazine "12Rnd_PG_missiles";
 _vehicle removeMagazine "24Rnd_PG_missiles";
