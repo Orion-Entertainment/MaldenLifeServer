@@ -192,13 +192,25 @@ _unit spawn {
 //Give killer notification
 [_unit,_killer] remoteExecCall ["life_fnc_KilledPlayer",_killer];
 
-//Logs Kill
+
+/*
+
+Log Kill to Orion-Entertainment Panel
+
+*/
 private _KillData = [
 	"Killed",
+	player getVariable["realname",""], //Name
+	getPlayerUID player, //PID
+	_groupName, //Group
 	_killer getVariable["realname",""], //Killer Name
-	getPlayerUID _killer //Killer PID
+	getPlayerUID _killer, //Killer PID
+	_killerWeapon, //Killer Weapon
+	_groupNameKiller, //Killer Group
+	floor( _killer distance _unit)] call life_fnc_numberText //Kill Distance
 ];
 ["Log",_KillData] remoteExec ["DB_fnc_logData",RSERV];
+
 
 _unit spawn {
     private ["_requestBtn","_requestTime"];
