@@ -45,6 +45,10 @@ if (_veh isEqualTo "O_T_VTOL_02_vehicle_grey_F") then {
     _vehicle removeWeapon "missiles_SCALPEL";
     _vehicle removeWeapon "rockets_Skyfire";
 };
+
+if (_veh isEqualTo "B_AFV_Wheeled_01_up_cannon_F") then {
+    _vehicle removeWeapon "cannon_120mm";
+};
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;

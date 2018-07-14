@@ -173,7 +173,8 @@ class CarShops {
             { "C_SUV_01_F", "license_cop_swat" },
             { "C_Hatchback_01_sport_F", "license_cop_swat" },
             { "C_Offroad_02_unarmed_F", "license_cop_swat" },
-            { "B_APC_Wheeled_01_cannon_F", "license_cop_swat" }
+            { "B_APC_Wheeled_01_cannon_F", "license_cop_swat" },
+            { "B_AFV_Wheeled_01_up_cannon_F", "license_cop_swat" }
         };
     };
 
@@ -732,6 +733,19 @@ class LifeCfgVehicles {
     };
 
     class B_APC_Wheeled_01_cannon_F {
+        vItemSpace = 100;
+        conditions = "";
+        price = 200000;
+        textures[] = {
+            { "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } }
+        };
+    };
+
+    class B_AFV_Wheeled_01_up_cannon_F {
         vItemSpace = 100;
         conditions = "";
         price = 200000;
