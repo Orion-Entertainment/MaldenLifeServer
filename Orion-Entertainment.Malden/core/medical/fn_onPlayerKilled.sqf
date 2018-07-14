@@ -207,7 +207,7 @@ private _KillData = [
 	getPlayerUID _killer, //Killer PID
 	_killerWeapon, //Killer Weapon
 	_groupNameKiller, //Killer Group
-	floor( _killer distance _unit)] call life_fnc_numberText //Kill Distance
+	floor( _killer distance _unit) //Kill Distance
 ];
 ["Log",_KillData] remoteExec ["DB_fnc_logData",RSERV];
 
