@@ -29,14 +29,11 @@ if (_veh isEqualTo "O_Heli_Attack_02_black_F") then {
     _vehicle removeMagazinesTurret ["38Rnd_80mm_rockets",[0]];
 };
 
-if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
-    _vehicle removeMagazinesTurret ["24Rnd_missiles",[0]];
-    _vehicle removeMagazinesTurret ["24Rnd_missiles",[1]];
-    _vehicle removeMagazinesTurret ["24Rnd_missiles",[2]];
-    _vehicle removeMagazinesTurret ["24Rnd_missiles",[3]];
-    _vehicle removeMagazinesTurret ["24Rnd_missiles",[4]];
+ if (_object isKindOf "B_Heli_Light_01_armed_F") then { // AH-9 Pawnee
+_object removeWeapon "missiles_DAGR";
+_object removeMagazine "12Rnd_PG_missiles";
+_object removeMagazine "24Rnd_PG_missiles";
 };
-
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
