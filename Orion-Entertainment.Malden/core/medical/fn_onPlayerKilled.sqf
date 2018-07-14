@@ -197,7 +197,7 @@ private _KillData = [
 	"Killed",
 	_killer getVariable["realname",""], //Killer Name
 	getPlayerUID _killer //Killer PID
-]
+];
 ["Log",_KillData] remoteExec ["DB_fnc_logData",RSERV];
 
 _unit spawn {
