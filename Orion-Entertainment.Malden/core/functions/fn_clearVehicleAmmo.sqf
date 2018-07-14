@@ -30,8 +30,8 @@ if (_veh isEqualTo "O_Heli_Attack_02_black_F") then {
 };
 
 if (_veh isEqualTo "B_Heli_Light_01_armed_F") then {
-    _vehicle removeWeapon ["missiles_DAR",[0]];
-    _vehicle removeMagazine ["24Rnd_missiles",[0]];
+    _vehicle removeWeapon "missiles_DAR";
+    _vehicle removeMagazine "24Rnd_missiles";
 };
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
