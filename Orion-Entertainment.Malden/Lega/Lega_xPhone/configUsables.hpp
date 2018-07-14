@@ -193,21 +193,6 @@ class Lega_xPhone_UsableFoods
         hunger = 30;
         call = "[] call life_fnc_hudUpdate;";
     };
-    class donuts
-    {
-        hunger = 10;
-        call = "[] call life_fnc_hudUpdate;";
-    };
-    class rabbit
-    {
-        hunger = 30;
-        call = "[] call life_fnc_hudUpdate;";
-    };
-    class turtle_soup
-    {
-        hunger = 90;
-        call = "[] call life_fnc_hudUpdate;";
-    };
 };
 
 class Lega_xPhone_UsableDrinks
