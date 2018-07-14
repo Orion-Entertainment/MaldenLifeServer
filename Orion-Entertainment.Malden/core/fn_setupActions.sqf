@@ -27,6 +27,8 @@ switch (playerSide) do {
   		life_actions pushBack (player addAction["<t color = '#ffff1a'>Police Speaker System</t>",life_fnc_policeSpeaker,"",7,false,false,"",' vehicle player != player ']);
   		life_actions = life_actions + [player addAction ["Remove Police Barrier",life_fnc_removePlaceable,"",0,false,false,"",'!isNull cursorTarget && (playerSide == west) && (cursorTarget getVariable ["placeable",false]) && !(animationState cursorTarget == "Incapacitated") && !(player getVariable["restrained",false])']];
   		life_actions pushBack (player addAction["Seize Items In Area",{[] call life_fnc_seizeWeapon},cursorTarget,0,false,false,"",'(count(nearestObjects [player,["weaponholder"],3])>0)']);
+        //Gang
+        life_actions = life_actions + [player addAction["<t color='#FF0000'>Capture Gang Location</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) == "Flag_Red_F") ']];
     };
 };
 
