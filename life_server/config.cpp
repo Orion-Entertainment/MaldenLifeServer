@@ -27,6 +27,7 @@ class CfgFunctions {
             class mresString {};
             class updatePartial {};
             class betUpdate {};
+            class logData {};
         };
     };
 

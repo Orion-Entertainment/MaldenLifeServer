@@ -189,74 +189,17 @@ _unit spawn {
     _Timer ctrlSetText localize "STR_Medic_Respawn_2";
 };
 
-
-
-
-
 //Give killer notification
 [_unit,_killer] remoteExecCall ["life_fnc_KilledPlayer",_killer];
-/*
-//Add kills to database
-if (!((time - life_action_delay) < 60)) then {
-	life_action_delay = time;
-	//Players
-	_killedPlayerDB = _unit;
-	_killerPlayerDB = _killer;
-	//UIDs
-	_killedUIDDB = getPlayerUID _killedPlayerDB;
-	_killerUID = getPlayerUID _killerPlayerDB;
-	//Names
-	_killedNameDB = _unit getVariable["realname",""];
-	_killerNameDB = _killer getVariable["realname",""];
-	//Sides
-	_killedSideDB = side _killedPlayerDB;
-	switch(_killedSideDB) do
-	{
-		case west:
-		{
-			_playerKillerSideDB = "Police";
-		};
-		case independent:
-		{
-			_playerKillerSideDB = "Medic";
-		};
-		case civilian:
-		{
-			_playerKillerSideDB = "Civilian";
-		};
-		case east:
-		{
-			_playerKillerSideDB = "Other";
-		};
-	};
-	_killerSide = side _killerPlayerDB;
-	switch(_killerSide) do
-	{
-		case west:
-		{
-			_playerKillerSideDB = "Police";
-		};
-		case independent:
-		{
-			_playerKillerSideDB = "Medic";
-		};
-		case civilian:
-		{
-			_playerKillerSideDB = "Civilian";
-		};
-		case east:
-		{
-			_playerKillerSideDB = "Other";
-		};
-	};
-	//Killer Weapon
-	_killWeapon = _killerWeapon;
-	//Kill Distance
-	_killDistance = [floor( _killer distance _unit)] call life_fnc_numberText;
-	_query = format["INSERT INTO kills(killerPID, killedPID, killerName, killedName, Weapon, Distance, KilledSide, KillerSide) VALUES ('%1','%2','%3','%4','%5','%6','%7','%8')",_killerUIDDB,_killedUIDDB,_killerNameDB,_killedNameDB,_killWeaponDB,_killDistanceDB,_playerKillerSideDB,_playerKilledSideDB];
-	[_query,1] call DB_fnc_asyncCall;
-};
-*/
+
+//Logs Kill
+private _KillData = [
+	"Killed",
+	_killer getVariable["realname",""], //Killer Name
+	getPlayerUID _killer //Killer PID
+]
+["Log",_KillData] remoteExec ["DB_fnc_logData",RSERV];
+
 _unit spawn {
     private ["_requestBtn","_requestTime"];
     disableSerialization;
