@@ -18,6 +18,7 @@ class Lega_XPhone_BottomIcons
     displayName = "SYNC DATA";
     onCall = "[] call SOCK_fnc_syncData";
     image = "sync.paa";
+    conditions = "call life_adminlevel >= 1";
   };
   class Inventory
   {
