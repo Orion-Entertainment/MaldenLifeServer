@@ -3,7 +3,6 @@ private["_prizeitemsspecial1","_ressource"];
 
 _prizeitemsspecial1 = [
 
-	"goldenbarz3",
 	"volleyball",
 	"airhorn"	
 ];

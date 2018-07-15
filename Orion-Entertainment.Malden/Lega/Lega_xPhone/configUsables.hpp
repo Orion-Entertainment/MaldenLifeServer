@@ -1,7 +1,7 @@
 class Lega_xPhone_usablesMain
 {
-    overuseFood = false;//if you want a player to become stuffed when they eat too much food, and lose stamina 
-    staminaLossStuffed = 50;
+    overuseFood = true;//if you want a player to become stuffed when they eat too much food, and lose stamina 
+    staminaLossStuffed = 0;
 };
 class Lega_xPhone_UsableItems
 {
