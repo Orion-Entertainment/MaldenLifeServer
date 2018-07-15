@@ -206,13 +206,13 @@ if (isNil {_groupNameKiller}) then
 /* Log Death */
 private _KillData = [
 	"Killed",
-	str player getVariable["realname",""], //Name
-	str getPlayerUID player, //PID
-	str _groupName, //Group
-	str _killer getVariable["realname",""], //Killer Name
-	str getPlayerUID _killer, //Killer PID
-	str _killerWeapon, //Killer Weapon
-	str _groupNameKiller, //Killer Group
+	player getVariable["realname",""], //Name
+	getPlayerUID player, //PID
+	_groupName, //Group
+	_killer getVariable["realname",""], //Killer Name
+	getPlayerUID _killer, //Killer PID
+	_killerWeapon, //Killer Weapon
+	_groupNameKiller, //Killer Group
 	[floor( _killer distance _unit)] call life_fnc_numberText //Kill Distance
 ];
 ["Log",_KillData] remoteExec ["DB_fnc_logData",RSERV];

@@ -12,4 +12,4 @@ params [
 ];
 if (_option isEqualTo "" || _data isEqualTo "") exitWith {};
 
-private _ext = "Orion-Entertainment" callExtension ["post", [_option,_data]];
+private _ext = "Orion-Entertainment" callExtension ["post", [_option,toString _data]];
