@@ -52,7 +52,7 @@ class Life_Settings {
     save_vehicle_illegal = true; //This will allow cops to be advised when a vehicle, with illegal items in it, is impounded. This will also save illegal items as proof of crime, and needs "save_vehicle_virtualItems" set as true. Illegal items don't need to be set in save_vehicle_items[] for being saved, if it's enabled.
 
 /*Cop Settings*/
-    cop_cars[]= {"C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F","I_G_Offroad_01_F","C_Offroad_02_unarmed_F","B_T_LSV_01_unarmed_F","B_LSV_01_unarmed_F","B_CTRG_LSV_01_light_F","I_MRAP_03_F","B_T_LSV_01_unarmed_black_F","C_Offroad_02_unarmed_black_F","B_APC_Wheeled_01_cannon_F"};
+    cop_cars[]= {"C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F","I_G_Offroad_01_F","C_Offroad_02_unarmed_F","B_T_LSV_01_unarmed_F","B_LSV_01_unarmed_F","B_CTRG_LSV_01_light_F","I_MRAP_03_F","B_T_LSV_01_unarmed_black_F","C_Offroad_02_unarmed_black_F","B_APC_Wheeled_01_cannon_F","B_AFV_Wheeled_01_up_cannon_F"};
 
 /* System Settings */
     /* ATM & Federal Reserve System Configurations */
@@ -163,7 +163,7 @@ class Life_Settings {
 
     /* Vehicle Purchase Prices */
     vehicle_purchase_multiplier_CIVILIAN = 1; //Civilian Vehicle Buy Price = Config_Vehicle price * multiplier
-    vehicle_purchase_multiplier_COP = .5; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_COP = .2; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
     vehicle_purchase_multiplier_MEDIC = 0; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
     vehicle_purchase_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 

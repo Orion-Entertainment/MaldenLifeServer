@@ -66,7 +66,9 @@ class CarShops {
             { "C_Plane_Civil_01_F", "" },
             { "B_Heli_Transport_03_unarmed_F", "" },
             { "O_Heli_Transport_04_bench_F", "" },
-            { "O_Heli_Transport_04_box_F", "" }
+            { "O_Heli_Transport_04_box_F", "" },
+            { "B_T_VTOL_01_infantry_F", "" },
+            { "B_T_VTOL_01_vehicle_F", "" }
             
         };
     };
@@ -563,16 +565,16 @@ class LifeCfgVehicles {
     };
 	
     class B_T_VTOL_01_infantry_F {
-        vItemSpace = 250;
+        vItemSpace = 325;
         conditions = "";
-        price = 250000;
+        price = 1750000;
         textures[] = {};
     };
 
     class B_T_VTOL_01_vehicle_F {
-        vItemSpace = 250;
+        vItemSpace = 400;
         conditions = "";
-        price = 250000;
+        price = 2250000;
         textures[] = {};
     };
 
