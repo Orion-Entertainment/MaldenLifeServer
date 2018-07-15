@@ -70,6 +70,27 @@ _owner setVariable ["gang_bank",round(_gFund+((count playableUnits)*2000)),true]
 //push gang funds to DB
 [1,_owner] call TON_fnc_updateGang;
 
+/*
+	#########################
+ 	#	Gang Territory	#
+ 	#########################
+ */
+
+//gets the flag locations
+_area4 = [5886.35,3575.361,0] nearestObject "Flag_Red_F";
+
+//gets the gang names of the flag owners
+_owner = _area4 getVariable ["gangOwner",grpNull];
+
+//get the gang funds
+_gFund = _owner getVariable ["gang_bank",0];
+
+//set the new gang funds
+_owner setVariable ["gang_bank",round(_gFund+((count playableUnits)*2000)),true];
+
+//push gang funds to DB
+[1,_owner] call TON_fnc_updateGang;
+
 //time between scripts
 Sleep 900;
 
