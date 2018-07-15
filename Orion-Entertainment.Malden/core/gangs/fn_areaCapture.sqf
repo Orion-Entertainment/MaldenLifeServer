@@ -258,7 +258,7 @@ if (_gangNum == "Gang_Area_3") then {
 };
 
 if (_gangNum == "Gang_Area_4") then {
-    "gang_cap_4" setMarkerText _pText;
+    "gang_cap_4" setMarkerText _Text;
 };
 
 //Tell the world
