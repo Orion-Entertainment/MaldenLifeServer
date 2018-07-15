@@ -203,6 +203,14 @@ if (isNil {_groupNameKiller}) then
 };
 
 
+if (isNil "_killerWeapon") then {
+    _killerWeapon = "";
+};
+
+if (isNull _killerWeapon) then {
+    _killerWeapon = "";
+};
+
 /* Log Death */
 private _KillData = [
 	"Killed",
