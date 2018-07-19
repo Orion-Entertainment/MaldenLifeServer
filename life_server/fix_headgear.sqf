@@ -1,5 +1,5 @@
 /*
-    File: fix_headgear.sqf
+     File: fix_headgear.sqf
     Author: pettka
     Modified by Tonic for Altis Life.
 
