@@ -1498,10 +1498,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
             { "Police", "cop", {
-                "images\textures\Vehicles\Cop\Police_Orca_white.jpg"
+                "images\Textures\Vehicles\Cop\Police_Orca_white.jpg"
             }, "" },
             { "EMS", "med", {
-                "images\textures\Vehicles\Medical\EMSOrca.paa"
+                "images\Textures\Vehicles\Medical\EMSOrca.paa"
             }, "" }
         };
     };
