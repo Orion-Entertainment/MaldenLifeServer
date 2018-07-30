@@ -48,7 +48,7 @@ class Lega_xPhone_gangMainBtnLeave: XPhoneIconControlButton
       y = 0.6914 * safezoneH + safezoneY;
       w = 0.0711562 * safezoneW;
       h = 0.0176 * safezoneH;
-      onButtonClick = "[] spawn lega_fnc_xPhoneGangLeave";
+      onButtonClick = "[] call life_fnc_gangLeave";
 };
 class Lega_xPhone_gangMainBtnSetLeader: XPhoneIconControlButton
 {
