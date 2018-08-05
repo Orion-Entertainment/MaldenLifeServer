@@ -1475,7 +1475,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "images\textures\Vehicles\Medical\medHeli.paa)"
             }, "" },
             { "Police", "cop", {
-                "images\Textures\Vehicles\Cop\Police_Orca_white.jpg"
+                "images\Textures\Vehicles\Cop\Police_Orca_white.paa"
             }, "" }
         };
     };
@@ -1498,7 +1498,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
             { "Police", "cop", {
-                "images\Textures\Vehicles\Cop\Police_Orca_white.jpg"
+                "images\Textures\Vehicles\Cop\Police_Orca_white.paa"
             }, "" },
             { "EMS", "med", {
                 "images\Textures\Vehicles\Medical\EMSOrca.paa"
