@@ -40,11 +40,4 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
 };
 
 [] call life_fnc_playerSkins;
-
-if (life_session_inv) exitWith {};
 [] call SOCK_fnc_updateRequest;
-[] spawn {
-    life_session_inv = true;
-    sleep (2 * 60);
-    life_session_inv = false;
-};
