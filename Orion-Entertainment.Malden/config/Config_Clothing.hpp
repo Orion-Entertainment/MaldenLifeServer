@@ -781,7 +781,8 @@ class Clothing {
             { "G_Shades_Blue", "", 10, "" }
         };
         vests[] = {
-            { "NONE", $STR_C_Remove_vests, 0, "" }
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+			{ "V_RebreatherIA", "", 10, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
