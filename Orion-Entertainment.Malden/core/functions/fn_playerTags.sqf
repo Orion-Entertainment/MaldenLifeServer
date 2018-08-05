@@ -42,9 +42,9 @@ private _index = -1;
         _Colors = [];
         if (!isNil {player getVariable "donator_lvl"}) then {
             _Colors = switch (_x getVariable "donator_lvl") do {
-                case (1) : {["#ffbd30","#c18f24"]};
-                case (2) : {["#ffff00","#cccc08"]};
-                case (3) : {["#00ffe9","#00ad9e"]};
+                case 1 : {["#ffbd30","#c18f24"]};
+                case 2 : {["#ffff00","#cccc08"]};
+                case 3 : {["#00ffe9","#00ad9e"]};
                 default {["#a3a3a3","#666666"]};
             };
         } else {
