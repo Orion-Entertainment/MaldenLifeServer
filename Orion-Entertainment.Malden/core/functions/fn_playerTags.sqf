@@ -39,7 +39,6 @@ private _index = -1;
         _sPos = worldToScreen _pos;
         _distance = _pos distance player;
 
-        _Colors = ["a3a3a3","666666"];
         if (!isNil {_x getVariable "donator_lvl"}) then {
             _Colors = switch (_x getVariable "donator_lvl") do {
                 case 1: {["ffbd30","c18f24"]};
@@ -47,7 +46,10 @@ private _index = -1;
                 case 3: {["00ffe9","00ad9e"]};
                 default {["a3a3a3","666666"]};
             };
+        } else {
+            _Colors = ["a3a3a3","666666"];
         };
+        waitUntil {!isNil "_Colors"};
 
         if (count _sPos > 1 && {_distance < 15}) then {
             if ((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks) then {
