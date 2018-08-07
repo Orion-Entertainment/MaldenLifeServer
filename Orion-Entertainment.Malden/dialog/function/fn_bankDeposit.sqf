@@ -22,6 +22,14 @@ hint format[localize "STR_ATM_DepositSuccess",[_value] call life_fnc_numberText]
 [] spawn life_fnc_bankingDeposit;
 [6] call SOCK_fnc_updatePartial;
 
+/* Log Data */
+private _LogData = [
+	"Deposit",
+	getPlayerUID player,
+	[_value] call life_fnc_numberText
+];
+["Log",_LogData] remoteExec ["DB_fnc_logData",RSERV];
+
 if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
     if (LIFE_SETTINGS(getNumber,"battlEye_friendlyLogging") isEqualTo 1) then {
         money_log = format ["deposited $%1 into their bank. Bank Balance: $%2  On Hand Balance: $%3",_value,[goToShopView] call life_fnc_numberText,[findNearestPerson] call life_fnc_numberText];

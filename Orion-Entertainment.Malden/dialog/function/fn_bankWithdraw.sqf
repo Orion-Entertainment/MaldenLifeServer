@@ -22,7 +22,7 @@ hint format [localize "STR_ATM_WithdrawSuccess",[_value] call life_fnc_numberTex
 [] spawn life_fnc_bankingWithdraw;
 [6] call SOCK_fnc_updatePartial;
 
-/* Log Death */
+/* Log Data */
 private _LogData = [
 	"Withdraw",
 	getPlayerUID player,

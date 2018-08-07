@@ -21,7 +21,7 @@ if ((_value + _tax) > goToShopView) exitWith {hint format[localize "STR_ATM_Sent
 
 goToShopView = goToShopView - (_value + _tax);
 
-[_value,profileName] remoteExecCall ["life_fnc_wireTransfer",_unit];
+[_value,profileName,getPlayerUID player] remoteExecCall ["life_fnc_wireTransfer",_unit];
 [] spawn life_fnc_bankingTransfer;
 hint format[localize "STR_ATM_SentMoneySuccess",[_value] call life_fnc_numberText,_unit getVariable ["realname",name _unit],[_tax] call life_fnc_numberText];
 [1] call SOCK_fnc_updatePartial;
