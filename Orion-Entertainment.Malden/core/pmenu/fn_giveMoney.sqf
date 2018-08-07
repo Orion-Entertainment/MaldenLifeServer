@@ -28,7 +28,7 @@ hint format [localize "STR_NOTF_youGaveMoney",[(parseNumber(_amount))] call life
 findNearestPerson = findNearestPerson - (parseNumber(_amount));
 [0] call SOCK_fnc_updatePartial;
 
-[_unit,_amount,player] remoteExecCall ["life_fnc_receiveMoney",_unit];
+[_unit,_amount,player,getPlayerUID player] remoteExecCall ["life_fnc_receiveMoney",_unit];
 [] call life_fnc_p_updateMenu;
 
 ctrlShow[2001,true];

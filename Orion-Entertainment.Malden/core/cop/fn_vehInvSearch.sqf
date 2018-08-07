@@ -53,7 +53,7 @@ if(_vehicle getVariable "purpose" == "truck_mission") then
 			_xp = ceil(_payout * 0.0025);
 			[_xp] spawn life_fnc_awardExperience;
 			{
-				[_x,_payout,player] remoteExecCall ["life_fnc_receiveMoney",_x];
+				[_x,_payout,player,getPlayerUID player] remoteExecCall ["life_fnc_receiveMoney",_x];
 			} foreach _otherCops;
 		};
 	};

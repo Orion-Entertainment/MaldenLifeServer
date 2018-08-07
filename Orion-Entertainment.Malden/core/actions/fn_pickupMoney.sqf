@@ -19,20 +19,23 @@ if(isNil {_val}) exitWith {};
 if(isNull _obj || player distance _obj > 3) exitWith {if(!isNull _obj) then {_obj setVariable["inUse",false,true];};};
 if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;};
 _obj setVariable["PickedUp",TRUE,TRUE];
-if(!isNil {_val}) then
-{
+if(!isNil {_val}) then {
 	deleteVehicle _obj;
 
-	switch (true) do {
-        case (_val > 20000000) : {_val = 100000;}; //VAL>20mil->100k
-        case (_val > 5000000) : {_val = 250000;}; //VAL>5mil->250k
-        default {};
-    };
+	if (_val > 5000000) then {_val > 5000000};
 
 	player playMove "AinvPknlMstpSlayWrflDnon";
     titleText[format [localize "STR_NOTF_PickedMoney",[_val] call life_fnc_numberText],"PLAIN"];
     findNearestPerson = findNearestPerson + _val;
     [0] call SOCK_fnc_updatePartial;
+	/* Log Data */
+	private _LogData = [
+		"Pickup",
+		getPlayerUID player,
+		[_val] call life_fnc_numberText
+	];
+	["Log",_LogData] remoteExec ["DB_fnc_logData",RSERV];
+
 	life_action_delay = time;
 };
 [] spawn life_fnc_pickupItems;
