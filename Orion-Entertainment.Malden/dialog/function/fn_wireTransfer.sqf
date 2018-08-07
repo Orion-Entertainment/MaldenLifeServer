@@ -12,7 +12,7 @@ params [
     ["_fromsteamid","",[""]]
 ];
 
-if (_value isEqualTo 0 || _from isEqualTo "" || _from isEqualTo profileName || _fromsteamid isEqualTo "") exitWith {}; //No
+if (_value isEqualTo 0 || _from isEqualTo "" || _from isEqualTo profileName) exitWith {}; //No
 goToShopView = goToShopView + _value;
 [1] call SOCK_fnc_updatePartial;
 hint format [localize "STR_ATM_WireTransfer",_from,[_value] call life_fnc_numberText];

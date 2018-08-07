@@ -12,9 +12,4 @@ params [
 ];
 if (_option isEqualTo "" || _data isEqualTo "") exitWith {};
 
-/* Check Data */
-{
-    if (isNull _x) exitWith {diag_log format ["<Orion-Entertainment> logData: %1 Null", _x];};
-} forEach _data;
-
 private _ext = "Orion-Entertainment" callExtension ["post", [_option,_data]];
