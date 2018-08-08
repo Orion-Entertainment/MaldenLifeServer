@@ -22,8 +22,6 @@ _obj setVariable["PickedUp",TRUE,TRUE];
 if(!isNil {_val}) then {
 	deleteVehicle _obj;
 
-	if (_val > 5000000) then {_val > 5000000};
-
 	player playMove "AinvPknlMstpSlayWrflDnon";
     titleText[format [localize "STR_NOTF_PickedMoney",[_val] call life_fnc_numberText],"PLAIN"];
     findNearestPerson = findNearestPerson + _val;

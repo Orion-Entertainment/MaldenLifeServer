@@ -22,7 +22,7 @@ if (isNull _ui) then {
 };
 
 _units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"],50];
-//_units = _units - [player]; FOR TESTING
+_units = _units - [player];
 
 _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 
@@ -40,9 +40,9 @@ private _index = -1;
         _distance = _pos distance player;
 
         _Colors = switch (_x getVariable "donator_lvl") do {
-            case 1: {["ffbd30","c18f24"]};
-            case 2: {["ffff00","cccc08"]};
-            case 3: {["00ffe9","00ad9e"]};
+            case 1: {["4cff00","41db00"]};
+            case 2: {["00ffe9","00d1be"]};
+            case 3: {["FFD700","d8b600"]};
             default {["a3a3a3","666666"]};
         };
 
