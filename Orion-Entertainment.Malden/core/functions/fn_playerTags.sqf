@@ -22,7 +22,7 @@ if (isNull _ui) then {
 };
 
 _units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"],50];
-_units = _units - [player];
+//_units = _units - [player];
 
 _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 
@@ -48,11 +48,10 @@ private _index = -1;
             };
 
             if ((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks) then {
-                _name = "MASKED";
+                _text = format ["<t size='1' color='#a3a3a3'>MASKED</t><br/><t size='0.9' color='#%1'>%2</t>",_Colors select 1,getPlayerUID _x];
             } else {
-                _name = _x getVariable ["realname",name _x];
+                _text = format ["<t size='1' color='#%1'>%2</t><br/><t size='0.9' color='#%3'>%4</t>",_Colors select 0,_x getVariable ["realname",name _x],_Colors select 1,getPlayerUID _x];
             };
-            _text = format ["<t size='1' color='#%1'>%2</t><br/><t size='0.9' color='#%3'>%4</t>",_Colors select 0,_name,_Colors select 1,getPlayerUID _x];
 
             if (_x getVariable ["speaking",false]) then {_text = "<t color='#e6e6e6'>[Speaking] " + _text;};
             _idc ctrlSetStructuredText parseText _text;
