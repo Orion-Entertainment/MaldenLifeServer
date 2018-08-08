@@ -39,14 +39,14 @@ private _index = -1;
         _sPos = worldToScreen _pos;
         _distance = _pos distance player;
 
-        _Colors = switch (_x getVariable "donator_lvl") do {
-            case 1: {["4cff00","41db00"]};
-            case 2: {["00ffe9","00d1be"]};
-            case 3: {["FFD700","d8b600"]};
-            default {["a3a3a3","666666"]};
-        };
-
         if (count _sPos > 1 && {_distance < 15}) then {
+            _Colors = switch (_x getVariable "donator_lvl") do {
+                case 1: {["4cff00","41db00"]};
+                case 2: {["00ffe9","00d1be"]};
+                case 3: {["FFD700","d8b600"]};
+                default {["a3a3a3","666666"]};
+            };
+
             if ((headgear _x) in _masks || (goggles _x) in _masks || (uniform _x) in _masks) then {
                 _text = format ["<t size='1' color='#a3a3a3'>MASKED</t><br/><t size='0.9' color='#%1'>%2</t>",_Colors select 1,getPlayerUID _x];
             } else {
