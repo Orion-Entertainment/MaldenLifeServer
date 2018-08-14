@@ -248,3 +248,5 @@ if (_total > 0) then
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Malden Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
+
+[] spawn The_Programmer_RepairSystem_fnc_RepairInit;
