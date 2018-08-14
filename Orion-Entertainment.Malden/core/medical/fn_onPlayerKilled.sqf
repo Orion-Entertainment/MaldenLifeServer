@@ -223,7 +223,7 @@ private _KillData = [
 
 
 
-_unit spawn {
+/*_unit spawn {
     private ["_requestBtn","_requestTime"];
     disableSerialization;
     _requestBtn = ((findDisplay 7300) displayCtrl 7303);
@@ -233,7 +233,8 @@ _unit spawn {
     _requestBtn ctrlEnable true;
 };
 
-[] spawn life_fnc_deathScreen;
+[] spawn life_fnc_deathScreen;*/
+[_unit] spawn orion_fnc_deathscreen;
 
 //Credits to Ciaran for original creation of the script
 if(life_nlrtimer_running) then

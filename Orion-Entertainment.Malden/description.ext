@@ -26,13 +26,14 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "core\derleon\Scripts_Master.hpp"
 #include "Custom\scarCODE\ServerInfoMenu\hpp\CfgServerInfoMenu.hpp"
 #include "Custom\scarCODE\ServerInfoMenu\hpp\RscDisplayServerInfoMenu.hpp"
-#include "Lega\Lega_Handler.hpp"
+#include "orion\orion_MasterHandler.hpp"
+#include "The-Programmer\theprogrammer_dialog_master.cpp"
 
 
 class CfgServer {
     DatabaseName = "maldenlife2"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
     DebugMode = 0; //Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
-    HeadlessSupport = 0; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
+    HeadlessSupport = 1; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
     /*
     Enabled: When HeadlessSupport is set to 1 (enabled), the server will run without fault when no Headless Client is connected. However, it will support the Headless Client if you choose to connect one.
     Disabled: If HeadlessSupport is set to 0 (disabled), the connection of a Headless Client will make no difference. This option will increase server performance a TINY but negligible amount.
@@ -52,11 +53,14 @@ class RscTitles {
     #include "core\derleon\vis\vehInfo.hpp"
     #include "Custom\status_bar\statusBar.hpp"
     #include "maverick\maverick_titles_master.cpp"
+	#include "The-Programmer\GPS\RscTitles.hpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
     #include "maverick\maverick_functions_master.cpp"
+	#include "orion\orion_Functions.hpp"
+	#include "The-Programmer\theprogrammer_functions_master.cpp"
 };
 
 class CfgMusic {

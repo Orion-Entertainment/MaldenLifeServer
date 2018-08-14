@@ -241,7 +241,7 @@ switch (_code) do {
     //Y Player Menu
     case 21: {
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
-            [] call Lega_fnc_openXPhone;
+            [1] spawn the_programmer_iphone_fnc_phone_init;
         };
     };
 

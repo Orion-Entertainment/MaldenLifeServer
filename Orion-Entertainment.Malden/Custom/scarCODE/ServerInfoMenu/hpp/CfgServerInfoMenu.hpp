@@ -44,7 +44,17 @@ class CfgServerInfoMenu
          menuName = "Staff";
          title = "ORION STAFF";
          content[] = {
-			"Founders: Conway, +Flabby"
+			"Founders: Conway, +Flabby",
+			"<br />",
+			"Head Developer: Ra's al Ghul",
+			"<br />",
+            "Developers: Flabby, Mr New",
+            "<br />",
+			"Community Manager: Reece, Brandon",
+            "<br />",
+			"Head Admin: Left Twix",
+            "<br />",
+			"Senior Admin: John Smith"
 		 };
       };
       class fifth
