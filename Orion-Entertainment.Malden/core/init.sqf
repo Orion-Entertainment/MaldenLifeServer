@@ -156,7 +156,7 @@ LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObje
 
 player setVariable ["steam64ID",getPlayerUID player];
 player setVariable ["realname",profileName,true];
-player setVariable ["donator_lvl",FETCH_CONST(life_donorlevel)];
+player setVariable ["donator_lvl",(FETCH_CONST(life_donorlevel)),true];
 
 life_fnc_moveIn = compileFinal
 "

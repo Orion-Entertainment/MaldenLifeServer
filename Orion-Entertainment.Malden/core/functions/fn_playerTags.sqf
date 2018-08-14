@@ -40,7 +40,7 @@ private _index = -1;
         _distance = _pos distance player;
 
         if (count _sPos > 1 && {_distance < 15}) then {
-            _Colors = switch (_x getVariable "donator_lvl") do {
+            _Colors = switch (_x getVariable["donator_lvl", 0]) do {
                 case 1: {["4cff00","41db00"]};
                 case 2: {["00ffe9","00d1be"]};
                 case 3: {["FFD700","d8b600"]};
