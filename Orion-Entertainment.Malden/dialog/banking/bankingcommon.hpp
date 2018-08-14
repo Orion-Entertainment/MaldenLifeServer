@@ -1,4 +1,4 @@
-class Life_RscButtonInvisibleAlt : Life_RscButtonMenu {
+class Life_RscButtonInvisible : Life_RscButtonMenu {
 	animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
 	animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
 	animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
@@ -13,10 +13,10 @@ class Life_RscButtonInvisibleAlt : Life_RscButtonMenu {
 	colorDisabled[] = {1, 1, 1, 0};
 };
 
-class Life_CardSlotButton : Life_RscButtonInvisibleAlt {
+class Life_CardSlotButton : Life_RscButtonInvisible {
 };
 
-class Life_BankButton : Life_RscButtonInvisibleAlt {
+class Life_BankButton : Life_RscButtonInvisible {
     /*soundEnter[] = { "", 0, 1 };
   	soundPush[] = { "bankbip.ogg", 0.1, 1 };
   	soundClick[] = { "", 0, 1 };
