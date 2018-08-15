@@ -30,7 +30,7 @@ class ProcessAction {
         MaterialsGive[] = {{"diamond_cut",1}};
         Text = "STR_Process_Diamond";
         //ScrollText = "Cut Diamonds";
-        NoLicenseCost = 1350;
+        NoLicenseCost = 1500;
     };
 
     class heroin {
@@ -78,7 +78,7 @@ class ProcessAction {
         MaterialsGive[] = {{"cocaine_processed",1}};
         Text = "STR_Process_Cocaine";
         //ScrollText = "Process Cocaine";
-        NoLicenseCost = 1500;
+        NoLicenseCost = 2500;
     };
 
     class marijuana {
@@ -86,7 +86,7 @@ class ProcessAction {
         MaterialsGive[] = {{"marijuana",1}};
         Text = "STR_Process_Marijuana";
         //ScrollText = "Harvest Marijuana";
-        NoLicenseCost = 500;
+        NoLicenseCost = 750;
     };
 /*
 	class wax {
@@ -127,7 +127,7 @@ class ProcessAction {
             MaterialsGive[] = {{"C4",1}};
             Text = "STR_Process_C4";
             //ScrollText = "Mix Cement";
-            NoLicenseCost = 11500;
+            NoLicenseCost = 25000;
 	};
 
 	class steelplate {
@@ -143,7 +143,7 @@ class ProcessAction {
             MaterialsGive[] = {{"cloth",1}};
             Text = "STR_Process_cloth";
             //ScrollText = "Mix Cement";
-            NoLicenseCost = 11500;
+            NoLicenseCost = 2500;
 	};
 
     class lumber {
@@ -159,7 +159,7 @@ class ProcessAction {
         MaterialsGive[] = {{"LSD",1}};
         Text = "STR_Process_LSD";
         //ScrollText = "Mix Cement";
-        NoLicenseCost = 0;
+        NoLicenseCost = 2000;
     };
 
     class ruby {
@@ -167,7 +167,7 @@ class ProcessAction {
         MaterialsGive[] = {{"rubyC",1}};
         Text = "STR_Process_Ruby";
         //ScrollText = "Mix Cement";
-        NoLicenseCost = 0;
+        NoLicenseCost = 2000;
     };
 
     class uranium {
@@ -175,7 +175,7 @@ class ProcessAction {
         MaterialsGive[] = {{"uranium",1}};
         Text = "STR_Process_uranium";
         //ScrollText = "Mix Cement";
-        NoLicenseCost = 0;
+        NoLicenseCost = 2000;
     };
 
 //Box's Additions
