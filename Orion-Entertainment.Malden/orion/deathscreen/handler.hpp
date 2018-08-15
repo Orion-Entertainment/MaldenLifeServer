@@ -4,7 +4,7 @@
  
 #include "Deathscreen.hpp"
 class DeathscreenSettings{
-    ForceRespawn = 60;
-    RespawnTimer = 55;
+    ForceRespawn = 600;
+    RespawnTimer = 300;
     timeBetweenRequest = 10;
 };
