@@ -28,6 +28,6 @@ private _LogData = [
     "Hand",
     getPlayerUID player,
     _fromsteamid,
-    [_val] call life_fnc_numberText
+    [(parseNumber (_val))] call life_fnc_numberText
 ];
 ["Log",_LogData] remoteExec ["DB_fnc_logData",RSERV];
