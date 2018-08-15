@@ -1538,7 +1538,7 @@ class VirtualItems {
         displayName = "STR_Item_OilP";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 2475;
+        sellPrice = 2500;
         illegal = false;
         edible = -1;
         icon = "images\icons\ico_oilProcessed.paa";
@@ -1560,7 +1560,7 @@ class VirtualItems {
         displayName = "STR_Item_CopperIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 1375;
+        sellPrice = 1400;
         illegal = false;
         edible = -1;
         icon = "images\icons\ico_copper.paa";
@@ -1582,7 +1582,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 2;
         buyPrice = 2100;
-        sellPrice = 1625;
+        sellPrice = 1750;
         illegal = false;
         edible = -1;
         icon = "images\icons\ico_iron.paa";
@@ -1625,8 +1625,8 @@ class VirtualItems {
         variable = "glass";
         displayName = "STR_Item_Glass";
         weight = 1;
-        buyPrice = 1500;
-        sellPrice = 1350;
+        buyPrice = 1750;
+        sellPrice = 1500;
         illegal = false;
         edible = -1;
         icon = "images\icons\ico_glass.paa";
@@ -1648,7 +1648,7 @@ class VirtualItems {
         displayName = "STR_Item_DiamondC";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 4000;
+        sellPrice = 3100;
         illegal = false;
         edible = -1;
         icon = "images\icons\ico_diamondCut.paa";
@@ -1693,7 +1693,7 @@ class VirtualItems {
         variable = "heroinProcessed";
         displayName = "STR_Item_HeroinP";
         weight = 4;
-        buyPrice = 4500;
+        buyPrice = 5000;
         sellPrice = 4000;
         illegal = true;
         edible = -1;
@@ -1716,8 +1716,8 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 2;
-        buyPrice = 3500;
-        sellPrice = 3000;
+        buyPrice = 4000;
+        sellPrice = 3500;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_marijuana.paa";
@@ -1740,7 +1740,7 @@ class VirtualItems {
         displayName = "STR_Item_CocaineP";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 3500;
+        sellPrice = 4500;
         illegal = true;
         edible = -1;
         icon = "images\icons\ico_cocaineProcessed.paa";
