@@ -71,7 +71,7 @@ class Life_Settings {
     donor_level = true; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = false; //Set to false to disable the ARMA 3 fatigue system.
     total_maxWeight = 34; //Static variable for the maximum weight allowed without having a backpack
-    respawn_timer = 90; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
+    respawn_timer = 300; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
     news_broadcast_cost = 999999999; //Cost for a player to send a news station broadcast.
@@ -126,7 +126,7 @@ class Life_Settings {
     jail_forceWalk = true;
 
     /* Medical System Configurations */
-    revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
+    revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_civ = false; //true to enable civs the ability to revive everyone or false for only medics/ems or medic/ems/cops.
     revive_east = false; //true to enable opfor the ability to revive everyone or false for only medics/ems or medic/ems/cops.
     revive_fee = 5000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
@@ -137,9 +137,9 @@ class Life_Settings {
     bank_civ = 500000; //Amount of cash in bank for new civillians
     bank_med = 500000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 2350; //Payment for cops
-    paycheck_civ = 2150; //Payment for civillians
-    paycheck_med = 2250; //Payment for medics
+    paycheck_cop = 3500; //Payment for cops
+    paycheck_civ = 2500; //Payment for civillians
+    paycheck_med = 3000; //Payment for medics
 
     paycheck_period = 5; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
